@@ -480,7 +480,7 @@ img {
     --ztc-text-text-8: #F6F8F9;
     --ztc-text-text-9: #FEE0ED;
     --ztc-text-text-10: #F6F8F9;
-    --ztc-text-text-11: #ADFF1C;
+    --ztc-text-text-11: #EA9C75;
     --ztc-text-text-12: #0A2828;
     --ztc-text-text-13: #2E00FF;
     --ztc-text-text-14: #FF6610;
@@ -504,7 +504,7 @@ img {
     --ztc-bg-bg-14: #FFF5F9;
     --ztc-bg-bg-15: #F6F8F9;
     --ztc-bg-bg-16: #FFF6F9;
-    --ztc-bg-bg-17: #ADFF1C;
+    --ztc-bg-bg-17: #EA9C75;
     --ztc-bg-bg-18: #104041;
     --ztc-bg-bg-19: rgba(173, 255, 28, 0.1);
     --ztc-bg-bg-20: rgba(10, 40, 40, 0.1);
@@ -1712,7 +1712,7 @@ Location:
     font-size: var(--ztc-font-size-font-s16);
     line-height: var(--ztc-font-size-font-s16);
     font-weight: var(--ztc-weight-medium);
-    background: var(--ddd, linear-gradient(91deg, #FF0A54 0.78%, #FF6F00 99.88%));
+    background: var(--ddd, linear-gradient(91deg, #832B00 0.78%, #EA9C75 99.88%));
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -9139,7 +9139,7 @@ Location:
 .hero13-section-area {
     position: relative;
     z-index: 1;
-    background: #F8F6FC;
+    background: #F7E5DA;
     padding: 100px 0 0;
     overflow: hidden;
 }
@@ -19253,7 +19253,7 @@ li a:has(i.fa-angle-down) {
 
 .homepage7-body .header-area.homepage7 .header-elements .main-menu ul li:hover>a {
     transition: all 0.4s;
-    color: var(--ztc-text-text-14) !important;
+    
 }
 
 .homepage7-body .header-area.homepage7 .header-elements .main-menu ul li .tp-submenu {
