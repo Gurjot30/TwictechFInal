@@ -3727,7 +3727,7 @@ Location:
     height: 8px;
     width: 100%;
     border-radius: 30px;
-    background: var(--ztc-border-border-1);
+    background: #F7E5DA;
 }
 
 .about5-section-area .about5-content-area .about5-boxarea .about5-boxes .about5-bar .about5-per {
@@ -3735,7 +3735,7 @@ Location:
     display: block;
     height: 100%;
     width: 85%;
-    background: var(--ztc-text-text-2);
+    background: #832B00;
     border-radius: 30px;
     animation: progress 0.8s ease-in-out forwards;
     opacity: 0;
@@ -3767,7 +3767,7 @@ Location:
     height: 8px;
     width: 100%;
     border-radius: 30px;
-    background: #E7E9E9;
+    background: #F7E5DA;
 }
 
 .about5-section-area .about5-content-area .about5-boxarea .about5-boxes .about5-bar2 .about5-per2 {
@@ -3775,7 +3775,7 @@ Location:
     display: block;
     height: 100%;
     width: 95%;
-    background: var(--ztc-text-text-2);
+    background: #832B00;
     border-radius: 30px;
     animation: progress 0.8s ease-in-out forwards;
     opacity: 0;
