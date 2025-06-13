@@ -1740,9 +1740,9 @@ Location:
 
 .heading19 h2 {
     font-family: var(--ztc-family-font1);
-    font-size: var(--ztc-font-size-font-s60);
-    line-height: var(--ztc-font-size-font-s66);
-    font-weight: var(--ztc-weight-bold);
+    font-size: var(--ztc-font-size-font-s56);
+    line-height: var(--ztc-font-size-font-s68);
+    font-weight: var(--ztc-weight-semibold);
     color: #09171B;
 }
 
