@@ -47,8 +47,11 @@
                     <div class="col-lg-12">
                         <div class="header-elements">
                             <div class="site-logo">
-                                <a href="index.html"><img src="assets/img/logo/logo6.png" alt=""></a>
-                            </div>
+                                <a href="index.html">
+                                  <img src="assets/img/logo/Logo.png" alt="" style="width: 150px;">
+                                </a>
+                              </div>
+                              
                             <div class="main-menu">
                                 <ul>
                                     <li><a href="#">Company <i class="fa-solid fa-angle-down"></i></a>
@@ -107,18 +110,29 @@
     <!--=====HEADER END =======-->
 
     <style>
-        /* Initial transparent navbar */
         #header {
-          background-color: transparent;
+          background-color: transparent !important;
           transition: background-color 0.3s ease;
         }
       
-        /* White background when scrolled */
         #header.scrolled {
-          background-color: white !important;
-          
+          background-color: #fff !important;
+          box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+          z-index: 999;
         }
       </style>
+      
+      
+      <script>
+        window.addEventListener("scroll", function () {
+          const header = document.getElementById("header");
+          if (window.scrollY > 10) {
+            header.classList.add("scrolled");
+          } else {
+            header.classList.remove("scrolled");
+          }
+        });
+      </script>
       
     
 <!--===== MOBILE HEADER STARTS =======-->
@@ -289,15 +303,25 @@
             <div class="row align-items-center">
                 <div class="col-lg-6">
                     <div class="hero13-header heading19">
-                        <h5><img src="assets/img/icons/logo-icons8.svg" alt=""> Top #1 SEO & Advertising Agency</h5>
+                        <h5><img src="assets/img/icons/logo-icons8.svg" alt=""> Top #1 Brand Marketing Company</h5>
                         <div class="space16"></div>
                         <h1 class="text-anime-style-2">We Build Campaigns That Make Brands Unforgettable</h1>
                         <div class="space24"></div>
                         <p>At our agency, we believe that creativity has the power to transform brands and connect them with their audiences in meaningful ways.</p>
                         <div class="space32"></div>
                         <div class="btn-area1">
-                            <a href="contact.html" class="header-btn21">Our Success Stories <i class="fa-solid fa-arrow-right"></i></a>
-                            <a href="contact.html" class="header-btn21 btn2">Contact Us <i class="fa-solid fa-arrow-right"></i></a>
+                            <a href="contact.html" class="header-btn21" style="color: white !important;">
+                                <span style="color: white !important;">Our Success Stories</span> 
+                                <i class="fa-solid fa-arrow-right" style="color: white !important;"></i>
+                              </a>
+                              
+                              <a href="contact.html" class="header-btn21 btn2">
+                                <span>Contact Us</span> 
+                                <i class="fa-solid fa-arrow-right"></i>
+                              </a>
+                              
+                              
+                              
                         </div>
                     </div>
                 </div>
@@ -312,13 +336,32 @@
     </div>
     <!--===== HERO AREA ENDS =======-->
 
+    <style>
+        .header-btn21.btn2 {
+          color: white !important;
+        }
+      
+        .header-btn21.btn2 span,
+        .header-btn21.btn2 i {
+          color: #FD3B32 !important;
+        }
+      
+        .header-btn21.btn2:hover,
+        .header-btn21.btn2:hover span,
+        .header-btn21.btn2:hover i {
+          color: white !important;
+        }
+      </style>
+      
+      
+
     <!--===== ABOUT AREA STARTS =======-->
     <div class="about5-section-area sp1">
         <div class="container">
             <div class="row">
                 <div class="col-lg-7 m-auto">
                     <div class="about5-header text-center heading10">
-                        <h5><img src="assets/img/icons/logo-icons6.svg" alt="">Welcome to SEO Agency</h5>
+                        <!-- <h5><img src="assets/img/icons/logo-icons6.svg" alt="">Welcome to SEO Agency</h5> -->
                         <h2 class="text-anime-style-3">Meet SEOC Your Trusted SEO & Digital Marketing Partner</h2>
                     </div>
                 </div>
@@ -555,7 +598,7 @@
             <div class="row">
                 <div class="col-lg-8 m-auto">
                     <div class="service-header text-center heading10">
-                        <h5><img src="assets/img/icons/logo-icons6.svg" alt="">Our SEO Services</h5>
+                        <!-- <h5><img src="assets/img/icons/logo-icons6.svg" alt="">Our SEO Services</h5> -->
                         <h2 class="text-anime-style-3">Elevating Your Online Presence with Expert SEO & Digital Marketing Services</h2>
                     </div>
                 </div>
@@ -696,7 +739,7 @@
             <div class="row">
                 <div class="col-lg-7 m-auto">
                     <div class="testimonial-header-area text-center heading10">
-                        <h5><img src="assets/img/icons/logo-icons5.svg" alt="">Testimonials</h5>
+                        <!-- <h5><img src="assets/img/icons/logo-icons5.svg" alt="">Testimonials</h5> -->
                         <h2 class="text-anime-style-3">Client Success Stories: Hear What Our Clients Have To Say</h2>
                     </div>
                 </div>
@@ -799,7 +842,7 @@
             <div class="row">
                 <div class="col-lg-5 m-auto">
                     <div class="blog4-header text-center heading20 space-margin60">
-                        <h5 data-aos="fade-up" data-aos-duration="1000"><img src="assets/img/icons/logo-icons8.svg" alt="">Blog & News</h5>
+                        <!-- <h5 data-aos="fade-up" data-aos-duration="1000"><img src="assets/img/icons/logo-icons8.svg" alt="">Blog & News</h5> -->
                         <div class="space16"></div>
                         <h2 class="text-anime-style-3">Agency Insights: Trends, Tips & More</h2>
                     </div>
