@@ -2755,7 +2755,7 @@ Location:
     font-size: var(--ztc-font-size-font-s18);
     line-height: var(--ztc-font-size-font-s18);
     font-weight: var(--ztc-weight-bold);
-    color: #fff;
+    color: #fff!important; 
     padding: 18px 24px;
     transition: all 0.4s;
     border-radius: 4px;
@@ -2764,6 +2764,11 @@ Location:
     background: var(--ddd, linear-gradient(91deg, #FF0A54 0.78%, #FF6F00 99.88%));
     z-index: 1;
 }
+
+.header-btn21 {
+    color: white !important;
+  }
+  
 
 .header-btn21::after {
     position: absolute;
@@ -2784,6 +2789,7 @@ Location:
     color: var(--ztc-text-text-1);
     transition: all 0.4s;
     transform: translateY(-5px);
+    color:white;
 }
 
 .header-btn21:hover::after {
@@ -17802,6 +17808,17 @@ html {
     top: 10px;
     left: 0px;
 }
+
+li a:has(i.fa-angle-down) {
+    color: black !important;
+  }
+  
+  a[href="about.html"],
+  a[href="contact.html"] {
+    color: black !important;
+  }
+  
+  
 
 .homepage2-body .header-area.homepage2 .header-elements .main-menu ul li .tp-submenu .homemenu-thumb .text::after {
     position: absolute;
