@@ -5673,18 +5673,18 @@ Location:
 }
 
 .service5-section-area .service-author-boxarea.box2 {
-    background: #deced5;
+    background: var(--ztc-bg-bg-22);
 }
 
 .service5-section-area .service-author-boxarea.box3 {
-    background: #deced5;
+    background: var(--ztc-bg-bg-23);
 }
 
 .service5-section-area .service-author-boxarea {
     position: relative;
     z-index: 1;
     transition: all 0.4s;
-    background: #deced5;
+    background: var(--ztc-bg-bg-21);
     border-radius: 5px;
     padding: 24px;
     margin-bottom: 30px;
