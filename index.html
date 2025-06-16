@@ -8,6 +8,10 @@
 
     <!--=====FAB ICON=======-->
     <link rel="shortcut icon" href="assets/img/logo/fav-logo5.png" type="image/x-icon">
+    <!-- Select2 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+
+    
 
     <!--===== CSS LINK =======-->
     <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css">
@@ -376,7 +380,246 @@
 </div>
 <!--===== MOBILE HEADER STARTS =======-->
 
+<!-- POP UP FORM -->
+<div class="popup-overlay" id="popupOverlay">
+    <div class="popup-container" id="popupContainer">
+      
+        <div class="popup-left">
+            <img src="assets/img/phone.png" alt="Phone" class="single-phone" />
+          </div>
+          
+  
+  
+  
 
+      <!-- RIGHT FORM SECTION -->
+      <div class="popup-form" id="popupForm">
+        <span class="close-btn" id="closeBtn">&times;</span>
+        <h2>Have a project in mind?<br><span class="highlight">Let’s Collaborate</span></h2>
+        <form>
+          <input type="text" placeholder="Full Name*" required />
+          <input type="email" placeholder="Business Email*" required />
+          <div class="phone-group">
+            <select name="countryCode" required>
+                <option value="+91">India (+91)</option>
+                <option value="+1">United States (+1)</option>
+                <option value="+44">United Kingdom (+44)</option>
+                
+                <option value="+61">Australia (+61)</option>
+                <option value="+81">Japan (+81)</option>
+                <option value="+49">Germany (+49)</option>
+                <option value="+33">France (+33)</option>
+                <option value="+39">Italy (+39)</option>
+                <option value="+86">China (+86)</option>
+                <option value="+971">United Arab Emirates (+971)</option>
+                <option value="+92">Pakistan (+92)</option>
+                <option value="+880">Bangladesh (+880)</option>
+                <option value="+55">Brazil (+55)</option>
+                <option value="+7">Russia (+7)</option>
+                <option value="+34">Spain (+34)</option>
+                <option value="+82">South Korea (+82)</option>
+                <option value="+60">Malaysia (+60)</option>
+                <option value="+65">Singapore (+65)</option>
+                <option value="+27">South Africa (+27)</option>
+                <option value="+62">Indonesia (+62)</option>
+                <option value="+66">Thailand (+66)</option>
+                <option value="+90">Turkey (+90)</option>
+                <option value="+20">Egypt (+20)</option>
+                <option value="+98">Iran (+98)</option>
+                <option value="+94">Sri Lanka (+94)</option>
+                <option value="+63">Philippines (+63)</option>
+                <option value="+234">Nigeria (+234)</option>
+                <option value="+256">Uganda (+256)</option>
+              </select>
+              
+            <input type="tel" placeholder="Phone*" required />
+          </div>
+          <select required>
+            <option value="" disabled selected>Mobile App Development</option>
+            <option value="Web">Web Development</option>
+            <option value="Design">UI/UX Design</option>
+          </select>
+          <textarea placeholder="Tell us your development vision.." rows="4"></textarea>
+          <button type="submit">Get a Free Strategy Call in 24 Hours!</button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+
+  <style>
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: #000;
+  overflow-x: hidden;
+}
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.95);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+/* Layout Container */
+.popup-container {
+  display: flex;
+  background: transparent;
+  max-width: 1000px;
+  width: 90%;
+  gap: 30px;
+  position: relative;
+}
+.popup-left {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; /* Prevents overflow if image is larger */
+  padding: 10px; /* Optional: add space around image */
+}
+
+.single-phone {
+  height: 520px; /* Increase this to make image bigger */
+  max-width: 100%;
+  /* transform: rotate(-10deg); */
+  transition: transform 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .popup-left {
+    display: none; /* Hide image on mobile */
+  }
+}
+
+
+/* RIGHT FORM */
+.popup-form {
+  flex: 1;
+  background: #111;
+  color: #fff;
+  padding: 30px 40px;
+  border-radius: 10px;
+  width: 100%;
+  position: relative;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+/* Close Button */
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  color: white;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* Heading */
+.popup-form h2 {
+  font-size: 24px;
+  margin-bottom: 25px;
+}
+
+.popup-form .highlight {
+    background: linear-gradient(135deg, #5b0e2d, #E84266, #FF7E5F);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Input Styles */
+.popup-form input,
+.popup-form select,
+.popup-form textarea {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 12px;
+  border-radius: 6px;
+  border: none;
+  font-size: 14px;
+  background: #222;
+  color: white;
+}
+
+/* Phone group */
+.phone-group {
+  display: flex;
+  gap: 10px;
+}
+
+.phone-group select {
+  flex: 1;
+}
+
+.phone-group input {
+  flex: 2;
+}
+
+/* Button */
+.popup-form button {
+  width: 100%;
+  padding: 15px;
+  background: linear-gradient(135deg,#5b0e2d, #E84266, #FF7E5F);
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .popup-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .popup-left {
+    display: none;
+  }
+
+  .popup-form {
+    width: 100%;
+  }
+}
+
+
+  </style>
+
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+  const popupOverlay = document.getElementById('popupOverlay');
+  const popupContainer = document.getElementById('popupContainer');
+  const closeBtn = document.getElementById('closeBtn');
+
+  // Close on outside click
+  popupOverlay.addEventListener('click', (e) => {
+    if (!popupContainer.contains(e.target)) {
+      popupOverlay.style.display = 'none';
+    }
+  });
+
+  // Close on X
+  closeBtn.addEventListener('click', () => {
+    popupOverlay.style.display = 'none';
+  });
+});
+
+
+</script>
     <!--===== HERO AREA STARTS =======-->
     <div class="hero13-section-area">
         <div class="img2">
@@ -1167,7 +1410,7 @@
     <script src="assets/js/plugins/magnific-popup.js"></script>
     <script src="assets/js/plugins/mobilemenu.js"></script>
     <script src="assets/js/plugins/owlcarousel.min.js"></script>
-    <script src="assets/js/plugins/nice-select.js"></script>
+    <!-- <script src="assets/js/plugins/nice-select.js"></script> -->
     <script src="assets/js/plugins/gsap.min.js"></script>
     <script src="assets/js/plugins/ScrollTrigger.min.js"></script>
     <script src="assets/js/plugins/Splitetext.js"></script>
@@ -1175,6 +1418,11 @@
     <script src="assets/js/plugins/waypoints.js"></script>
     <script src="assets/js/plugins/circle-progress.js"></script>
     <script src="assets/js/main.js"></script>
+    <!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Select2 JS -->
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 
 </body>
 
