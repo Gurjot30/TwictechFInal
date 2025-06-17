@@ -16726,6 +16726,8 @@ Location:
     position: relative;
     z-index: 1;
     padding: 80px 0 0 0;
+    background-color: rgb(248, 217, 217);
+    /* background-color: rgb(236, 196, 196); */
 }
 
 @media (max-width: 767px) {
@@ -16749,7 +16751,7 @@ Location:
     font-size: var(--ztc-font-size-font-s16);
     line-height: var(--ztc-font-size-font-s26);
     font-weight: var(--ztc-weight-regular);
-    color: #5C6365;
+    color: black;
 }
 
 .footer13-section-area .footer-logo-area ul {
@@ -16770,11 +16772,11 @@ Location:
     line-height: 40px;
     margin: 0 6px 0 0;
     transition: all 0.4s;
-    color: #FD2F39;
+    color: #5b0e2d;
 }
 
 .footer13-section-area .footer-logo-area ul li a:hover {
-    background: #FD2F39;
+    background: #f65e66;
     transition: all 0.4s;
     transform: translateY(-5px);
     color: #fff;
@@ -16802,7 +16804,7 @@ Location:
     font-family: var(--ztc-family-font1);
     font-size: var(--ztc-font-size-font-s24);
     font-weight: var(--ztc-weight-bold);
-    color: #09171B;
+    color: black;
     line-height: var(--ztc-font-size-font-s24);
 }
 
@@ -16811,7 +16813,7 @@ Location:
     font-size: var(--ztc-font-size-font-s16);
     line-height: var(--ztc-font-size-font-s16);
     font-weight: var(--ztc-weight-regular);
-    color: #5C6365;
+    color: black;
     display: inline-block;
     margin-top: 20px;
     transition: all 0.4s;
@@ -16874,7 +16876,7 @@ Location:
     font-family: var(--ztc-family-font1);
     font-size: var(--ztc-font-size-font-s24);
     font-weight: var(--ztc-weight-semibold);
-    color: #09171B;
+    color: black;
     line-height: var(--ztc-font-size-font-s24);
 }
 
@@ -16883,7 +16885,7 @@ Location:
     font-size: var(--ztc-font-size-font-s16);
     line-height: var(--ztc-font-size-font-s26);
     font-weight: var(--ztc-weight-regular);
-    color: #5C6365;
+    color: black;
     display: flex;
     align-items: flex-start;
     margin-top: 20px;
@@ -16933,7 +16935,7 @@ Location:
     font-size: var(--ztc-font-size-font-s16);
     line-height: var(--ztc-font-size-font-s16);
     font-weight: var(--ztc-weight-regular);
-    color: #5C6365;
+    color: black;
     display: inline-block;
     margin-top: 20px;
 }
@@ -16981,7 +16983,7 @@ Location:
     align-items: center;
     justify-content: space-between;
     padding: 30px 0 24px 0;
-    border-top: 1px solid #E5E7EB;
+    border-top: 1px solid black;
 }
 
 @media (max-width: 767px) {
@@ -16996,7 +16998,7 @@ Location:
     font-size: var(--ztc-font-size-font-s16);
     line-height: var(--ztc-font-size-font-s16);
     font-weight: var(--ztc-weight-regular);
-    color: #5C6365;
+    color: black;
 }
 
 @media (max-width: 767px) {
@@ -17015,7 +17017,7 @@ Location:
     display: inline-block;
     line-height: var(--ztc-font-size-font-s16);
     font-weight: var(--ztc-weight-medium);
-    color: #5C6365;
+    color: black;
     transition: all 0.4s;
     margin: 0 32px 0 0;
 }
@@ -17629,7 +17631,7 @@ html {
     transition: all 0.5s ease-in-out;
     opacity: 1;
     z-index: 9;
-    top: 50px;
+    top: 10px;
     position: absolute;
     transition: all 0.4s;
 }
@@ -17677,13 +17679,18 @@ html {
     box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
     position: absolute;
     background: var(--ztc-text-text-1);
-    top: 100px;
+    top: 10px;
     width: 225px;
     z-index: 1;
     transition: all 0.4s;
     border-radius: 5px;
     padding: 15px;
 }
+/* Adjust dropdown position slightly upward */
+.header-area .main-menu ul li ul.dropdown-padding {
+    top: 120%!important; /* Decrease from default 100% */
+  }
+  
 
 .homepage1-body .header-area.homepage1 .header-elements .main-menu ul li ul.dropdown-padding li.main-small-menu {
     position: relative;
