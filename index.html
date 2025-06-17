@@ -144,17 +144,34 @@
           box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
           z-index: 999;
         }
+
+        /* Remove padding and enforce full width inside header only */
+        .header-area .container {
+        max-width: 100% !important;
+        padding-left: 40px !important;
+        padding-right: 40px !important;
+        }
+
+        html, body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        }
+
+
       </style>
+
+      
 
 <style>
     a.header-btn21 {
-        background: #f92c8b;
-  background: -moz-linear-gradient(left, #f92c8b 0%, #b02cd6 100%);
-  background: -webkit-linear-gradient(left, #f92c8b 0%, #b02cd6 100%);
-  background: linear-gradient(to right, #e84266 0%, #192133 100%);
-  -webkit-box-shadow: 0 10px 15px 0px rgba(175, 0, 202, 0.2);
-  box-shadow: 0 10px 15px 0px rgba(175, 0, 202, 0.2);
-      /* color: #F7E5DA !important; */
+        background: #5b0e2d;
+        /* background: -moz-linear-gradient(left, #f92c8b 0%, #b02cd6 100%);
+        background: -webkit-linear-gradient(left, #f92c8b 0%, #b02cd6 100%);
+        background: linear-gradient(to right, #e84266 0%, #192133 100%);
+        -webkit-box-shadow: 0 10px 15px 0px rgba(175, 0, 202, 0.2);
+        box-shadow: 0 10px 15px 0px rgba(175, 0, 202, 0.2); */
+      color: white !important;
       border: 1px solid #832B00 !important;
       border-radius: 6px;
       text-decoration: none !important;
@@ -637,7 +654,7 @@
                                 <i class="fa-solid fa-arrow-right" style="color: white !important;"></i>
                               </a>
                               
-                              <a href="contact.html" class="header-btn21 btn2">
+                              <a href="contact.html" class="header-btn21 btn3">
                                 <span>Contact Us</span> 
                                 <i class="fa-solid fa-arrow-right"></i>
                               </a>
@@ -1281,9 +1298,10 @@
                         </p>
                         <div class="space40"></div>
                         <div class="btn-area1" data-aos="fade-up" data-aos-duration="1200">
-                          <a href="contact.html" class="header-btn21" >
-                            Get Started Today <i class="fa-solid fa-arrow-right"></i>
-                          </a>
+                            <a href="contact.html" class="header-btn2110">
+                                Get Started Today <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                              
                           <a href="contact.html" class="header-btn21 btn2" >
                             Request a Consultation <i class="fa-solid fa-arrow-right"></i>
                           </a>

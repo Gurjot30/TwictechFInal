@@ -2807,6 +2807,64 @@ Location:
     transform: rotate(-45deg);
 }
 
+.header-btn2110 {
+    display: inline-block;
+    font-family: var(--ztc-family-font1);
+    font-size: var(--ztc-font-size-font-s18);
+    line-height: var(--ztc-font-size-font-s18);
+    font-weight: var(--ztc-weight-bold);
+    color: #fff!important; 
+    padding: 18px 24px;
+    transition: all 0.4s;
+    border-radius: 4px;
+    position: relative;
+    border-radius: 5px;
+    background: #5b0e2d;
+    z-index: 1;
+    
+}
+
+.header-btn2110 {
+    color: white !important;
+  }
+  
+
+.header-btn2110::after {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 10px;
+    left: 50%;
+    top: 0;
+    transition: all 0.4s;
+    background: #09171B;
+    border-radius: 4px;
+    z-index: -1;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.header-btn2110:hover {
+    color: var(--ztc-text-text-1);
+    transition: all 0.4s;
+    transform: translateY(-5px);
+    color:white;
+}
+
+.header-btn2110:hover::after {
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.4s;
+    left: 0;
+    width: 100%;
+}
+
+.header-btn2110 i {
+    margin-left: 4px;
+    transform: rotate(-45deg);
+}
+
+
 
 .header-btn212 {
     display: inline-block;
@@ -17879,11 +17937,11 @@ li a:has(i.fa-angle-down) {
     color: black !important;
   }
   
-  a[href="about.html"],
+  /* a[href="about.html"],
   a[href="contact.html"] {
     color: black !important;
   }
-  
+   */
   
 
 .homepage2-body .header-area.homepage2 .header-elements .main-menu ul li .tp-submenu .homemenu-thumb .text::after {
