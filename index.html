@@ -61,7 +61,7 @@
                                     <li><a href="#">Company <i class="fa-solid fa-angle-down"></i></a>
                                         <ul class="dropdown-padding">
                                             <li><a href="about.html">About Us</a></li>
-                                            <li><a href="ourteam.html">Our Team</a></li>
+                                            
                                             <li><a href="career.html">Careers</a></li>
                                             <li><a href="blog.html">Blogs</a></li>
                                         </ul>
@@ -1041,18 +1041,71 @@
     <!--===== SERVICE AREA ENDS =======-->
 
     <!--INDUSTRIES WE SERVE-->
-    <img src="assets/img/MANUFACTURING.svg" alt="icon" class="industry-icon">
+    <section id="industries-section">
+        
+        <video
+          src="assets/video/tumble.mp4"
+          class="industry-icon"
+          muted
+          loop
+          playsinline
+        ></video>
+      </section>
 
-    <style>
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const video = document.querySelector(".industry-icon");
+          video.playbackRate = 0.75;
+      
+          const observer = new IntersectionObserver(
+            (entries, observer) => {
+              entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                  video.classList.add("visible");
+                  video.play();
+                  observer.unobserve(entry.target); // only once
+                }
+              });
+            },
+            {
+              root: null,
+              threshold: 0.15 // 15% in view
+            }
+          );
+      
+          observer.observe(document.querySelector("#industries-section"));
+        });
+      </script>
+      
+      
+      
+      
+
+
+      <style>
         .industry-icon {
-        width: 400%;
-        height: 100%;
-        margin-bottom: 20px;
-        margin-top: -60px;         /* Remove any top margin */
-        object-fit: contain;
-        }
+            width: 95%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-top: -20px;
+            opacity: 0;
+            transition: opacity 5s cubic-bezier(0.25, 1, 0.5, 1); 
 
-    </style>
+            }
+
+            .industry-icon.visible {
+            opacity: 1;
+            }
+
+      </style>
+
+  
+      
+      
+
+      
+      
 
     
     <!--===== OTHERS AREA STARTS =======-->
@@ -1344,8 +1397,8 @@
                 <div class="col-lg-8 m-auto">
                     <div class="cta13-header text-center heading20" style="color: black !important;">
                         <h2 class="text-anime-style-3" style="color: black !important;">
-                          Take Your Brand To The Next Level!
-                          <br class="d-lg-block d-none">To Begin Your Success Story.
+                            Let’s Build Smarter, Together
+                          <!-- <br class="d-lg-block d-none">To Begin Your Success Story. -->
                         </h2>
                         <div class="space16"></div>
                         <p data-aos="fade-up" data-aos-duration="1000" style="color: black !important;">
