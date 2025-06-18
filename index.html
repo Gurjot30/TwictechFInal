@@ -145,14 +145,27 @@
 /* Dropdown items */
 .header-elements ul ul li {
   padding: 10px 20px;
-  background: white;
-  transition: background-color 0.3s ease;
+  background-color: rgb(248, 217, 217); /* base background */
   border-bottom: 1px solid #eee;
+  font-weight: 600;
+  transition: color 0.3s ease;
 }
 
-.header-elements ul ul li:hover {
-  background-color: #f7f7f7;
+/* Anchor styling */
+.header-elements ul ul li a {
+  color: #5b0e2d; /* normal text color */
+  transition: color 0.3s ease;
 }
+
+/* On hover, only change text color */
+.header-elements ul ul li:hover {
+  background-color: rgb(248, 217, 217); /* keep background same */
+}
+
+.header-elements ul ul li:hover a {
+  color: #5b0e2d; /* maroon on hover */
+}
+
 
 
     </style>
@@ -438,6 +451,8 @@
     </div>
 </div>
 <!--===== MOBILE HEADER STARTS =======-->
+
+<!-- background-color: rgb(248, 217, 217); -->
 
 <!-- POP UP FORM -->
 <div class="popup-overlay" id="popupOverlay">
@@ -1047,7 +1062,7 @@
           src="assets/video/tumble.mp4"
           class="industry-icon"
           muted
-          loop
+          
           playsinline
         ></video>
       </section>
