@@ -1,0 +1,1054 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- #5b0e2d Color code main -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+
+    <!--=====FAB ICON=======-->
+    <link rel="shortcut icon" href="assets/img/logo/fav-logo5.png" type="image/x-icon">
+    <!-- Select2 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+
+    
+
+    <!--===== CSS LINK =======-->
+    <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/plugins/aos.css">
+    <link rel="stylesheet" href="assets/css/plugins/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/plugins/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/plugins/mobile.css">
+    <link rel="stylesheet" href="assets/css/plugins/owlcarousel.min.css">
+    <link rel="stylesheet" href="assets/css/plugins/sidebar.css">
+    <link rel="stylesheet" href="assets/css/plugins/slick-slider.css">
+    <link rel="stylesheet" href="assets/css/plugins/nice-select.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <!--=====  JS SCRIPT LINK =======-->
+    <script src="assets/js/plugins/jquery-3-6-0.min.js"></script>
+</head>
+
+<body class="homepage5-body">
+
+    
+
+    <!--===== PROGRESS STARTS=======-->
+    <div class="paginacontainer">
+        <div class="progress-wrap">
+            <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+         <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
+       </svg>
+        </div>
+    </div>
+    <!--===== PROGRESS ENDS=======-->
+
+    <!--=====HEADER START=======-->
+    <header>
+        <div class="header-area homepage5 header header-sticky d-none d-lg-block " id="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="header-elements">
+                            <div class="site-logo">
+                                <a href="index.html">
+                                  <img src="assets/img/logo/logo.png" alt="" style="width: 160px;">
+                                </a>
+                              </div>
+                              
+                            <div class="main-menu">
+                                <ul>
+                                    <li><a href="#">Company <i class="fa-solid fa-angle-down"></i></a>
+                                        <ul class="dropdown-padding">
+                                            <li><a href="about.html">About Us</a></li>
+                                            
+                                            <li><a href="career.html">Careers</a></li>
+                                            <li><a href="blog.html">Blogs</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Solutions <i class="fa-solid fa-angle-down"></i></a>
+                                        <ul class="dropdown-padding">
+                                            <li><a href="Plans.html">Plans</a></li>
+                                            <li><a href="Brand.html">Brand</a></li>
+                                            <li><a href="Content.html">Content</a></li>
+                                            <li><a href="Build.html">Build</a></li>
+                                            <li><a href="Growth Strategy.html">Growth Strategy</a></li>
+                                            <li><a href="Grow.html">Grow</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Industries <i class="fa-solid fa-angle-down"></i></a>
+                                        <ul class="dropdown-padding">
+                                            <li><a href="Healthcare.html">Healthcare</a></li>
+                                            <li><a href="Finance.html">Finance</a></li>
+                                            <li><a href="Education.html">Education</a></li>
+                                            <li><a href="E-Commerce.html">E-Commerce</a></li>
+                                            
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Portfolio <i class="fa-solid fa-angle-down"></i></a>
+                                        <ul class="dropdown-padding">
+                                            <li><a href="#">Client Testimonials</a></li>
+                                            <li><a href="#">Success Stories</a></li>
+                                            
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Our Approach <i class="fa-solid fa-angle-down"></i></a>
+                                        <ul class="dropdown-padding">
+                                            <li><a href="case.html">How We Work</a></li>
+                                            <li><a href="case-single.html">Why Twictech</a></li>
+                                            
+                                        </ul>
+                                    </li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="btn-area">
+                                <a href="contact1.html" class="header-btn21">
+                                  Let’s Connect <span><i class="fa-solid fa-arrow-right"></i></span>
+                                </a>
+                              </div>
+                              
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--=====HEADER END =======-->
+
+    <style>
+/* Dropdown base state */
+.header-elements ul ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px); /* start further above for effect */
+  transition: opacity 0.6s ease, transform 0.6s ease;
+  z-index: 999;
+  min-width: 200px;
+  padding: 10px 0;
+  border-radius: 6px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+/* Show dropdown slowly */
+.header-elements ul li:hover > ul {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0); /* slide down */
+}
+
+/* Dropdown items */
+.header-elements ul ul li {
+  padding: 10px 20px;
+  background-color: rgb(248, 217, 217); /* base background */
+  border-bottom: 1px solid #eee;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+/* Anchor styling */
+.header-elements ul ul li a {
+  color: #5b0e2d; /* normal text color */
+  transition: color 0.3s ease;
+}
+
+/* On hover, only change text color */
+.header-elements ul ul li:hover {
+  background-color: rgb(248, 217, 217); /* keep background same */
+}
+
+.header-elements ul ul li:hover a {
+  color: #5b0e2d; /* maroon on hover */
+}
+
+
+
+    </style>
+
+        
+
+    <style>
+        .main-menu ul li > a {
+          font-size: 16px !important;
+        }
+      
+        .main-menu ul li ul li a {
+          font-size: 15px !important;
+        }
+      
+        .header-btn21 {
+          font-size: 16px !important;
+        }
+      </style>
+      
+      
+
+    <style>
+        #header {
+          background-color: transparent !important;
+          transition: background-color 0.3s ease;
+        }
+      
+        #header.scrolled {
+          background-color: #fff !important;
+          box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+          z-index: 999;
+        }
+
+        /* Remove padding and enforce full width inside header only */
+        .header-area .container {
+        max-width: 100% !important;
+        padding-left: 40px !important;
+        padding-right: 40px !important;
+        }
+
+        html, body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        }
+
+
+      </style>
+
+      
+
+<style>
+    a.header-btn21 {
+        background: #5b0e2d;
+        /* background: -moz-linear-gradient(left, #f92c8b 0%, #b02cd6 100%);
+        background: -webkit-linear-gradient(left, #f92c8b 0%, #b02cd6 100%);
+        background: linear-gradient(to right, #e84266 0%, #192133 100%);
+        -webkit-box-shadow: 0 10px 15px 0px rgba(175, 0, 202, 0.2);
+        box-shadow: 0 10px 15px 0px rgba(175, 0, 202, 0.2); */
+      color: white !important;
+      border: 1px solid #832B00 !important;
+      border-radius: 6px;
+      text-decoration: none !important;
+      display: inline-block;
+      transition: none !important;
+    }
+  
+    a.header-btn21:hover {
+      background: linear-gradient(to right, #832B00, #EA9C75) !important;
+      color: white !important;
+    }
+  
+    a.header-btn21 i {
+      /* color: #F7E5DA !important; */
+    }
+  
+    a.header-btn21:hover i {
+      color: #F7E5DA !important;
+    }
+  </style>
+      
+      
+      <script>
+        window.addEventListener("scroll", function () {
+          const header = document.getElementById("header");
+          if (window.scrollY > 10) {
+            header.classList.add("scrolled");
+          } else {
+            header.classList.remove("scrolled");
+          }
+        });
+      </script>
+
+<style>
+    /* Main nav links */
+    .main-menu > ul > li > a {
+      color: #5b0e2d !important;
+      font-weight: 600!important;
+      transition: color 0.3s ease;
+    }
+  
+    /* Hover state for main links */
+    .main-menu > ul > li > a:hover,
+    .main-menu > ul > li > a:focus {
+      color: #eee6ea  !important;
+    }
+  
+    /* Dropdown links */
+    .main-menu ul li ul li a {
+      color: #5b0e2d !important;
+    }
+  
+    .main-menu ul li ul li a:hover,
+    .main-menu ul li ul li a:focus {
+      color: #eee6ea  !important;
+    }
+  
+    /* Arrow icon color (fa-angle-down) should inherit text color */
+    .main-menu ul li a i {
+      color: inherit !important;
+    }
+
+    
+  </style>
+  
+
+    
+<!--===== MOBILE HEADER STARTS =======-->
+<div class="mobile-header mobile-haeder13 d-block d-lg-none">
+    <div class="container-fluid">
+        <div class="col-12">
+            <div class="mobile-header-elements">
+                <div class="mobile-logo">
+                    <a href="index.html"><img src="assets/img/logo/logo14.png" alt=""></a>
+                </div>
+                <div class="mobile-nav-icon dots-menu">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="mobile-sidebar mobile-sidebar13">
+    <div class="logosicon-area">
+        <div class="logos">
+            <img src="assets/img/logo/logo14.png" alt="">
+        </div>
+        <div class="menu-close">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+    </div>
+    <div class="mobile-nav mobile-nav1">
+        <ul class="mobile-nav-list nav-list1">
+            <li><a href="#">Home </a>
+                <ul class="sub-menu">
+                    <li>
+                        <a href="#">Multiple Page</a>
+                        <ul class="sub-menu">
+                            <li><a href="index.html">Home One</a></li>
+                            <li><a href="index2.html">Home Two</a></li>
+                            <li><a href="index3.html">Home Three</a></li>
+                            <li><a href="index4.html">Home Four</a></li>
+                            <li><a href="index5.html">Home Five</a></li>
+                            <li><a href="index6.html">Home Six</a></li>
+                            <li><a href="index7.html">Home Seven</a></li>
+                            <li><a href="index8.html">Home Eight</a></li>
+                            <li><a href="index9.html">Home Nine</a></li>
+                            <li><a href="index10.html">Home Ten</a></li>
+                            <li><a href="index11.html">Home Eleven</a></li>
+                            <li><a href="index12.html">Home Twelve</a></li>
+                            <li><a href="index13.html">Home Thirteen</a></li>
+                            <li><a href="index14.html">Home Fouteen</a></li>
+                            <li><a href="index15.html">Home Fifteen</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Landing Page</a>
+                        <ul class="sub-menu">
+                            <li><a href="single-index1.html" target="_blank">Home One</a></li>
+                            <li><a href="single-index2.html" target="_blank">Home Two</a></li>
+                            <li><a href="single-index3.html" target="_blank">Home Three</a></li>
+                            <li><a href="single-index4.html" target="_blank">Home Four</a></li>
+                            <li><a href="single-index5.html" target="_blank">Home Five</a></li>
+                            <li><a href="single-index6.html" target="_blank">Home Six</a></li>
+                            <li><a href="single-index7.html" target="_blank">Home Seven</a></li>
+                            <li><a href="single-index8.html" target="_blank">Home Eight</a></li>
+                            <li><a href="single-index9.html" target="_blank">Home Nine</a></li>
+                            <li><a href="single-index10.html" target="_blank">Home Ten</a></li>
+                            <li><a href="single-index11.html" target="_blank">Home Eleven</a></li>
+                            <li><a href="single-index12.html" target="_blank">Home Twelve</a></li>
+                            <li><a href="single-index13.html" target="_blank">Home Thirteen</a></li>
+                            <li><a href="single-index14.html" target="_blank">Home Fouteen</a></li>
+                            <li><a href="single-index15.html" target="_blank">Home Fifteen</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="features.html">Services</a>
+                <ul class="sub-menu">
+                    <li><a href="service1.html">Service One</a></li>
+                    <li><a href="service2.html">Service Two</a></li>
+                    <li><a href="service3.html">Service Three</a></li>
+                    <li><a href="service4.html">Service Four</a></li>
+                    <li><a href="service5.html">Service Five</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Blogs</a>
+                <ul class="sub-menu">
+                    <li><a href="blog.html">Blog One</a></li>
+                    <li><a href="blog-left.html">Blog Left</a></li>
+                    <li><a href="blog-right.html">Blog Right</a></li>
+                    <li><a href="blog-single.html">Blog Single</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Pages</a>
+                <ul class="sub-menu">
+                    <li><a href="case.html">Case Study One</a></li>
+                    <li><a href="case-single.html">Case Study Single</a></li>
+                    <li><a href="team.html">Our Team</a></li>
+                    <li><a href="pricing.html">Pricing Plan</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="404.html">404</a></li>
+                </ul>
+            </li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+
+        <div class="allmobilesection">
+            <a href="contact.html" class="header-btn21">Get Started <span><i class="fa-solid fa-arrow-right"></i></span></a>
+            <div class="single-footer">
+                <h3>Contact Info</h3>
+                <div class="footer1-contact-info">
+                    <div class="contact-info-single">
+                        <div class="contact-info-icon">
+                            <i class="fa-solid fa-phone-volume"></i>
+                        </div>
+                        <div class="contact-info-text">
+                            <a href="tel:+3(924)4596512">+3(924)4596512</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-single">
+                        <div class="contact-info-icon">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div class="contact-info-text">
+                            <a href="mailto:info@example.com">info@example.com</a>
+                        </div>
+                    </div>
+
+                    <div class="single-footer">
+                        <h3>Our Location</h3>
+
+                        <div class="contact-info-single">
+                            <div class="contact-info-icon">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div class="contact-info-text">
+                                <a href="mailto:info@example.com">55 East Birchwood Ave.Brooklyn, <br> New York 11201,United States</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="single-footer">
+                        <h3>Social Links</h3>
+
+                        <div class="social-links-mobile-menu">
+                            <ul>
+                                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--===== MOBILE HEADER STARTS =======-->
+
+<!-- HERO SECTION -->
+
+<section class="impact-section">
+    <div class="dot top-left"></div>
+    <div class="dot top-right"></div>
+
+    <div class="impact-content">
+      <h1>Make An <span>IMPACT</span></h1>
+      <p>Here at Impactable, we’ve built a rockstar team of LinkedIn Ads experts that are just as obsessed with marketing as they are about helping each other succeed.</p>
+      <p>We’re always looking for talented people to join our team and make an impact for our growing list of clients!</p>
+      <button>Current Openings</button>
+    </div>
+
+    
+
+    <!-- Profile Photos -->
+    <div class="profile left-top">
+      <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Profile 1"/>
+    </div>
+    <div class="profile left-bottom yellow">
+      <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Profile 2"/>
+    </div>
+    <div class="profile right-bottom">
+      <img src="https://randomuser.me/api/portraits/men/46.jpg" alt="Profile 3"/>
+    </div>
+    <div class="profile right-top yellow">
+      <img src="https://randomuser.me/api/portraits/women/55.jpg" alt="Profile 4"/>
+    </div>
+  </section>
+
+  <style>
+ 
+
+.impact-section {
+  position: relative;
+  background-color: rgb(248, 217, 217);
+  color: black;
+  padding: 220px 20px; /* ⬅️ Increased from 80px */
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  text-align: center;
+  overflow: hidden;
+}
+
+
+.impact-content h1 {
+  font-size: 42px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.impact-content p {
+  font-size: 16px;
+  max-width: 700px;
+  margin: 10px auto;
+}
+
+.impact-content button {
+  margin-top: 25px;
+  padding: 12px 24px;
+  border: none;
+  background: white;
+  color: #5b0e2d;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.profile {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: #00b5e2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.profile img {
+  width: 140%;
+  height: 140%;
+  object-fit: cover;
+}
+
+.profile.yellow {
+  background: #f9cb45;
+}
+
+/* Positioning */
+.left-top {
+  top: 120px;
+  left: 10%;
+}
+
+.left-bottom {
+  bottom: 80px;
+  left: 25%;
+}
+
+.right-bottom {
+  bottom: 80px;
+  right: 25%;
+}
+
+.right-top {
+  top: 100px;
+  right: 10%;
+}
+
+/* You Placeholder */
+.you-placeholder {
+  position: absolute;
+  top: 40px;
+  right: 120px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.you-placeholder .circle {
+  width: 50px;
+  height: 50px;
+  background: #00b5e2;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4px;
+}
+
+/* Dot Matrix Decorations */
+.dot {
+  position: absolute;
+  width: 200px; /* Increased width */
+  height: 80px; /* Optional: increase height too */
+  background-image: radial-gradient(white 2px, transparent 2px);
+  background-size: 20px 20px; /* Increased gap between dots */
+}
+
+.top-left {
+  top: 80px;
+  left: 19%;
+}
+
+.top-right {
+  top: 80px;
+  right: 20%;
+}
+
+  </style>
+
+  <script>
+    <button onclick="window.location.href='careers.html'">Current Openings</button>
+
+  </script>
+
+
+<!-- WHY SECTION -->
+
+<div class="why-thrive-container">
+    <div class="benefits">
+      <div class="column column-left">
+        <div class="benefit-box">
+          <img src="https://img.icons8.com/ios-filled/100/000000/positive-dynamic.png" alt="Positive Work Culture" />
+          <p><strong>Positive Work Culture</strong></p>
+        </div>
+      </div>
+      <div class="column column-right">
+        <div class="benefit-box">
+          <img src="https://img.icons8.com/ios-filled/100/000000/time.png" alt="Long-Term Career Paths" />
+          <p><strong>Long-Term<br>Career Paths</strong></p>
+        </div>
+        <div class="benefit-box">
+            <img src="https://img.icons8.com/ios-filled/100/000000/conference-call.png" alt="People-Oriented Leadership" />
+            <p><strong>People-Oriented<br>Leadership</strong></p>
+          </div>
+          
+      </div>
+    </div>
+  
+    <div class="why-thrive-content">
+      <h2>Why Thrive?</h2>
+      <h3>Driving Individual and Business Transformations Since 2005</h3>
+      <p>Thrive Internet Marketing Agency is a recognized leader in the digital marketing realm. For more than 19 years, we have actively built and sustained our commitment to improving the lives of our employees, partner agencies and local communities through our people-centric company programs and services.</p>
+      <p>If you’re passionate about doing your best work and helping others, we’d love to meet you.</p>
+      <a href="#" class="learn-btn">LEARN MORE ABOUT US</a>
+    </div>
+  </div>
+  
+
+  <style>
+
+    .why-thrive-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: stretch;
+      padding: 60px 0;
+      background: linear-gradient(to right, #ffffff, #f5f9ec);
+      flex-wrap: wrap;
+    }
+    
+    .benefits {
+      display: flex;
+      flex-direction: row;
+      margin-left: 90px;
+      position: relative;
+    }
+    
+    .column-left {
+      display: flex;
+      align-items: center; /* Align center vertically */
+      margin-right: 30px;
+    }
+    
+    .column-right {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    
+    .benefit-box {
+      background: #fff;
+      border: 1px solid #eee;
+      border-radius: 20px;
+      padding: 30px;
+      text-align: center;
+      width: 180px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+    
+    .benefit-box img {
+      width: 60px;
+      height: 60px;
+      margin-bottom: 10px;
+    }
+    
+    .why-thrive-content {
+      background-color: #5b0e2d;
+      color: white;
+      padding: 40px;
+      border-radius: 30px 0 0 30px;
+      max-width: 800px;
+      width: 55%;
+      margin-left: auto;
+    }
+    
+    .why-thrive-content h2 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+    
+    .why-thrive-content h3 {
+      font-size: 22px;
+      font-weight: 400;
+      margin-bottom: 20px;
+    }
+    
+    .why-thrive-content p {
+      line-height: 1.6;
+      margin-bottom: 16px;
+      font-size: 16px;
+    }
+    
+    .learn-btn {
+      display: inline-block;
+      background: linear-gradient(135deg, #5b0e2d, #E84266, #FF7E5F);
+      color: white;
+      font-weight: bold;
+      padding: 14px 24px;
+      border-radius: 50px;
+      text-decoration: none;
+      margin-top: 20px;
+    }
+    </style>
+
+    <!--Available jobs-->
+
+    <div class="available-jobs-section">
+        <h2 class="section-title">Available Jobs</h2>
+        
+        <div class="job-listings">
+          <div class="job-box">
+            <img src="https://img.icons8.com/ios-filled/50/2c5898/hashtag-large.png" alt="Social Media" />
+            <span>Organic Social<br>Media Strategist</span>
+          </div>
+          <div class="job-box">
+            <img src="https://img.icons8.com/ios-filled/50/f18700/search--v1.png" alt="SEO" />
+            <span>SEO Strategist</span>
+          </div>
+          <div class="job-box">
+            <img src="https://img.icons8.com/ios-filled/50/2b7a8b/user-male-circle.png" alt="Account Manager" />
+            <span>Account Manager</span>
+          </div>
+          <div class="job-box">
+            <img src="https://img.icons8.com/ios-filled/50/2c5898/megaphone.png" alt="Marketing Consultant" />
+            <span>Marketing Consultant</span>
+          </div>
+        </div>
+      
+        <button class="resume-btn" onclick="sendResume()">SEND US YOUR RESUME NOW</button>
+      </div>
+      
+      <style>
+        .available-jobs-section {
+          text-align: center;
+          padding: 60px 20px;
+        }
+        
+        .section-title {
+          font-size: 36px;
+          color: #3d372f;
+          margin-bottom: 40px;
+        }
+        
+        .job-listings {
+          display: flex;
+          justify-content: center;
+          gap: 20px;
+          flex-wrap: wrap;
+          margin-bottom: 40px;
+        }
+        
+        .job-box {
+          display: flex;
+          align-items: center;
+          gap: 12px;
+          background: #fff;
+          border: 1px solid #eee;
+          border-radius: 16px;
+          padding: 20px 30px;
+          min-width: 220px;
+          box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+          font-weight: 600;
+          color: #3d372f;
+          text-align: left;
+        }
+        
+        .job-box img {
+          width: 30px;
+          height: 30px;
+        }
+        
+        .resume-btn {
+            background: linear-gradient(135deg, #5b0e2d, #E84266, #FF7E5F);
+          color: white;
+          font-weight: bold;
+          padding: 16px 32px;
+          font-size: 18px;
+          border-radius: 50px;
+          border: none;
+          cursor: pointer;
+          transition: 0.3s ease;
+        }
+        
+        .resume-btn:hover {
+            background: linear-gradient(135deg, #5b0e2d, #E84266, #FF7E5F);
+        }
+        </style>
+
+
+    <script>
+        function sendResume() {
+        window.location.href = "mailto:hr@yourcompany.com?subject=Resume%20Submission&body=Dear%20HR%2C%0A%0APlease%20find%20my%20resume%20attached.%0A%0ARegards%2C%0A[Your%20Name]";
+        }
+    </script>
+    
+    <!--OUR CULTURE-->
+    <div class="culture-section">
+        <h2>Our Culture</h2>
+        <h4>It Is Who We Are and How We Work!</h4>
+        <p class="culture-intro">
+          Thrive is proud to rank among the Inc. 5000 fastest-growing companies in the United States for seven consecutive years.
+          Since the Inc. 5000 List started in 1982, only 1.5% of companies have made the list seven times!
+          But our commitment to success doesn’t stop here. We continuously invest in our employees to ensure personal and operational excellence.
+        </p>
+      
+        <div class="culture-grid">
+          <div class="culture-box">
+            <img src="https://img.icons8.com/ios-filled/50/2c5898/fist.png" alt="Empowerment" />
+            <h5>EMPOWERMENT</h5>
+            <p>We encourage our employees to reach beyond their daily responsibilities, explore their interests and stretch their capabilities.</p>
+          </div>
+          <div class="culture-box">
+            <img src="https://img.icons8.com/ios-filled/50/3c8190/facebook-like.png" alt="Appreciation" />
+            <h5>APPRECIATION</h5>
+            <p>We recognize and celebrate the accomplishments and hard work of our team members, as well as how they elevate others to reach their desired goals.</p>
+          </div>
+          <div class="culture-box">
+            <img src="https://img.icons8.com/ios-filled/50/2e7d6b/conference-call.png" alt="Teamwork" />
+            <h5>TEAMWORK</h5>
+            <p>Our collaboration is based on empathy, support and trust in each other’s expertise, skills, opinion and good intentions.</p>
+          </div>
+          <div class="culture-box">
+            <img src="https://img.icons8.com/ios-filled/50/3b813c/process.png" alt="Integrity" />
+            <h5>INTEGRITY</h5>
+            <p>We act fairly towards our colleagues, clients and local communities at all times.</p>
+          </div>
+          <div class="culture-box">
+            <img src="https://img.icons8.com/ios-filled/50/7a943c/scales.png" alt="Nurturing" />
+            <h5>NURTURING</h5>
+            <p>We encourage and support all our employees with their personal and professional development.</p>
+          </div>
+          <div class="culture-box">
+            <img src="https://img.icons8.com/ios-filled/50/f18700/handshake-heart.png" alt="Balance" />
+            <h5>BALANCE</h5>
+            <p>We prioritize work-life balance to maintain a healthier, more productive workforce.</p>
+          </div>
+        </div>
+      </div>
+
+      <style>
+        .culture-section {
+          text-align: center;
+          padding: 60px 30px;
+          max-width: 1200px;
+          margin: auto;
+        }
+        
+        .culture-section h2 {
+          font-size: 36px;
+          color: #2c2c2c;
+          margin-bottom: 5px;
+        }
+        
+        .culture-section h4 {
+          color: #7a943c;
+          font-weight: normal;
+          margin-bottom: 30px;
+        }
+        
+        .culture-intro {
+          font-size: 16px;
+          color: #444;
+          max-width: 800px;
+          margin: auto;
+          margin-bottom: 50px;
+          line-height: 1.6;
+        }
+        
+        .culture-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+        
+        .culture-box {
+          text-align: center;
+          padding: 20px;
+        }
+        
+        .culture-box img {
+          width: 50px;
+          height: 50px;
+          margin-bottom: 15px;
+        }
+        
+        .culture-box h5 {
+          font-size: 16px;
+          color: #2c2c2c;
+          margin-bottom: 10px;
+        }
+        
+        .culture-box p {
+          font-size: 15px;
+          color: #555;
+          line-height: 1.6;
+        }
+        </style>
+        
+    
+    
+    <!--===== FOOTER AREA STARTS =======-->
+    <div class="footer13-section-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-logo-area">
+                        <img src="assets/img/logo/logo.png" alt="Logo" style="width: 150px; height: 30px;">
+
+
+                        <p>By optimizing content, leveraging relevant keywords, and adhering to best practices, businesses can secure prominent position (SEO)</p>
+                        <ul>
+                            <li><a href="https://www.facebook.com/twictech" style="color: #5b0e2d;"><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a href="https://www.instagram.com/twictech/" style="color: #5b0e2d;"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="https://www.linkedin.com/company/twictech" style="color: #5b0e2d;"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                            <li><a href="https://x.com/twictech2" style="color: #5b0e2d;"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href="https://in.pinterest.com/twictech/" style="color: #5b0e2d;"><i class="fa-brands fa-pinterest-p"></i></a></li>
+                          </ul>
+                          
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer-logo-area1">
+                        <h3>About Link</h3>
+                        <ul>
+                            <li><a href="blog.html">Our Blog</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="service1.html">Services</a></li>
+                            <li><a href="case.html">Marketing</a></li>
+                            <li><a href="testimonials.html">Testimonials</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-logo-area2">
+                        <h3>Get in touch</h3>
+                        <ul>
+                            <li><a href="mailto"><img src="assets/img/icons/email.svg" alt=""><span>Infoseoc@gmail.com</span></a></li>
+                            <li><a href="#"><img src="assets/img/icons/location.svg" alt=""><span>8708 Technology Forest <br class="d-lg-block d-none"> Pl Suite 125 -G, The <br class="d-lg-block d-none"> Woodlands, TX 773</span></a></li>
+                            <li><a href="tel:123-456-7890"><img src="assets/img/icons/phone.svg" alt=""><span>123-456-7890</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-logo-area3">
+                        <h3>Subscribe Our Newsletter</h3>
+
+                        <form action="#">
+                            <input type="text" placeholder="Enter Your email">
+                            <div class="space16"></div>
+                            <button class="header-btn111">
+                                Subscribe <span><i class="fa-solid fa-arrow-right" style="color: #F7E5DA;"></i></span>
+                              </button>
+                              
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="space50 d-lg-block d-none"></div>
+            <div class="space40 d-lg-none d-block"></div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="copyright-area">
+                        <div class="pera">
+                            <p>ⓒCopyright 2024 SEOC . All rights reserved</p>
+                        </div>
+                        <ul>
+                            <li><a href="#">Terms & Conditions</a></li>
+                            <li><a href="#" class="m-0"> Privacy Policy </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--===== FOOTER AREA ENDS =======-->
+
+    <style>
+        .footer-logo-area1 ul li a:hover,
+        .footer-logo-area2 ul li a:hover,
+        .footer-logo-area2 ul li a:hover span {
+          color: #832B00 !important;
+          text-decoration: none;
+        }
+      
+        .footer-logo-area1 ul li a,
+        .footer-logo-area2 ul li a span {
+          transition: color 0.3s ease;
+        }
+      </style>
+      
+
+    
+   
+
+
+    <!--===== JS SCRIPT LINK =======-->
+    <script src="assets/js/plugins/bootstrap.min.js"></script>
+    <script src="assets/js/plugins/fontawesome.js"></script>
+    <script src="assets/js/plugins/aos.js"></script>
+    <script src="assets/js/plugins/counter.js"></script>
+    <script src="assets/js/plugins/sidebar.js"></script>
+    <script src="assets/js/plugins/slick-slider.js"></script>
+    <script src="assets/js/plugins/magnific-popup.js"></script>
+    <script src="assets/js/plugins/mobilemenu.js"></script>
+    <script src="assets/js/plugins/owlcarousel.min.js"></script>
+    <!-- <script src="assets/js/plugins/nice-select.js"></script> -->
+    <script src="assets/js/plugins/gsap.min.js"></script>
+    <script src="assets/js/plugins/ScrollTrigger.min.js"></script>
+    <script src="assets/js/plugins/Splitetext.js"></script>
+    <script src="assets/js/plugins/gsap-animation.js"></script>
+    <script src="assets/js/plugins/waypoints.js"></script>
+    <script src="assets/js/plugins/circle-progress.js"></script>
+    <script src="assets/js/main.js"></script>
+    <!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Select2 JS -->
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+</body>
+
+</html>

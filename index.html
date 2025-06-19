@@ -756,9 +756,10 @@
                             <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 288 288">
                               <defs>
                                 <linearGradient id="imagewave" x1="70.711%" x2="0%" y1="70.711%" y2="0%">
-                                  <stop offset="0%" stop-color="#eee6ea" stop-opacity="1"></stop>
-                                  <stop offset="100%" stop-color="#eee6ea" stop-opacity="1"></stop>
-                                </linearGradient>
+                                    <stop offset="0%" stop-color="rgb(248, 217, 217)" stop-opacity="1"></stop>
+                                    <stop offset="100%" stop-color="rgb(248, 217, 217)" stop-opacity="1"></stop>
+                                  </linearGradient>
+                                  
                               </defs>
                               <path fill="url(#imagewave)">
                                 <animate repeatCount="indefinite" attributeName="d" dur="5s" values="
@@ -1036,7 +1037,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-12">
+                <!-- <div class="col-lg-12">
                     <div class="space30"></div>
                     <div class="btn-area1 text-center" data-aos="fade-up" data-aos-duration="1200">
                         <a href="#"
@@ -1049,7 +1050,7 @@
 
 
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
@@ -1059,7 +1060,7 @@
     <section id="industries-section">
         
         <video
-          src="assets/video/tumble.mp4"
+          src="assets/video/tumble1.mp4"
           class="industry-icon"
           muted
           
@@ -1099,11 +1100,11 @@
 
       <style>
         .industry-icon {
-            width: 95%;
-            height: 100%;
+            width: 98%;
+            height: 80%;
             object-fit: cover;
             border-radius: 10px;
-            margin-top: -20px;
+            margin-top: -30px;
             opacity: 0;
             transition: opacity 5s cubic-bezier(0.25, 1, 0.5, 1); 
 
@@ -1322,6 +1323,38 @@
         }
       </style>
 
+      <style>
+  .testimonial5-section-area.sp1 {
+    padding-top: 60px !important;
+    padding-bottom: 40px !important;
+  }
+
+  .testimonial-header-area h2 {
+    margin-bottom: 20px !important;
+  }
+
+  .testimonial-sliders {
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+  }
+
+  .single-testimonial h5 {
+    margin-bottom: 10px !important;
+    line-height: 1.4;
+    margin-top: -30px !important;
+  }
+
+  .author {
+    margin-top: 5px !important;
+  }
+
+  .testimonial-arrows {
+    margin-top: 10px !important;
+  }
+
+  
+</style>
+
 
       
 
@@ -1338,7 +1371,8 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-4 col-md-6" data-aos="zoom-out" data-aos-duration="800">
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-out" data-aos-duration="800">
+
                     <div class="blog-auhtor-boxarea">
                         <ul>
                             <li><a href="#"><i class="fa-regular fa-circle-user"></i>John Doe</a></li>
@@ -1403,6 +1437,33 @@
         </div>
     </div>
     <!--===== BLOG AREA ENDS =======-->
+
+    <style>
+        .blog-auhtor-boxarea {
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          padding: 20px;
+          background: #fff;
+          border: 1px solid #eee;
+          border-radius: 10px;
+        }
+      
+        .blog-content-area {
+          flex-grow: 1;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+        }
+      
+        .blog-content-area p {
+          flex-grow: 1;
+        }
+      </style>
+      
+
+   
 
     <!--===== CTA AREA STARTS =======-->
     <div class="cta13-section-area sp1">

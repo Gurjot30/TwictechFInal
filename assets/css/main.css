@@ -32826,6 +32826,28 @@ html {
     object-fit: cover;
 }
 
+/* .slider-all-boxarea,
+.slider-all-boxarea2 {
+  display: flex !important;
+  flex-wrap: nowrap !important;
+  overflow-x: auto !important;
+  overflow-y: hidden !important;
+  gap: 30px !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+  white-space: nowrap !important;
+}
+
+.slider-boxarea {
+  flex: 0 0 auto !important;
+  width: 250px !important;
+  min-width: 250px !important;
+  box-sizing: border-box !important;
+} */
+
+
+
+
 .testimonial5-section-area {
     position: relative;
     z-index: 1;
