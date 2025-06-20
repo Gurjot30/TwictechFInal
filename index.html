@@ -1022,15 +1022,7 @@
         white-space: nowrap;
         }
 
-        .slider-track {
-        display: flex;
-        animation: scroll-left 10s linear infinite;
-        }
-
-        .row2 .slider-track {
-        animation-delay: 3s;
-        animation-duration: 8s; /* faster */
-        }
+        
 
         .slider-item {
         display: flex;
@@ -1054,11 +1046,31 @@
         white-space: nowrap;
         }
 
-        /* Scroll animation */
-        @keyframes scroll-left {
-        0% { transform: translateX(0); }
-        100% { transform: translateX(-50%); }
-        }
+        .slider-track {
+  display: flex;
+  animation: scroll-left 10s linear infinite;
+  animation-play-state: running;
+}
+
+.row1 .slider-track {
+  animation: scroll-right 10s linear infinite;
+}
+
+.row2 .slider-track {
+  animation-delay: 3s;
+  animation-duration: 8s;
+}
+
+/* NEW animation */
+@keyframes scroll-right {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}
+
+@keyframes scroll-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
 
 
       </style>
