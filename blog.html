@@ -27,14 +27,7 @@
 
 <body class="homepage1-body">
 
-    <!--===== PRELOADER STARTS =======-->
-    <div class="preloader">
-        <div class="loading-container">
-            <div class="loading"></div>
-            <div id="loading-icon"><img src="assets/img/logo/preloader.png" alt=""></div>
-        </div>
-    </div>
-    <!--===== PRELOADER ENDS =======-->
+
 
     <!--===== PROGRESS STARTS=======-->
     <div class="paginacontainer">
@@ -54,7 +47,7 @@
                         <div class="header-elements">
                             <div class="site-logo">
                                 <a href="index.html">
-                                  <img src="assets/img/logo/twictech final logo1.png" alt="" style="width: 140px;">
+                                  <img src="assets/img/logo/logo.png" alt="" style="width: 140px;">
                                 </a>
                               </div>
                             <div class="main-menu">
@@ -62,7 +55,7 @@
                                     <li><a href="#">Company <i class="fa-solid fa-angle-down"></i></a>
                                         <ul class="dropdown-padding">
                                             <li><a href="about.html">About Us</a></li>
-                                            <li><a href="ourteam.html">Our Team</a></li>
+                                            
                                             <li><a href="career.html">Careers</a></li>
                                             <li><a href="blog.html">Blogs</a></li>
                                         </ul>
@@ -86,13 +79,13 @@
                                             
                                         </ul>
                                     </li>
-                                    <li><a href="#">Portfolio <i class="fa-solid fa-angle-down"></i></a>
+                                    <!-- <li><a href="#">Portfolio <i class="fa-solid fa-angle-down"></i></a>
                                         <ul class="dropdown-padding">
                                             <li><a href="#">Client Testimonials</a></li>
                                             <li><a href="#">Success Stories</a></li>
                                             
                                         </ul>
-                                    </li>
+                                    </li> -->
                                     <li><a href="#">Our Approach <i class="fa-solid fa-angle-down"></i></a>
                                         <ul class="dropdown-padding">
                                             <li><a href="case.html">How We Work</a></li>
@@ -105,8 +98,10 @@
                             </div>
 
                             <div class="btn-area">
-                                <a href="contact1.html" class="header-btn21">Let’s Connect <span><i class="fa-solid fa-arrow-right"></i></span></a>
-                            </div>
+                                <a href="contact1.html" class="header-btn21">
+                                  Let’s Connect <span><i class="fa-solid fa-arrow-right"></i></span>
+                                </a>
+                              </div>
 
                             <div class="header-search-form-wrapper">
                                 <div class="tx-search-close tx-close"><i class="fa-solid fa-xmark"></i></div>
@@ -125,47 +120,181 @@
         </div>
     </header>
     <!--=====HEADER END =======-->
-
     <style>
-        .main-menu ul li > a {
-          font-size: 16px !important;
-        }
-      
-        .main-menu ul li ul li a {
-          font-size: 15px !important;
-        }
-      
-        .header-btn21 {
-          font-size: 16px !important;
-        }
-      </style>
-      
-      
-
-    <style>
-        #header {
-          background-color: transparent !important;
-          transition: background-color 0.3s ease;
-        }
-      
-        #header.scrolled {
-          background-color: #fff !important;
-          box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        /* Dropdown base state */
+        .header-elements ul ul {
+          position: absolute;
+          top: 100%;
+          left: 0;
+          background: white;
+          opacity: 0;
+          visibility: hidden;
+          transform: translateY(-10px); /* start further above for effect */
+          transition: opacity 0.6s ease, transform 0.6s ease;
           z-index: 999;
+          min-width: 200px;
+          padding: 10px 0;
+          border-radius: 6px;
+          box-shadow: 0 8px 16px rgba(0,0,0,0.1);
         }
-      </style>
-      
-      
-      <script>
-        window.addEventListener("scroll", function () {
-          const header = document.getElementById("header");
-          if (window.scrollY > 10) {
-            header.classList.add("scrolled");
-          } else {
-            header.classList.remove("scrolled");
-          }
-        });
-      </script>
+        
+        /* Show dropdown slowly */
+        .header-elements ul li:hover > ul {
+          opacity: 1;
+          visibility: visible;
+          transform: translateY(0); /* slide down */
+        }
+        
+        /* Dropdown items */
+        /* .header-elements ul ul li {
+          padding: 10px 20px;
+          background-color: white; 
+          border-bottom: 1px solid #eee;
+          font-weight: 600;
+          transition: color 0.3s ease;
+        } */
+        
+        /* Anchor styling */
+        .header-elements ul ul li a {
+          color: #5b0e2d; /* normal text color */
+          transition: color 0.3s ease;
+        }
+        
+        /* On hover, only change text color */
+        .header-elements ul ul li:hover {
+          background-color: white /* keep background same */
+        }
+        
+        .header-elements ul ul li:hover a {
+          color: #5b0e2d; /* maroon on hover */
+        }
+        
+        
+        
+            </style>
+        
+                
+        
+            <style>
+                .main-menu ul li > a {
+                  font-size: 16px !important;
+                }
+              
+                .main-menu ul li ul li a {
+                  font-size: 15px !important;
+                }
+              
+                .header-btn21 {
+                  font-size: 16px !important;
+                }
+              </style>
+              
+              
+        
+            <style>
+                #header {
+                  background-color: transparent !important;
+                  transition: background-color 0.3s ease;
+                }
+              
+                #header.scrolled {
+                  background-color: #fff !important;
+                  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+                  z-index: 999;
+                }
+        
+                /* Remove padding and enforce full width inside header only */
+                .header-area .container {
+                max-width: 100% !important;
+                padding-left: 40px !important;
+                padding-right: 40px !important;
+                }
+        
+                html, body {
+                margin: 0;
+                padding: 0;
+                overflow-x: hidden;
+                }
+        
+        
+              </style>
+        
+              
+        
+        <style>
+            a.header-btn21 {
+                background: #5b0e2d;
+                /* background: -moz-linear-gradient(left, #f92c8b 0%, #b02cd6 100%);
+                background: -webkit-linear-gradient(left, #f92c8b 0%, #b02cd6 100%);
+                background: linear-gradient(to right, #e84266 0%, #192133 100%);
+                -webkit-box-shadow: 0 10px 15px 0px rgba(175, 0, 202, 0.2);
+                box-shadow: 0 10px 15px 0px rgba(175, 0, 202, 0.2); */
+              color: white !important;
+              border: 1px solid #832B00 !important;
+              border-radius: 6px;
+              text-decoration: none !important;
+              display: inline-block;
+              transition: none !important;
+            }
+          
+            a.header-btn21:hover {
+              background: linear-gradient(to right, #832B00, #EA9C75) !important;
+              color: white !important;
+            }
+          
+            a.header-btn21 i {
+              /* color: #F7E5DA !important; */
+            }
+          
+            a.header-btn21:hover i {
+              color: #F7E5DA !important;
+            }
+          </style>
+              
+              
+              <script>
+                window.addEventListener("scroll", function () {
+                  const header = document.getElementById("header");
+                  if (window.scrollY > 10) {
+                    header.classList.add("scrolled");
+                  } else {
+                    header.classList.remove("scrolled");
+                  }
+                });
+              </script>
+        
+        <style>
+            /* Main nav links */
+            .main-menu > ul > li > a {
+              color: #5b0e2d !important;
+              font-weight: 600!important;
+              transition: color 0.3s ease;
+            }
+          
+            /* Hover state for main links */
+            .main-menu > ul > li > a:hover,
+            .main-menu > ul > li > a:focus {
+              color: #eee6ea  !important;
+            }
+          
+            /* Dropdown links */
+            .main-menu ul li ul li a {
+              color: #5b0e2d !important;
+            }
+          
+            .main-menu ul li ul li a:hover,
+            .main-menu ul li ul li a:focus {
+              color: #eee6ea  !important;
+            }
+          
+            /* Arrow icon color (fa-angle-down) should inherit text color */
+            .main-menu ul li a i {
+              color: inherit !important;
+            }
+        
+            
+          </style>
+          
 
         
 <!--===== MOBILE HEADER STARTS =======-->
