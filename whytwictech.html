@@ -506,17 +506,18 @@
     }
 
     .glass-card:hover {
-      transform: translateY(-10px);
-      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
-    }
+  transform: scale(1.05);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+}
+
 
     .card-icon {
-      width: 60px;
-      height: 60px;
-      margin-bottom: 20px;
-      animation: float 3s ease-in-out infinite;
-      filter: brightness(0) saturate(100%) invert(10%) sepia(80%) saturate(5000%) hue-rotate(-20deg); /* Maroon tint */
-    }
+  width: 60px;
+  height: 60px;
+  margin-bottom: 20px;
+  animation: zoomIn 2s ease-in-out infinite;
+  filter: brightness(0) saturate(100%) invert(10%) sepia(80%) saturate(5000%) hue-rotate(-20deg);
+}
 
     .card-title {
       font-size: 18px;
@@ -529,25 +530,20 @@
       color: #444;
     }
 
-    @keyframes float {
-      0% { transform: translateY(0); }
-      50% { transform: translateY(-6px); }
-      100% { transform: translateY(0); }
-    }
+    @keyframes zoomIn {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 
-    @media (max-width: 768px) {
-      .section-title {
-        font-size: 28px;
-      }
-
-      .row-container {
-        flex-direction: column;
-        align-items: center;
-      }
-    }
   </style>
-</head>
-<body>
+
 
   <div class="section-subtitle">Reason To Choose Us</div>
   <div class="section-title">We provide truly prominent IT solutions.</div>
@@ -604,6 +600,280 @@
     </div>
   </div>
 
+
+<!-- SERVICES SECTION -->
+<section class="services-section">
+    <div class="section-header">
+      <h4 class="tagline">OUR DIGITAL SERVICES</h4>
+      <h2 class="main-title">Our Services <span class="emoji">💡</span></h2>
+      <p class="description">We provide a complimentary range of services, from brand conception to implementation and growth.</p>
+    </div>
+
+    <div class="branding-section">
+      <div class="text-content">
+        <h5 class="subheading">BRANDING AGENCY</h5>
+        <h3 class="heading">Branding</h3>
+        <p class="text">
+          Whether you’re starting with a blank canvas or you’re in need of a rebrand – our team carry the expertise to help you level up! 
+          We will work with you to create a blisteringly brilliant visual identity (including a logo, color scheme & all other brand elements), 
+          and to powerfully define your messaging, positioning, voice & values. Once finished, we’ll put together a brand bible for you to refer back to.
+        </p>
+        <a href="#" class="learn-more">
+          <span>Learn More</span>
+        </a>
+      </div>
+      <div class="image-content">
+        <img src="https://i.imgur.com/IbyuLCv.png" alt="Branding Image" class="branding-image">
+      </div>
+    </div>
+  </section>
+
+  <style>
+
+ 
+.services-section {
+  max-width: 1200px;
+  margin: auto;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.section-header .tagline {
+  color: #a442e4;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.section-header .main-title {
+  font-size: 36px;
+  margin: 10px 0;
+}
+
+.section-header .description {
+  font-size: 18px;
+  color: #555;
+  max-width: 800px;
+  margin: auto;
+}
+
+.branding-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 60px;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.text-content {
+  flex: 1;
+  min-width: 300px;
+  text-align: left;
+  margin-left: 50px;
+}
+
+.text-content .subheading {
+  color: #b004b0;
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.text-content .heading {
+  font-size: 35px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.text-content .text {
+  font-size: 16px;
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.learn-more {
+  display: inline-flex;
+  align-items: center;
+  background: #a442e4;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.learn-more:hover {
+  background: #7f1bdc;
+}
+
+.learn-more::before {
+  content: "➤";
+  margin-right: 10px;
+  transition: transform 0.3s;
+}
+
+.learn-more:hover::before {
+  transform: translateX(4px);
+}
+
+.image-content {
+  flex: 1;
+  min-width: 300px;
+  text-align: center;
+}
+
+.branding-image {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  transition: transform 0.4s ease;
+}
+
+.branding-image:hover {
+  transform: scale(1.03);
+}
+
+
+
+  </style>
+
+<!-- WEB DESIGN SECTION -->
+<section class="webdesign-section">
+    <div class="webdesign-container">
+      <div class="webdesign-image">
+        <img src="https://i.imgur.com/MGEFDc5.png" alt="Web Design Preview">
+      </div>
+      <div class="webdesign-content">
+        <h5 class="webdesign-subtitle">WEB DESIGN AGENCY</h5>
+        <h2 class="webdesign-title">Web Design</h2>
+        <p class="webdesign-description">
+          Our team of techie talents have decades of combined experience in designing & developing completely bespoke
+          websites using WordPress, Shopify & HubSpot. Whether you’re a startup or an established enterprise, we can
+          sprinkle our digital magic to conjure you up a beautiful website.
+        </p>
+        <a href="#" class="webdesign-btn">
+          <span>Learn More</span>
+        </a>
+      </div>
+    </div>
+  </section>
+  
+
+  <style>
+ /* Web Design Section */
+.webdesign-section {
+  max-width: 1200px;
+  margin: 80px auto;
+  padding: 60px 20px;
+}
+
+.webdesign-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.webdesign-image {
+  flex: 1;
+  min-width: 300px;
+  text-align: center;
+}
+
+.webdesign-image img {
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s ease;
+}
+
+.webdesign-image img:hover {
+  transform: scale(1.03);
+}
+
+.webdesign-content {
+  flex: 1;
+  min-width: 300px;
+  text-align: left;
+}
+
+.webdesign-subtitle {
+  color: #a442e4;
+  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.webdesign-title {
+  font-size: 35px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.webdesign-description {
+  font-size: 16px;
+  color: #444;
+  line-height: 1.6;
+  text-align: justify;
+  margin-bottom: 25px;
+  margin-right: 50px;
+}
+
+.webdesign-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 12px 24px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #8a2be2, #ff00cc);
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.webdesign-btn:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+.webdesign-btn::before {
+  content: "➤";
+  margin-right: 10px;
+  font-size: 16px;
+  transition: transform 0.3s;
+}
+
+.webdesign-btn:hover::before {
+  transform: translateX(4px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .webdesign-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .webdesign-content {
+    text-align: center;
+  }
+
+  .webdesign-description {
+    text-align: center;
+  }
+}
+
+
+  </style>
 
 
 
