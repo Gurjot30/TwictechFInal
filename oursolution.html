@@ -1301,8 +1301,186 @@
   </style>
   
   <!--more sections-->
-  
+  <section class="services-section1">
+    <div class="heading-area">
+      <p class="subtitle">OUR DIGITAL SERVICES 💡</p>
+      <h1 class="title">More Services</h1>
+      <p class="desc">We provide a complimentary range of services, from brand conception to implementation and growth.</p>
+    </div>
 
+    <div class="slider-container">
+      <div class="slider" id="slider">
+        <div class="slide">
+          <div class="image-side">
+            <img src="https://i.imgur.com/tGbaZCY.png" alt="PPC Example"/>
+          </div>
+          <div class="content-side">
+            <p class="category">PPC MARKETING AGENCY</p>
+            <h2>PPC Marketing</h2>
+            <p class="info">
+              PPC (pay-per-click) advertising is a powerful digital marketing strategy that allows businesses to drive targeted traffic to their website and generate leads and sales.
+            </p>
+            <a href="#" class="learn-more-btn">▶ Learn More</a>
+          </div>
+        </div>
+
+        <!-- Add more slides here if needed -->
+
+      </div>
+
+      <div class="dots-container" id="dots">
+        <span class="dot active" onclick="currentSlide(0)"></span>
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <!-- Add more dots if more slides -->
+      </div>
+    </div>
+  </section>
+
+  <style>
+   
+.services-section1 {
+  padding: 60px 40px;
+  background: linear-gradient(to right, #0d0d0d, #5c0707);
+  
+}
+
+.heading-area {
+  max-width: 600px;
+  margin-bottom: 50px;
+  margin-left: 70px;
+}
+
+.subtitle {
+  color: #E84266;
+  letter-spacing: 1px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.title {
+  font-size: 38px;
+  font-weight: bold;
+  margin: 0;
+  color: white;
+}
+
+.desc {
+  color: #ccc;
+  margin-top: 10px;
+}
+
+.slider-container {
+  position: relative;
+}
+
+.slider {
+  display: flex;
+  overflow: hidden;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.image-side img {
+  width: 400px;
+  border-radius: 8px;
+}
+
+.content-side {
+  max-width: 50%;
+  padding: 0 40px;
+}
+
+.category {
+  color: #E84266;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.content-side h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.info {
+  color: #ccc;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.learn-more-btn {
+  display: inline-block;
+  background: linear-gradient(135deg, #5b0e2d, #E84266, #FF7E5F);
+  padding: 10px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.learn-more-btn:hover {
+  opacity: 0.8;
+  color: white;
+}
+
+.dots-container {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  margin: 0 6px;
+  background-color: #555;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dot.active {
+  background-color:  #E84266;
+}
+
+  </style>
+
+
+<script>
+    let currentSlideIndex = 0;
+const slider = document.getElementById("slider");
+const dots = document.querySelectorAll(".dot");
+
+function showSlide(index) {
+  const slideWidth = slider.children[0].offsetWidth;
+  slider.style.transform = `translateX(-${index * slideWidth}px)`;
+
+  dots.forEach(dot => dot.classList.remove("active"));
+  dots[index].classList.add("active");
+}
+
+function currentSlide(index) {
+  currentSlideIndex = index;
+  showSlide(currentSlideIndex);
+}
+
+// Auto slide (optional)
+setInterval(() => {
+  currentSlideIndex = (currentSlideIndex + 1) % dots.length;
+  showSlide(currentSlideIndex);
+}, 5000);
+
+</script>
 
 
   <!--Contact form-->
