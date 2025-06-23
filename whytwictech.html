@@ -71,7 +71,7 @@
                                             <li><a href="blog.html">Blogs</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="#">Solutions <i class="fa-solid fa-angle-down"></i></a>
+                                    <li><a href="oursolution.html">Solutions <i class="fa-solid fa-angle-down"></i></a>
                                         <ul class="dropdown-padding">
                                             <li><a href="Plans.html">Plans</a></li>
                                             <li><a href="Brand.html">Brand</a></li>
@@ -459,284 +459,434 @@
 
 <!-- background-color: rgb(248, 217, 217); -->
 
+<!--What we bring to the table-->
+<section class="service-offer">
+  <div class="left-column">
+    <!-- <h2 class="left-heading">Our Construction Vision</h2> -->
+    <div class="image-stack">
+      <img src="assets/img/it.avif" class="image-top" alt="Worker on site" />
+      <img src="assets/img/markeitng.avif" class="image-bottom" alt="Crane" />
+    </div>
+  </div>
 
+  <div class="right-column">
+    <h2 class="main-heading">What We bring to the table</h2>
+    <!-- <p class="description">
+      Pharetra nibh senectus donec dui, diam neque arcu egestas. Nibh velit
+      mauris nunc morbi et nam et. Facilisis curabitur amet id pharetra.
+    </p> -->
 
-<!-- SERVICES SECTION -->
-<section class="services-section">
-    <div class="section-header">
-      <h4 class="tagline">OUR DIGITAL SERVICES</h4>
-      <h2 class="main-title">Our Services <span class="emoji">💡</span></h2>
-      <p class="description">We provide a complimentary range of services, from brand conception to implementation and growth.</p>
+    <div class="services">
+      <div class="service-group">
+        <h4 class="service-title">Marketing Solutions</h4>
+        <ul class="service-list animated-list">
+          <li><span class="tick">✔</span> Brand Strategy & Identity Design</li>
+          <li><span class="tick">✔</span> Logo, Packaging & Visual Branding</li>
+          <li><span class="tick">✔</span> Digital Marketing & SEO</li>
+          <li><span class="tick">✔</span> Content & Campaign Management</li>
+          <li><span class="tick">✔</span> Social Media & Influencer Marketing</li>
+        </ul>
+      </div>
+      <div class="service-group">
+        <h4 class="service-title">IT & Development Solutions</h4>
+        <ul class="service-list animated-list">
+          <li><span class="tick">✔</span> Website & App Development</li>
+          <li><span class="tick">✔</span> ERP, CRM & Custom Software</li>
+          <li><span class="tick">✔</span> E-commerce Development</li>
+          <li><span class="tick">✔</span> Mobile App (Android & iOS)</li>
+          <li><span class="tick">✔</span> UI/UX and API Integrations</li>
+        </ul>
+      </div>
     </div>
 
-    <div class="branding-section">
-      <div class="text-content">
-        <h5 class="subheading">BRANDING AGENCY</h5>
-        <h3 class="heading">Branding</h3>
-        <p class="text">
-          Whether you’re starting with a blank canvas or you’re in need of a rebrand – our team carry the expertise to help you level up! 
-          We will work with you to create a blisteringly brilliant visual identity (including a logo, color scheme & all other brand elements), 
-          and to powerfully define your messaging, positioning, voice & values. Once finished, we’ll put together a brand bible for you to refer back to.
-        </p>
-        <a href="#" class="learn-more">
-          <span>Learn More</span>
-        </a>
-      </div>
-      <div class="image-content">
-        <img src="https://i.imgur.com/IbyuLCv.png" alt="Branding Image" class="branding-image">
-      </div>
-    </div>
-  </section>
-
-  <style>
-
- 
-.services-section {
-  max-width: 1200px;
-  margin: auto;
-  padding: 120px 20px;
-  text-align: center;
-
-}
-
-.section-header .tagline {
-  color: #a442e4;
-  font-weight: bold;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  font-size: 14px;
-}
-
-.section-header .main-title {
-  font-size: 36px;
-  margin: 10px 0;
-}
-
-.section-header .description {
-  font-size: 18px;
-  color: #555;
-  max-width: 800px;
-  margin: auto;
-}
-
-.branding-section {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 60px;
-  flex-wrap: wrap;
-  gap: 40px;
-}
-
-.text-content {
-  flex: 1;
-  min-width: 300px;
-  text-align: left;
-  margin-left: 50px;
-}
-
-.text-content .subheading {
-  color: #b004b0;
-  font-weight: 700;
-  font-size: 20px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-}
-
-.text-content .heading {
-  font-size: 35px;
-  font-weight: bold;
-  margin: 10px 0;
-}
-
-.text-content .text {
-  font-size: 16px;
-  color: #444;
-  line-height: 1.6;
-  margin-bottom: 20px;
-  text-align: justify;
-}
-
-.learn-more {
-  display: inline-flex;
-  align-items: center;
-  background: #a442e4;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 30px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background 0.3s;
-}
-
-.learn-more:hover {
-  background: #7f1bdc;
-  color: #eee6ea;
-}
-
-.learn-more::before {
-  content: "➤";
-  margin-right: 10px;
-  transition: transform 0.3s;
-}
-
-.learn-more:hover::before {
-  transform: translateX(4px);
-}
-
-.image-content {
-  flex: 1;
-  min-width: 300px;
-  text-align: center;
-}
-
-.branding-image {
-  max-width: 100%;
-  border-radius: 10px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-  transition: transform 0.4s ease;
-}
-
-.branding-image:hover {
-  transform: scale(1.03);
-}
+    <button class="view-btn">View Our Services →</button>
+  </div>
+</section>
 
 
-
-  </style>
-
-<!-- WEB DESIGN SECTION -->
-<section class="webdesign-section">
-    <div class="webdesign-container">
-      <div class="webdesign-image">
-        <img src="https://i.imgur.com/MGEFDc5.png" alt="Web Design Preview">
-      </div>
-      <div class="webdesign-content">
-        <h5 class="webdesign-subtitle">WEB DESIGN AGENCY</h5>
-        <h2 class="webdesign-title">Web Design</h2>
-        <p class="webdesign-description">
-          Our team of techie talents have decades of combined experience in designing & developing completely bespoke
-          websites using WordPress, Shopify & HubSpot. Whether you’re a startup or an established enterprise, we can
-          sprinkle our digital magic to conjure you up a beautiful website.
-        </p>
-        <a href="#" class="webdesign-btn">
-          <span>Learn More</span>
-        </a>
-      </div>
-    </div>
-  </section>
+<style>
   
+/* Base setup */
 
-  <style>
- /* Web Design Section */
-.webdesign-section {
-  max-width: 1200px;
-  margin: 80px auto;
-  padding: 60px 20px;
-}
-
-.webdesign-container {
+/* Main section */
+.service-offer {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  gap: 40px;
+  align-items: flex-start;
+  padding: 160px 80px;
+  gap: 60px;
   flex-wrap: wrap;
 }
 
-.webdesign-image {
+.service-list li {
+  opacity: 0;
+  transform: translateX(-10px);
+  transition: all 0.4s ease;
+}
+
+.service-list li.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+
+/* Left column with image stack */
+.left-column {
   flex: 1;
-  min-width: 300px;
-  text-align: center;
+  max-width: 50%;
+  position: relative;
+  margin-left: 70px;
 }
 
-.webdesign-image img {
-  max-width: 100%;
-  border-radius: 12px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  transition: transform 0.4s ease;
+
+
+.image-stack {
+  position: relative;
+  width: fit-content;
 }
 
-.webdesign-image img:hover {
-  transform: scale(1.03);
+.image-bottom {
+  width: 400px;
+  height: auto;
+  display: block;
+  border-radius: 8px;
 }
 
-.webdesign-content {
-  flex: 1;
-  min-width: 300px;
-  text-align: left;
+.image-top {
+  width: 300px;
+  height: auto;
+  position: absolute;
+  top: 80px;
+  left: -100px;
+  border-radius: 8px;
+  z-index: 2;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
 }
 
-.webdesign-subtitle {
-  color: #a442e4;
-  font-weight: bold;
-  font-size: 20px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  margin-bottom: 10px;
+/* Right column with content */
+.right-column {
+  flex: 1.2;
+  max-width: 50%;
 }
 
-.webdesign-title {
-  font-size: 35px;
+.main-heading {
+  font-size: 36px;
   font-weight: 800;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 
-.webdesign-description {
+.description {
   font-size: 16px;
-  color: #444;
-  line-height: 1.6;
-  text-align: justify;
-  margin-bottom: 25px;
-  margin-right: 50px;
+  color: #555;
+  margin-bottom: 30px;
+  max-width: 500px;
 }
 
-.webdesign-btn {
-  display: inline-flex;
+/* Service sections */
+.services {
+  display: flex;
+  gap: 60px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.service-group {
+  flex: 1;
+  min-width: 220px;
+}
+
+.service-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.service-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.service-list li {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 15px;
+  display: flex;
   align-items: center;
-  padding: 12px 24px;
-  font-weight: bold;
+}
+
+.tick {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 22px;
+  height: 22px;
+  background-color: #E84266; /* Goji red or any color you prefer */
   color: white;
-  text-decoration: none;
-  border-radius: 30px;
-  background: linear-gradient(135deg, #8a2be2, #ff00cc);
-  transition: background 0.3s ease, transform 0.3s ease;
-}
-
-.webdesign-btn:hover {
-  opacity: 0.9;
-  transform: translateY(-2px);
-  color: #eee6ea;
-}
-
-.webdesign-btn::before {
-  content: "➤";
+  border-radius: 50%;
+  font-size: 14px;
+  font-weight: bold;
   margin-right: 10px;
-  font-size: 16px;
-  transition: transform 0.3s;
+  flex-shrink: 0;
 }
 
-.webdesign-btn:hover::before {
-  transform: translateX(4px);
+
+/* Button */
+.view-btn {
+  background: linear-gradient(135deg, #5b0e2d, #E84266, #FF7E5F);
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.view-btn:hover {
+  background-color: #c63654;
+  color: white;
+  
 }
 
 /* Responsive */
-@media (max-width: 768px) {
-  .webdesign-container {
+@media screen and (max-width: 960px) {
+  .service-offer {
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+
+  .left-column,
+  .right-column {
+    max-width: 100%;
+  }
+
+  .image-top {
+    width: 160px;
+  }
+
+  .image-bottom {
+    width: 100%;
+  }
+
+  .services {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+</style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const animatedLists = document.querySelectorAll(".animated-list");
+
+    animatedLists.forEach((ul, index) => {
+      const items = ul.querySelectorAll("li");
+      items.forEach((li, i) => {
+        setTimeout(() => {
+          li.classList.add("visible");
+        }, 400 * i + (index * 1000)); // Stagger list appearance per group
+      });
+    });
+  });
+</script>
+
+<!--WHY CHOOSE US -->
+
+<section class="why-choose">
+  <div class="container1">
+    <div class="left">
+      <h2>Why Choose Twictech?<span></span></h2>
+      <p>
+        Because You Deserve a Partner Who Delivers End-to-End Excellence.
+      </p>
+      <ul class="fancy-points">
+        <li>Dual Expertise: Branding + Technology</li>
+        <li>Customized, Not Cookie-Cutter</li>
+        <li>Results-Driven Strategies</li>
+        <li>Cross-Industry Experience</li>
+        <li>In-House Experts, No Outsourcing Risks</li>
+        <li>End-to-End Project Ownership</li>
+        <li>Agile, Transparent, Collaborative</li>
+        <li>Trusted By Growing Brands</li>
+      </ul>
+      
+      
+      
+    </div>
+
+    <div class="right">
+      <div class="image-grid">
+        <div class="top-images">
+          <img src="assets/img/whychoose3.avif" alt="Team Discussion" />
+          <img src="assets/img/whychoose2.avif" alt="Leader" />
+        </div>
+        <div class="bottom-image">
+          <img src="assets/img/whychooseus1.avif" alt="Presentation" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .why-choose {
+  background: radial-gradient(circle at center, #E84266 15%, #5b0e2d 100%);
+  color: white;
+  padding: 80px 40px;
+  border-radius: 40px 40px 0 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.container1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  max-width: 1200px;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.left {
+  flex: 1;
+  min-width: 300px;
+}
+
+.left h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.fancy-points {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 30px;
+}
+
+.fancy-points li {
+  position: relative;
+  padding-left: 40px;
+  margin-bottom: 14px;
+  font-size: 16px;
+  color: #f0f0f0;
+  line-height: 1.6;
+  transition: transform 0.3s ease, color 0.3s ease;
+  cursor: default;
+}
+
+.fancy-points li::before {
+  content: "➤";
+  position: absolute;
+  left: 0;
+  top: 2px;
+  width: 26px;
+  height: 26px;
+  background-color: #E84266;
+  color: white;
+  border-radius: 50%;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.fancy-points li:hover {
+  transform: translateX(8px);
+  color: #ffffff;
+}
+
+.fancy-points li:hover::before {
+  background-color: #c73450; /* darker goji on hover */
+}
+
+
+
+
+.left h2 span {
+  display: block;
+}
+
+.left p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  color: #dceef2;
+}
+
+.learn-btn {
+  display: inline-block;
+  padding: 14px 28px;
+  background-color: white;
+  color: #007b8f;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 40px;
+  transition: background-color 0.3s;
+}
+
+.learn-btn:hover {
+  background-color: #e0f7ff;
+}
+
+/* Right Section: Images */
+.right {
+  flex: 1;
+  min-width: 300px;
+}
+
+.image-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.top-images {
+  display: flex;
+  gap: 20px;
+}
+
+.top-images img,
+.bottom-image img {
+  border-radius: 10px;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+}
+
+.top-images img {
+  width: 50%;
+}
+
+.bottom-image img {
+  width: 100%;
+  max-height: 300px;
+}
+
+/* Responsive */
+@media (max-width: 960px) {
+  .container {
     flex-direction: column;
     text-align: center;
   }
 
-  .webdesign-content {
-    text-align: center;
+  .top-images {
+    flex-direction: column;
   }
 
-  .webdesign-description {
-    text-align: center;
+  .top-images img {
+    width: 100%;
   }
 }
 
+</style>
 
-  </style>
 
 
 
