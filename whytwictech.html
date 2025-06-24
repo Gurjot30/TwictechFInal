@@ -459,6 +459,98 @@
 
 <!-- background-color: rgb(248, 217, 217); -->
 
+<!--HERO SECtion-->
+
+<div class="wave-section">
+  <div class="background-image"></div>
+  <div class="content-box">
+    <h1>Your Trusted Partner in Brand Marketing and IT Innovation</h1>
+    <p>At TwicTech, we’re more than a service provider — we’re your strategic partner in transformation. Whether you're building a brand that connects or deploying technology that scales, we deliver creative, customized, and data-driven solutions designed for impact.</p>
+    <!-- <button>Button Text</button> -->
+  </div>
+</div>
+
+<style>
+  
+
+.wave-section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: #ccc;
+}
+
+/* Left side image */
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60%;
+  height: 100%;
+  background: url('assets/img/whytwictech.avif') no-repeat center center/cover;
+  z-index: 1;
+}
+
+/* Wave overlay and content */
+.content-box {
+  position: relative;
+  z-index: 2;
+  width: 60%;
+  height: 100%;
+  background: linear-gradient(
+  to bottom,
+  #ffffff 0%,       /* white at top */
+  #ffffff 5%,       /* keep white for only 5% */
+  #9a3b4a 35%,      /* mid maroon tone */
+  #5b0e2d 100%      /* dark maroon */
+);
+
+
+
+  clip-path: ellipse(90% 100% at 100% 50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 60px;
+  color: #fff;
+}
+
+.content-box h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin-left: 100px;
+}
+
+.content-box p {
+  font-size: 16px;
+  max-width: 650px;
+  margin-bottom: 30px;
+  margin-left: 100px;
+  text-align: justify;
+}
+
+/* .content-box button {
+  padding: 12px 20px;
+  background-color: #5dc6ff;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.content-box button:hover {
+  background-color: #339ddf;
+} */
+
+</style>
+
 <!--WHO WE ARE-->
 <section class="why-us">
   <h4 class="highlight">Why Shaligram Infotech?</h4>
