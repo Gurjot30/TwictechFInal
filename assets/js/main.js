@@ -326,27 +326,43 @@
    
 
     //testimonial slider
-    $(".testimonial-nav").slick({
-        slidesToShow: 5,
-        slidesToScroll: 1,
-        asNavFor: ".slider-testimonial",
-        dots: false,
-        loop: true,
-        centerMode: true,
-        focusOnSelect: true,
-        arrows: false,
-    });
+    // $(".testimonial-nav").slick({
+    //     slidesToShow: 5,
+    //     slidesToScroll: 1,
+    //     asNavFor: ".slider-testimonial",
+    //     dots: false,
+    //     loop: true,
+    //     centerMode: true,
+    //     focusOnSelect: true,
+    //     arrows: false,
+    // });
 
-    $(".slider-testimonial").slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: true,
-        prevArrow: $(".testimonial-prev-arrow"),
-        nextArrow: $(".testimonial-next-arrow"),
-        fade: true,
-        loop: true,
-        asNavFor: ".testimonial-nav",
+    // $(".slider-testimonial").slick({
+    //     slidesToShow: 1,
+    //     slidesToScroll: 1,
+    //     arrows: true,
+    //     prevArrow: $(".testimonial-prev-arrow"),
+    //     nextArrow: $(".testimonial-next-arrow"),
+    //     fade: true,
+    //     loop: true,
+    //     asNavFor: ".testimonial-nav",
+    // });
+
+
+  $(document).ready(function () {
+    $('.slider-testimonial').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: true,
+      prevArrow: $('.testimonial-prev-arrow'),
+      nextArrow: $('.testimonial-next-arrow'),
+      dots: true,
+      autoplay: true,
+      autoplaySpeed: 4000,
+      adaptiveHeight: true
     });
+  });
+
 
 
     // testimonial //

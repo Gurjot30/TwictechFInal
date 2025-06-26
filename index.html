@@ -72,22 +72,84 @@
                                             <li><a href="blog.html">Blogs</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="oursolution.html">Solutions <i class="fa-solid fa-angle-down"></i></a>
-                                        <ul class="dropdown-padding">
-                                            <li><a href="Plans.html">Plans</a></li>
-                                            <li><a href="Brand.html">Brand</a></li>
-                                            <li><a href="Content.html">Content</a></li>
-                                            <li><a href="Build.html">Build</a></li>
-                                            <li><a href="Growth Strategy.html">Growth Strategy</a></li>
-                                            <li><a href="Grow.html">Grow</a></li>
-                                        </ul>
+                                    <li>
+                                      <a href="oursolution.html">Solutions <i class="fa-solid fa-angle-down"></i></a>
+                                      <ul class="dropdown-padding three-column-wrapper">
+                                        <li>
+                                          <div class="column-heading">Brand Marketing </div>
+                                          <a href="#">⁠Brand Strategy & Consulting
+                                          </a>
+                                          <a href="#">Logo & Visual Identity Design
+                                          </a>
+                                          <a href="#">Digital Marketing Campaigns
+                                          </a>
+                                          <a href="#">Social Media Management
+                                          </a>
+                                          <a href="#">⁠Content Creation & Copywriting
+                                          </a>
+                                          <a href="#">Influencer & PR Marketing
+                                          </a>
+                                          <a href="#">⁠⁠Rebranding Services
+                                          </a>
+                                        
+                                        </li>
+                                        <li>
+                                          <div class="column-heading">It Solutions</div>
+                                          <a href="#">⁠Website Design & Development
+                                          </a>
+                                          <a href="#">Mobile App Development
+                                          </a>
+                                          <a href="#"> ⁠Custom Software Development
+                                          </a>
+                                          <a href="#">UI/UX Design Services
+                                          </a>
+                                          <a href="#"> ⁠E-Commerce Development
+                                          </a>
+                                          <a href="#">⁠SEO & Performance Optimization
+                                          </a>
+                                          <a href="#"> ⁠Maintenance & Support
+                                          </a>
+                                        </li>
+                                        <li>
+                                          <div class="column-heading">Integrated Tech Marketing</div>
+                                          <a href="#">CRM & Marketing Automation
+                                          </a>
+                                          <a href="#">⁠Data Analytics & Reporting
+                                          </a>
+                                          <a href="#">Marketing Technology Consulting
+                                          </a>
+                                        </li>
+                                      </ul>
                                     </li>
+                                    
                                     <li><a href="#">Industries <i class="fa-solid fa-angle-down"></i></a>
                                         <ul class="dropdown-padding">
-                                            <li><a href="Healthcare.html">Healthcare</a></li>
-                                            <li><a href="Finance.html">Finance</a></li>
-                                            <li><a href="Education.html">Education</a></li>
-                                            <li><a href="E-Commerce.html">E-Commerce</a></li>
+                                          <li>
+                                            <a href="Healthcare.html">Healthcare & Wellness</a>
+                                          </li>
+                                          <li><a href="Finance.html">Retail & E-commerce </a></li>
+                                          <li><a href="Education.html">Real Estate & Infrastructure
+                                          </a></li>
+                                          <li><a href="E-Commerce.html"> Finance & Fintech
+                                          </a></li>
+                                          <li>
+                                            <a href="Healthcare.html">Education & E-learning
+                                            </a>
+                                          </li>
+                                          <li><a href="Finance.html">Food & Beverage
+                                          </a></li>
+                                          <li><a href="Education.html">Transport & Logistics
+                                          </a></li>
+                                          <li><a href="E-Commerce.html"> Corporate & B2B Services
+                                          </a></li>
+                                          <li><a href="E-Commerce.html"> Media, Entertainment & Events
+                                          </a></li>
+                                          <li><a href="E-Commerce.html"> Hospitality & Travel
+                                          </a></li>
+                                          <li><a href="E-Commerce.html"> Technology & Startups
+                                          </a></li>
+                                          <li><a href="E-Commerce.html"> NGOs & Social Enterprises
+                                          </a></li>
                                             
                                         </ul>
                                     </li>
@@ -122,6 +184,74 @@
         </div>
     </header>
     <!--=====HEADER END =======-->
+
+    <style>
+ .dropdown-padding.three-column-wrapper {
+  display: flex !important;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px;
+  width: 800px !important;       /* Force full width */
+  max-width: none !important;     /* Remove restrictions */
+  min-width: 800px !important;   /* Prevent collapsing */
+  padding: 20px 30px;
+  background: #fff;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  z-index: 9999;
+}
+
+
+/* Each column */
+.dropdown-padding.three-column-wrapper li {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+  position: relative;
+  gap: 6px; /* Less vertical gap */
+}
+
+/* Headings */
+.dropdown-padding .column-heading {
+  font-size: 15px;
+  font-weight: 600;
+  color: #5b0e2d;
+  margin-bottom: 10px;
+  line-height: 1.4;
+  /* margin-left: -10px; */
+  
+}
+
+/* Links */
+.dropdown-padding li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 13.5px;
+  line-height: 1.4; /* Tighter line spacing */
+  transition: color 0.2s ease;
+  margin-left: -20px;
+}
+
+.dropdown-padding li a:hover {
+  color: #5b0e2d;
+}
+
+/* Vertical divider lines */
+.dropdown-padding.three-column-wrapper li:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  top: 5px;
+  right: 0;
+  width: 1px;
+  height: calc(100% - 10px);
+  background: #ddd;
+}
+
+    </style>
 
     <style>
 /* Dropdown base state */
@@ -1395,53 +1525,45 @@
                         <div class="slider-testimonial">
 
                             <div class="single-testimonial">
-                                <h5>“Working with SEOC has been a game-changer for our business. Their expertise and dedication have helped us achieve unprecedented growth in our online presence. I highly recommend to any business looking to boost their online
-                                    visibility and drive meaningful results."</h5>
+                                <h5>“TwicTech completely transformed our brand presence. From designing our logo to building a complete digital strategy, TwicTech made sure our brand stood out in a competitive market. Their team is creative, professional, and truly understands branding.
+                                  "</h5>
                                 <div class="author">
-                                    <a href="team.html">Leslie Alexander</a>
+                                    <a href="team.html">Anjali Mehta</a>
                                     <!-- <p>CEO, Business Administ</p> -->
                                 </div>
                             </div>
                             <div class="single-testimonial">
-                                <h5>“Working with SEOC has been a game-changer for our business. Their expertise and dedication have helped us achieve unprecedented growth in our online presence. I highly recommend to any business looking to boost their online
-                                    visibility and drive meaningful results."</h5>
+                                <h5>“We were looking for a partner who could handle both our website and our digital campaigns—and TwicTech delivered beyond expectations. Their designs, development skills, and marketing expertise are truly impressive.
+                                  "</h5>
                                 <div class="author">
-                                    <a href="team.html">Leslie Alexander</a>
+                                    <a href="team.html">— Rohit Verma</a>
                                     <!-- <p>CEO, Business Administ</p> -->
                                 </div>
                             </div>
                             <div class="single-testimonial">
-                                <h5>“Working with SEOC has been a game-changer for our business. Their expertise and dedication have helped us achieve unprecedented growth in our online presence. I highly recommend to any business looking to boost their online
-                                    visibility and drive meaningful results."</h5>
+                                <h5>“Our e-commerce store needed a facelift, and TwicTech gave us a high-performing website that looks stunning and converts well. Their support and insight into customer behavior made all the difference.
+                                  "</h5>
                                 <div class="author">
-                                    <a href="team.html">Leslie Alexander</a>
+                                    <a href="team.html">— Neha Kapoor</a>
                                     <!-- <p>CEO, Business Administ</p> -->
                                 </div>
                             </div>
                             <div class="single-testimonial">
-                                <h5>“Working with SEOC has been a game-changer for our business. Their expertise and dedication have helped us achieve unprecedented growth in our online presence. I highly recommend to any business looking to boost their online
-                                    visibility and drive meaningful results."</h5>
+                                <h5>“We appreciated how TwicTech took time to understand our business before suggesting solutions. Their strategic approach to branding gave our startup a solid foundation and direction.
+                                  "</h5>
                                 <div class="author">
-                                    <a href="team.html">Leslie Alexander</a>
+                                    <a href="team.html">— Siddharth Rao</a>
                                     <!-- <p>CEO, Business Administ</p> -->
                                 </div>
                             </div>
                             <div class="single-testimonial">
-                                <h5>“Working with SEOC has been a game-changer for our business. Their expertise and dedication have helped us achieve unprecedented growth in our online presence. I highly recommend to any business looking to boost their online
-                                    visibility and drive meaningful results."</h5>
+                                <h5>“Efficient, creative, and always on time! TwicTech delivered a complete brand identity and corporate website within our tight deadline. Their creativity and commitment to quality are unmatched. Highly recommended!"</h5>
                                 <div class="author">
-                                    <a href="team.html">Leslie Alexander</a>
+                                    <a href="team.html">— Meera Joshi</a>
                                     <!-- <p>CEO, Business Administ</p> -->
                                 </div>
                             </div>
-                            <div class="single-testimonial">
-                                <h5>“Working with SEOC has been a game-changer for our business. Their expertise and dedication have helped us achieve unprecedented growth in our online presence. I highly recommend to any business looking to boost their online
-                                    visibility and drive meaningful results."</h5>
-                                <div class="author">
-                                    <a href="team.html">Leslie Alexander</a>
-                                    <!-- <p>CEO, Business Administ</p> -->
-                                </div>
-                            </div>
+                            
                         </div>
                         <div class="testimonial-arrows">
                             <div class="testimonial-prev-arrow">
@@ -1667,7 +1789,7 @@
                             <li><a href="https://www.instagram.com/twictech/" style="color: #5b0e2d;"><i class="fa-brands fa-instagram"></i></a></li>
                             <li><a href="https://www.linkedin.com/company/twictech" style="color: #5b0e2d;"><i class="fa-brands fa-linkedin-in"></i></a></li>
                             <li><a href="https://x.com/twictech2" style="color: #5b0e2d;"><i class="fa-brands fa-twitter"></i></a></li>
-                            <li><a href="https://in.pinterest.com/twictech/" style="color: #5b0e2d;"><i class="fa-brands fa-pinterest-p"></i></a></li>
+                            <!-- <li><a href="https://in.pinterest.com/twictech/" style="color: #5b0e2d;"><i class="fa-brands fa-pinterest-p"></i></a></li> -->
                           </ul>
                           
                     </div>
@@ -1692,12 +1814,13 @@
                         <h3>Get in touch</h3>
                         <ul>
                             <li><a href="mailto"><img src="assets/img/icons/email.svg" alt=""><span>Infoseoc@gmail.com</span></a></li>
-                            <li><a href="#"><img src="assets/img/icons/location.svg" alt=""><span>8708 Technology Forest <br class="d-lg-block d-none"> Pl Suite 125 -G, The <br class="d-lg-block d-none"> Woodlands, TX 773</span></a></li>
-                            <li><a href="tel:123-456-7890"><img src="assets/img/icons/phone.svg" alt=""><span>123-456-7890</span></a></li>
+                            <li><a href="#"><img src="assets/img/icons/location.svg" alt=""><span>Noida Sector 62  </span></a></li>
+                            <!-- <li><a href="#"><img src="assets/img/icons/location.svg" alt=""><span>Noida Sector 62 <br class="d-lg-block d-none"> Pl Suite 125 -G, The <br class="d-lg-block d-none"> Woodlands, TX 773</span></a></li> -->
+                            <li><a href="tel:123-456-7890"><img src="assets/img/icons/phone.svg" alt=""><span>+91 8077556082</span></a></li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
+                <!-- <div class="col-lg-3 col-md-6">
                     <div class="footer-logo-area3">
                         <h3>Subscribe Our Newsletter</h3>
 
@@ -1710,7 +1833,7 @@
                               
                         </form>
                     </div>
-                </div>
+                </div> -->
             </div>
             <div class="space50 d-lg-block d-none"></div>
             <div class="space40 d-lg-none d-block"></div>
