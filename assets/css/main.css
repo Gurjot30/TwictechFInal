@@ -17680,7 +17680,7 @@ html {
     position: absolute;
     background: var(--ztc-text-text-1);
     top: 10px;
-    width: 225px;
+    width: 300px;
     z-index: 1;
     transition: all 0.4s;
     border-radius: 5px;
