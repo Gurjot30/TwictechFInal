@@ -1165,6 +1165,7 @@ Location:
     display: inline-block;
     margin-bottom: 16px;
     background: var(--ztc-bg-bg-19);
+    
 }
 
 .heading9 h5 img {
@@ -1745,6 +1746,7 @@ Location:
     line-height: var(--ztc-font-size-font-s68);
     font-weight: var(--ztc-weight-semibold);
     color: #09171B;
+    margin-left: -30px;
 }
 
 @media (max-width: 767px) {
@@ -1760,6 +1762,7 @@ Location:
     line-height: var(--ztc-font-size-font-s28);
     font-weight: var(--ztc-weight-medium);
     color: #5C6365;
+    margin-left: -30px;
 }
 
 .heading20 h5 {
@@ -9314,7 +9317,7 @@ Location:
     background: #fff;
     color: #FD3B32;
     border: 1px solid #FD3B32;
-    margin-left: 16px;
+    margin-left: 110px;
 }
 
 @media (max-width: 767px) {
