@@ -16,6 +16,10 @@
 <!-- Slick Theme -->
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
 
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+
+ <!-- Font Awesome CDN -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
     
 
@@ -586,6 +590,946 @@
     </div>
 </div>
 <!--===== MOBILE HEADER STARTS =======-->
+
+<!--hero section-->
+
+<section class="hero-section">
+    <div class="hero-content">
+      <p class="hero-subtitle">OUR UNIQUE MOBILE APP DEVELOPMENT STRATEGY</p>
+      <h1 class="hero-title">
+        WE CRAFT CUSTOM APP DEVELOPMENT SOLUTIONS THAT
+        <span class="highlight">ENGAGE & DELIGHT</span>
+      </h1>
+
+      <ul class="hero-services">
+        <li><span class="tick">✔</span> <strong>App Development</strong></li>
+        <li><span class="tick">✔</span> <strong>SEO Services</strong></li>
+        <li><span class="tick">✔</span> <strong>IOS & Android</strong></li>
+        <li><span class="tick">✔</span> <strong>Entertainment & Gaming</strong></li>
+      </ul>
+
+      <p class="hero-description">
+        As a mobile app development company, Lounge Lizard’s expert Brandtenders develop mobile apps for iOS and Android devices that bring solutions to all types of customer experiences. From smart home applications to education and learning apps to gaming and entertainment apps, our team can take your vision and create a mind-blowing mobile app.
+      </p>
+
+      <a href="#" class="cta-button">TALK TO A BRANDTENDER</a>
+    </div>
+
+    <div class="hero-image">
+      <img src="assets/img/appdevhero Background Removed.png" alt="Phone Graphic" />
+    </div>
+  </section>
+
+  <style>
+    
+
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 160px 10%;
+  flex-wrap: wrap;
+}
+
+.hero-content {
+  flex: 1;
+  max-width: 600px;
+}
+
+.hero-subtitle {
+  font-weight: 600;
+  color: #7a7a7a;
+  font-size: 14px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.hero-title {
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.hero-title .highlight {
+    background: linear-gradient(135deg, #5b0e2d, #E84266, #FF7E5F);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.hero-services {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.hero-services li {
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+.tick {
+  color: #ff4a3d;
+  margin-right: 10px;
+}
+
+.hero-description {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 25px;
+}
+
+.cta-button {
+    background: linear-gradient(135deg,#5b0e2d, #E84266, #FF7E5F);
+  color: #fff;
+  padding: 12px 24px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  border-radius: 2px;
+  transition: 0.3s ease;
+}
+
+.cta-button:hover {
+  background: #e63c2e;
+}
+
+.hero-image {
+  flex: 1;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.hero-image img {
+  width: 300%;
+  max-width: 700px;
+}
+
+  </style>
+
+  <!--Featured work-->
+  <section class="featured-work-section">
+    <div class="overlay"></div>
+  
+    <div class="content-wrapper">
+      <div class="left-area">
+        <div class="heading-section">
+          <h1>FEATURED WORK</h1>
+          <p class="subtext">
+            Browse through our case study portfolio for our digital advertising agency to see how we positively impacted growth and bottom line revenue for our many clients.
+          </p>
+        </div>
+  
+        <div class="project-info">
+          <h3 class="project-title">HONEYWELL TOTAL COMFORT</h3>
+          <p class="project-desc">
+            Lounge Lizard successfully created an intuitive mobile experience to have complete control of heating/cooling system at home.
+          </p>
+          <div class="buttons">
+            <button class="btn red">VIEW WEBSITE</button>
+            <button class="btn transparent">VIEW CASE STUDY</button>
+          </div>
+        </div>
+      </div>
+  
+      <div class="slider-area">
+        <div class="monitor-frame">
+          <div class="slider">
+            <img src="assets/img/whychoose2.avif" class="slide active" alt="Slide 1">
+            <img src="assets/img/whychoose3.avif" class="slide" alt="Slide 2">
+            <img src="assets/img/whychooseus1.avif" class="slide" alt="Slide 3">
+          </div>
+        </div>
+        <div class="nav-dots">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <style>
+    
+
+  
+
+.featured-work-section {
+  position: relative;
+  padding: 80px 40px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url('assets/img/featured.png') no-repeat center center / cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(224, 208, 208, 0.6);
+  z-index: 0;
+}
+
+.content-wrapper {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+  gap: 50px;
+}
+
+.left-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+  max-width: 500px;
+}
+
+.heading-section h1 {
+  font-size: 45px;
+  font-weight: bold;
+  color: #5b0e2d;
+}
+
+.heading-section .subtext {
+  font-size: 20px;
+  margin: 10px 0 30px;
+  line-height: 1.4;
+  color: #5b0e2d;
+}
+
+.project-info {
+  margin-top: 30px;
+}
+
+.project-title {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.project-desc {
+  font-size: 15px;
+  color: black;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+
+.buttons .btn {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+.btn.red {
+    background: linear-gradient(135deg,#5b0e2d, #E84266, #FF7E5F);
+  color: #fff;
+}
+
+.btn.transparent {
+  background: transparent;
+  border: 1px solid black;
+  color: black;
+}
+
+.btn.red:hover {
+  background-color: #e23636;
+}
+
+.btn.transparent:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.slider-area {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.monitor-frame {
+  width: 570px;
+  height: 320px;
+  background: #000;
+  border: 10px solid #111;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.7);
+}
+
+.slider {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slide {
+  min-width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: none;
+}
+
+.slide.active {
+  display: block;
+}
+
+.nav-dots {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #ccc;
+  transition: background 0.3s ease;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #ff5e5e;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .content-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .left-area {
+    text-align: center;
+    align-items: center;
+  }
+
+  .monitor-frame {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+  }
+
+  .text-area {
+    max-width: 100%;
+  }
+}
+
+
+  </style>
+
+<script>
+    const slides = document.querySelectorAll(".slide");
+    const dots = document.querySelectorAll(".dot");
+    const projectTitle = document.querySelector(".project-title");
+    const projectDesc = document.querySelector(".project-desc");
+    
+    const titles = [
+      "HONEYWELL TOTAL COMFORT",
+      "SAMSUNG SMART CLIMATE",
+      "NEST HOME EXPERIENCE"
+    ];
+    
+    const descriptions = [
+      "Lounge Lizard successfully created an intuitive mobile experience to have complete control of heating/cooling system at home.",
+      "Samsung’s intuitive smart climate app was designed to simplify multi-zone AC control across different rooms.",
+      "Nest Home Experience helps users automate climate control using voice assistants and predictive AI."
+    ];
+    
+    let currentSlide = 0;
+    
+    function showSlide(index) {
+      slides.forEach((slide, i) => {
+        slide.classList.toggle("active", i === index);
+        dots[i].classList.toggle("active", i === index);
+      });
+    
+      projectTitle.textContent = titles[index];
+      projectDesc.textContent = descriptions[index];
+    }
+    
+    dots.forEach((dot, index) => {
+      dot.addEventListener("click", () => {
+        currentSlide = index;
+        showSlide(index);
+      });
+    });
+    
+    setInterval(() => {
+      currentSlide = (currentSlide + 1) % slides.length;
+      showSlide(currentSlide);
+    }, 4000);
+    </script>
+
+    <!--CLIENT -->
+    <section class="benefits-section">
+        <!-- Left Fixed Text -->
+        <div class="benefits-left">
+          <h4>CLIENT BENEFITS</h4>
+          <h1>WHAT YOU GET</h1>
+          <p>
+            With Lounge Lizard, when we develop a mobile app, we bring our best game to mix you an app design that resonates with your customers and provides solutions that they can access anywhere. Here is what you get – the benefits of app development services for clients when working with our team of creatives:
+          </p>
+        </div>
+    
+        <div class="benefits-right">
+            <div class="benefit-card">
+              <div class="icon-circle">
+                <i class="fas fa-lightbulb"></i>
+              </div>
+              <div class="card-text">
+                <h3>CONCEPTUALIZATION & DESIGN</h3>
+                <p>Apps change and evolve quickly in today’s tech environment — our goal is to conceptualize and design your app through our mobile apps development services with a fast-time-to-market.</p>
+              </div>
+            </div>
+          
+            <div class="benefit-card">
+              <div class="icon-circle">
+                <i class="fas fa-code"></i>
+              </div>
+              <div class="card-text">
+                <h3>PROFESSIONAL APP DEVELOPMENT</h3>
+                <p>Our app developers are fluent in programming languages like React Native, Swift, and Xamarin that make mobile apps effective.</p>
+              </div>
+            </div>
+          
+            <div class="benefit-card">
+              <div class="icon-circle">
+                <i class="fas fa-gauge-high"></i>
+              </div>
+              <div class="card-text">
+                <h3>RESPONSIVE APP PERFORMANCE</h3>
+                <p>Our app development experts can boost performance by up to 50% using optimization techniques like compression and caching.</p>
+              </div>
+            </div>
+          
+            <div class="benefit-card">
+              <div class="icon-circle">
+                <i class="fas fa-layer-group"></i>
+              </div>
+              <div class="card-text">
+                <h3>CROSS-PLATFORM INTEGRATION</h3>
+                <p>We ensure seamless app operation across all platforms and devices while syncing and updating effortlessly.</p>
+              </div>
+            </div>
+          
+            <div class="benefit-card hidden-on-load">
+              <div class="icon-circle">
+                <i class="fas fa-vial"></i>
+              </div>
+              <div class="card-text">
+                <h3>TESTING & QA</h3>
+                <p>We apply advanced QA techniques and testing protocols to ensure your app works perfectly before launch.</p>
+              </div>
+            </div>
+          
+            <div class="benefit-card hidden-on-load">
+              <div class="icon-circle">
+                <i class="fas fa-wrench"></i>
+              </div>
+              <div class="card-text">
+                <h3>ONGOING MAINTENANCE</h3>
+                <p>We provide long-term support and maintenance to keep your application healthy and up-to-date into the future.</p>
+              </div>
+            </div>
+          </div>
+          
+      </section>
+    
+
+      <style>
+
+
+.benefits-section {
+  display: flex;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 60px 40px;
+  gap: 50px;
+  align-items: flex-start;
+}
+
+.benefits-left {
+  position: sticky;
+  top: 60px;
+  flex: 1;
+  max-width: 350px;
+}
+
+.benefits-left h4 {
+  font-weight: 700;
+  font-size: 18px;
+  color: #5b0e2d;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.benefits-left h1 {
+  font-size: 35px;
+  margin: 0 0 20px;
+  font-weight: 600;
+}
+
+.benefits-left p {
+  font-size: 17px;
+  line-height: 1.7;
+  color: #444;
+  text-align: justify;
+}
+
+.benefits-right {
+  flex: 2;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+.benefit-card {
+  display: flex;
+  align-items: flex-start;
+  background: #fff;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 6px 24px rgba(0,0,0,0.08);
+  opacity: 1;
+  transform: translateY(0);
+  transition: 0.6s ease-in-out;
+  gap: 15px;
+  min-height: 200px;
+}
+
+.icon-circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #5b0e2d, #E84266, #FF7E5F);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 38px;
+  color: white; /* icon color */
+  flex-shrink: 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.icon-circle img {
+  width: 90%;
+  height: 90%;
+  object-fit: cover;
+}
+
+.card-text h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0 0 12px;
+}
+
+.card-text p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #444;
+}
+
+/* Animation */
+.hidden-on-load {
+  opacity: 0;
+  transform: translateY(60px);
+}
+
+
+
+      </style>
+
+
+<script>
+   window.addEventListener("scroll", () => {
+  const cards = document.querySelectorAll(".hidden-on-load");
+  cards.forEach(card => {
+    const rect = card.getBoundingClientRect();
+    if (rect.top < window.innerHeight * 0.9) {
+      card.classList.remove("hidden-on-load");
+    }
+  });
+});
+
+
+</script>
+
+<!-- WHY CHOOSE US -->
+<section class="why-choose-section">
+    <div class="why-choose-wrapper">
+      <div class="left-image-area">
+        <img src="assets/img/whychooseus.jpg" alt="Man with mic" class="hero-img">
+        <!-- <div class="rating-stars">⭐⭐⭐⭐⭐</div> -->
+      </div>
+      <div class="right-content-area">
+        <h4 class="subheading">WHY BRANDS CHOOSE US</h4>
+        <h1 class="main-heading">
+          WHY YOU SHOULD CHOOSE APP <br>
+          DEVELOPMENT AGENCY LOUNGE LIZARD
+        </h1>
+        <div class="feature-grid">
+          <div class="feature-item">
+            <h3>FULL-SERVICE APP DEVELOPMENT</h3>
+            <p>From conceptualization to design & development to final testing, our mobile app development company specializes in delivering a complete product.</p>
+          </div>
+          <div class="feature-item">
+            <h3>IMPROVED UX</h3>
+            <p>Our native mobile applications quickly access device functions like payment methods, sensors, and the camera to enhance the user experience.</p>
+          </div>
+          <div class="feature-item">
+            <h3>MARKETING EXPERTISE</h3>
+            <p>Lounge Lizard offers a full menu of industry-leading marketing and advertising services, including website development, digital marketing, & SEO.</p>
+          </div>
+          <div class="feature-item">
+            <h3>WORLD-CLASS VALUE</h3>
+            <p>While the cost to develop a new app relies on a variety of contingencies, our goal is to deliver outstanding value and to always offer fair app development costs.</p>
+          </div>
+          <div class="feature-item">
+            <h3>AWARD-WINNING SERVICE</h3>
+            <p>With over 20 years in the advertising and marketing industry, Lounge Lizard has a long-term reputation for providing world-class customer service.</p>
+          </div>
+          <div class="feature-item">
+            <h3>PROJECT MANAGEMENT</h3>
+            <p>A highly qualified project advocate leads each project and is responsible for coordinated communications, start-to-finish execution, and a smooth launch.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <style>
+    .why-choose-section {
+  background: #fff;
+  padding: 60px 40px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.why-choose-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  max-width: 1400px;
+  margin: auto;
+}
+
+.left-image-area {
+  flex: 1;
+  min-width: 400px;
+  text-align: center;
+  position: relative;
+}
+
+.left-image-area .hero-img {
+  border-radius: 50%;
+  max-width: 450px;
+  border: 10px solid transparent;
+  background: linear-gradient(135deg,#5b0e2d, #E84266, #FF7E5F);
+  padding: 10px;
+  margin-top: 60px;
+}
+
+/* .rating-stars {
+  font-size: 24px;
+  margin-top: 20px;
+  background: #fff;
+  padding: 10px 20px;
+  border-radius: 50px;
+  display: inline-block;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  font-weight: bold;
+} */
+
+.right-content-area {
+  flex: 2;
+  padding: 20px 40px;
+  margin-left: 40px;
+}
+
+.subheading {
+  font-weight: bold;
+  background: linear-gradient(135deg, #5b0e2d, #E84266, #FF7E5F);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.main-heading {
+  font-size: 25px;
+  margin-bottom: 30px;
+  color: #222;
+  font-weight: 550;
+  
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.feature-item h3 {
+  color: #5b0e2d;
+  margin-bottom: 10px;
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.feature-item p {
+  color: #444;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+  </style>
+
+  <!--aboutservuces-->
+
+  <section class="about-app-section">
+    <div class="app-content-wrapper">
+      <!-- Text Area -->
+      <div class="app-text">
+        <h1 id="animatedHeading"></h1>
+  
+        <p id="animatedParagraph"></p>
+  
+        <ul class="app-services-list" id="animatedList">
+          <li><span class="icon">✔</span> IOS APP DEVELOPMENT</li>
+          <li><span class="icon">✔</span> ANDROID APP DEVELOPMENT</li>
+          <li><span class="icon">✔</span> NATIVE & HYBRID APPS</li>
+          <li><span class="icon">✔</span> EDUCATION APPS</li>
+          <li><span class="icon">✔</span> GAMING APPS</li>
+          <li><span class="icon">✔</span> SOCIAL MEDIA APPS</li>
+          <li><span class="icon">✔</span> LIFESTYLE APPS</li>
+          <li><span class="icon">✔</span> SMART HOME APPS</li>
+        </ul>
+      </div>
+  
+      <!-- Image Area -->
+      <div class="app-image">
+        <img src="assets/img/appdevabout.png" alt="Sign & tools" />
+      </div>
+    </div>
+  </section>
+  
+  
+
+  <style>
+.about-app-section {
+  background: #f5f5f5;
+  padding: 80px 100px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.app-content-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1400px;
+  margin: auto;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.app-text {
+  flex: 1 1 50%;
+  padding-right: 40px;
+}
+
+/* Heading */
+#animatedHeading {
+  font-size: 35px;
+  font-weight: bold;
+  color: #5b0e2d;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.word {
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeInUp 0.5s ease forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Paragraph */
+#animatedParagraph {
+  font-size: 17px;
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  text-align: justify;
+}
+
+#animatedParagraph span {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeInUp 0.4s ease forwards;
+}
+
+/* List */
+.app-services-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.app-services-list li {
+  font-size: 17px;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeInLine 0.6s ease forwards;
+}
+
+@keyframes fadeInLine {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.icon {
+  display: inline-flex;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: linear-gradient(135deg,#5b0e2d, #E84266, #FF7E5F);
+  color: white;
+  font-weight: bold;
+  align-items: center;
+  justify-content: center;
+  margin-right: 12px;
+  font-size: 14px;
+}
+
+/* Image */
+.app-image {
+  flex: 1 1 40%;
+  text-align: center;
+}
+
+.app-image img {
+  max-width: 650px;   /* Increased from 100% or 300px */
+  width: 110%;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .app-content-wrapper {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .app-text {
+    padding-right: 0;
+  }
+
+  #animatedHeading {
+    justify-content: center;
+  }
+
+  .app-image img {
+    max-width: 300px;
+  }
+}
+
+
+
+  </style>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const heading = document.getElementById("animatedHeading");
+      const para = document.getElementById("animatedParagraph");
+      const listItems = document.querySelectorAll("#animatedList li");
+    
+      const headingText = "ABOUT APP DEVELOPMENT SERVICES";
+      const paraText =
+        "When you engage our expert app development team, you tap into custom mobile app development services that can deftly take your idea and craft a top-tier application ready to grow your customer base and create stickiness that cements your long-term relationship.";
+    
+      const section = document.querySelector(".about-app-section");
+    
+      const observer = new IntersectionObserver(
+        (entries, observer) => {
+          if (entries[0].isIntersecting) {
+            // Heading animation
+            const headingWords = headingText.split(" ");
+            headingWords.forEach((word, index) => {
+              const span = document.createElement("span");
+              span.className = "word";
+              span.textContent = word;
+              span.style.animationDelay = `${index * 0.3}s`;
+              heading.appendChild(span);
+            });
+    
+            // Paragraph animation
+            const paraWords = paraText.split(" ");
+            paraWords.forEach((word, index) => {
+              const span = document.createElement("span");
+              span.textContent = word + " ";
+              span.style.animationDelay = `${(headingWords.length + index) * 0.05}s`;
+              para.appendChild(span);
+            });
+    
+            // List animation
+            listItems.forEach((li, index) => {
+              li.style.animationDelay = `${
+                (headingWords.length + paraWords.length) * 0.05 + index * 0.3
+              }s`;
+              li.classList.add("animated"); // trigger CSS animation
+            });
+    
+            observer.disconnect(); // Run only once
+          }
+        },
+        { threshold: 0.1 } // 10% visibility
+      );
+    
+      observer.observe(section);
+    });
+    </script>
+    
+    
+    
+  
+    
 
 
 
