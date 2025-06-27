@@ -976,6 +976,7 @@
     </script>
 
     <!--CLIENT -->
+    <div class="benefits-outer">
     <section class="benefits-section">
         <!-- Left Fixed Text -->
         <div class="benefits-left">
@@ -1049,25 +1050,39 @@
           </div>
           
       </section>
+    </div>
     
 
       <style>
 
-
+/* Section with background image */
 .benefits-section {
   display: flex;
-  max-width: 1300px;
-  margin: 0 auto;
-  padding: 60px 40px;
-  gap: 50px;
+  gap: 30px;
+  padding: 40px;
   align-items: flex-start;
+margin-top: 60px;
+  background-image: url('assets/img/bg.png'); /* 🔁 your image path */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 20px;
 }
+
+/* Outer container creates spacing AROUND the background image */
+.benefits-outer {
+  padding: 0 60px; /* 🔁 controls how far background stays from screen edge */
+}
+
+
+
+
 
 .benefits-left {
   position: sticky;
   top: 60px;
   flex: 1;
-  max-width: 350px;
+  max-width: 600px;
 }
 
 .benefits-left h4 {
@@ -1076,6 +1091,7 @@
   color: #5b0e2d;
   margin-bottom: 10px;
   text-transform: uppercase;
+  margin-top: 20px;
 }
 
 .benefits-left h1 {
@@ -1087,7 +1103,7 @@
 .benefits-left p {
   font-size: 17px;
   line-height: 1.7;
-  color: #444;
+  color: white;
   text-align: justify;
 }
 
