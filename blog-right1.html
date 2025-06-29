@@ -63,27 +63,89 @@
                                     <li><a href="#">Company <i class="fa-solid fa-angle-down"></i></a>
                                         <ul class="dropdown-padding">
                                             <li><a href="about.html">About Us</a></li>
-                                            <!-- <li><a href="ourteam.html">Our Team</a></li> -->
+                                            
                                             <li><a href="career.html">Careers</a></li>
                                             <li><a href="blog.html">Blogs</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="oursolution.html">Solutions <i class="fa-solid fa-angle-down"></i></a>
-                                        <ul class="dropdown-padding">
-                                            <li><a href="Plans.html">Plans</a></li>
-                                            <li><a href="Brand.html">Brand</a></li>
-                                            <li><a href="Content.html">Content</a></li>
-                                            <li><a href="Build.html">Build</a></li>
-                                            <li><a href="Growth Strategy.html">Growth Strategy</a></li>
-                                            <li><a href="Grow.html">Grow</a></li>
-                                        </ul>
+                                    <li>
+                                      <a href="oursolution.html">Solutions <i class="fa-solid fa-angle-down"></i></a>
+                                      <ul class="dropdown-padding three-column-wrapper">
+                                        <li>
+                                          <div class="column-heading">Brand Marketing </div>
+                                          <a href="#">⁠Brand Strategy & Consulting
+                                          </a>
+                                          <a href="logodesign.html">Logo & Visual Identity Design
+                                          </a>
+                                          <a href="#">Digital Marketing Campaigns
+                                          </a>
+                                          <a href="#">Social Media Management
+                                          </a>
+                                          <a href="#">⁠Content Creation & Copywriting
+                                          </a>
+                                          <a href="#">Influencer & PR Marketing
+                                          </a>
+                                          <a href="#">⁠⁠Rebranding Services
+                                          </a>
+                                          <a href="#">⁠SEO & Performance Optimization
+                                          </a>
+                                        </li>
+                                        <li>
+                                          <div class="column-heading">It Solutions</div>
+                                          <a href="webdev.html">⁠Website Design & Development
+                                          </a>
+                                          <a href="appdev.html">Mobile App Development
+                                          </a>
+                                          <a href="softwaredev.html"> ⁠Custom Software Development
+                                          </a>
+                                          <a href="uiuxdesign.html">UI/UX Design Services
+                                          </a>
+                                          <a href="#"> ⁠E-Commerce Development
+                                          </a>
+                                          
+                                          <a href="maintenance.html"> ⁠Maintenance & Support
+                                          </a>
+                                        </li>
+                                        <li>
+                                          <div class="column-heading">Integrated Tech Marketing</div>
+                                          <a href="#">CRM & Marketing Automation
+                                          </a>
+                                          <a href="#">⁠Data Analytics & Reporting
+                                          </a>
+                                          <a href="#">Marketing Technology Consulting
+                                          </a>
+                                        </li>
+                                      </ul>
                                     </li>
+                                    
                                     <li><a href="#">Industries <i class="fa-solid fa-angle-down"></i></a>
                                         <ul class="dropdown-padding">
-                                            <li><a href="Healthcare.html">Healthcare</a></li>
-                                            <li><a href="Finance.html">Finance</a></li>
-                                            <li><a href="Education.html">Education</a></li>
-                                            <li><a href="E-Commerce.html">E-Commerce</a></li>
+                                          <li>
+                                            <a href="Healthcare.html">Healthcare & Wellness</a>
+                                          </li>
+                                          <li><a href="Finance.html">Retail & E-commerce </a></li>
+                                          <li><a href="Education.html">Real Estate & Infrastructure
+                                          </a></li>
+                                          <li><a href="E-Commerce.html"> Finance & Fintech
+                                          </a></li>
+                                          <li>
+                                            <a href="Healthcare.html">Education & E-learning
+                                            </a>
+                                          </li>
+                                          <li><a href="Finance.html">Food & Beverage
+                                          </a></li>
+                                          <li><a href="Education.html">Transport & Logistics
+                                          </a></li>
+                                          <li><a href="E-Commerce.html"> Corporate & B2B Services
+                                          </a></li>
+                                          <li><a href="E-Commerce.html"> Media, Entertainment & Events
+                                          </a></li>
+                                          <li><a href="E-Commerce.html"> Hospitality & Travel
+                                          </a></li>
+                                          <li><a href="E-Commerce.html"> Technology & Startups
+                                          </a></li>
+                                          <li><a href="E-Commerce.html"> NGOs & Social Enterprises
+                                          </a></li>
                                             
                                         </ul>
                                     </li>
@@ -97,7 +159,7 @@
                                     <li><a href="#">Our Approach <i class="fa-solid fa-angle-down"></i></a>
                                         <ul class="dropdown-padding">
                                             <li><a href="case.html">How We Work</a></li>
-                                            <li><a href="case-single.html">Why Twictech</a></li>
+                                            <li><a href="whytwictech.html">Why Twictech</a></li>
                                             
                                         </ul>
                                     </li>
@@ -130,6 +192,73 @@
     </header>
     <!--=====HEADER END =======-->
     <style>
+        .dropdown-padding.three-column-wrapper {
+          display: flex !important;
+          justify-content: flex-start;         /* Align columns to the start */
+          align-items: flex-start;
+          gap: 16px;                           /* Slightly tighter gap between columns */
+          width: 850px !important;
+          max-width: none !important;
+          min-width: 800px !important;
+          padding: 15px 20px;                  /* Reduced padding around dropdown */
+          background: #fff;
+          position: absolute;
+          top: 100%;
+          left: 0;                             /* Fix alignment: no offset */
+          border-radius: 12px;
+          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+          z-index: 9999;
+        }
+        
+        /* Each column */
+        .dropdown-padding.three-column-wrapper li {
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          padding: 0 10px;                    /* Reduce inner padding */
+          position: relative;
+          gap: 6px;
+          margin-right: 0;                    /* REMOVE extra right margin */
+        }
+        
+        /* Headings */
+        .dropdown-padding .column-heading {
+          font-size: 17px;
+          font-weight: 700;
+          color: #5b0e2d;
+          margin-bottom: 12px;
+          line-height: 1.3;
+          margin-top: 12px;
+        }
+        
+        /* Links */
+        .dropdown-padding li a {
+          text-decoration: none;
+          color: #333;
+          font-size: 13.5px;
+          line-height: 1.4;
+          transition: color 0.2s ease;
+        }
+        
+        .dropdown-padding li a:hover {
+          color: #5b0e2d;
+        }
+        
+        /* Vertical divider lines */
+        .dropdown-padding.three-column-wrapper li:not(:last-child)::after {
+          content: '';
+          position: absolute;
+          top: 5px;
+          right: 0;
+          width: 1.5px;
+          height: calc(100% - 10px);
+          background: #5b0e2d;
+        }
+        
+        
+            </style>
+        
+            <style>
         /* Dropdown base state */
         .header-elements ul ul {
           position: absolute;
@@ -141,7 +270,7 @@
           transform: translateY(-10px); /* start further above for effect */
           transition: opacity 0.6s ease, transform 0.6s ease;
           z-index: 999;
-          min-width: 200px;
+          min-width: 280px;
           padding: 10px 0;
           border-radius: 6px;
           box-shadow: 0 8px 16px rgba(0,0,0,0.1);
@@ -303,8 +432,6 @@
         
             
           </style>
-          
-
     <!--===== MOBILE HEADER STARTS =======-->
     <div class="mobile-header mobile-haeder1 d-block d-lg-none">
         <div class="container-fluid">
@@ -975,46 +1102,24 @@
     </div>
     <!--===== BLOG AREA ENDS =======-->
 
-    <!--===== CTA AREA STARTS =======-->
-    <div class="cta-section-area">
-        <img src="assets/img/bg/cta-bg1.png" alt="" class="cta-bg1 aniamtion-key-2">
-        <img src="assets/img/bg/cta-bg2.png" alt="" class="cta-bg2 aniamtion-key-1">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 m-auto">
-                    <div class="cta-header-area text-center sp4 heading2">
-                        <h2>Ready To Take Your SEO To <br class="d-md-block d-none"> The Next Level</h2>
-                        <p>Effective SEO strategies not only elevate a website's visibility but also drive <br class="d-md-block d-none"> targeted traffic, enhance user experience,</p>
-                        <div class="btn-area text-center">
-                            <a href="contact.html" class="header-btn1">Free Consultation <span><i class="fa-solid fa-arrow-right"></i></span></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--===== CTA AREA ENDS =======-->
-
     <!--===== FOOTER AREA STARTS =======-->
     <div class="footer13-section-area">
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 col-md-6">
                     <div class="footer-logo-area">
-                        <img src="assets/img/logo/Logo.png" alt="Logo" style="width: 150px; height: 30px;">
+                        <img src="assets/img/logo/logo.png" alt="Logo" style="width: 150px; height: 30px;">
 
 
                         <p>By optimizing content, leveraging relevant keywords, and adhering to best practices, businesses can secure prominent position (SEO)</p>
                         <ul>
-                            <li><a href="https://www.facebook.com/twictech
-                                "><i class="fa-brands fa-facebook-f"></i></a></li>
-                            <li><a href="https://www.instagram.com/twictech/
-                                "><i class="fa-brands fa-instagram"></i></a></li>
-                            <li><a href="https://www.linkedin.com/company/twictech"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                            <li><a href="https://x.com/twictech2"><i class="fa-brands fa-twitter"></i></a></li>
-                            <li><a href="https://in.pinterest.com/twictech/
-                                "><i class="fa-brands fa-pinterest-p"></i></a></li>
-                        </ul>
+                            <li><a href="https://www.facebook.com/twictech" style="color: #5b0e2d;"><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a href="https://www.instagram.com/twictech/" style="color: #5b0e2d;"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="https://www.linkedin.com/company/twictech" style="color: #5b0e2d;"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                            <li><a href="https://x.com/twictech2" style="color: #5b0e2d;"><i class="fa-brands fa-twitter"></i></a></li>
+                            <!-- <li><a href="https://in.pinterest.com/twictech/" style="color: #5b0e2d;"><i class="fa-brands fa-pinterest-p"></i></a></li> -->
+                          </ul>
+                          
                     </div>
                 </div>
 
@@ -1037,22 +1142,26 @@
                         <h3>Get in touch</h3>
                         <ul>
                             <li><a href="mailto"><img src="assets/img/icons/email.svg" alt=""><span>Infoseoc@gmail.com</span></a></li>
-                            <li><a href="#"><img src="assets/img/icons/location.svg" alt=""><span>8708 Technology Forest <br class="d-lg-block d-none"> Pl Suite 125 -G, The <br class="d-lg-block d-none"> Woodlands, TX 773</span></a></li>
-                            <li><a href="tel:123-456-7890"><img src="assets/img/icons/phone.svg" alt=""><span>123-456-7890</span></a></li>
+                            <li><a href="#"><img src="assets/img/icons/location.svg" alt=""><span>Noida Sector 62  </span></a></li>
+                            <!-- <li><a href="#"><img src="assets/img/icons/location.svg" alt=""><span>Noida Sector 62 <br class="d-lg-block d-none"> Pl Suite 125 -G, The <br class="d-lg-block d-none"> Woodlands, TX 773</span></a></li> -->
+                            <li><a href="tel:123-456-7890"><img src="assets/img/icons/phone.svg" alt=""><span>+91 8077556082</span></a></li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
+                <!-- <div class="col-lg-3 col-md-6">
                     <div class="footer-logo-area3">
                         <h3>Subscribe Our Newsletter</h3>
 
                         <form action="#">
                             <input type="text" placeholder="Enter Your email">
                             <div class="space16"></div>
-                            <button class="header-btn21"> Subscribe <span><i class="fa-solid fa-arrow-right"></i></span></button>
+                            <button class="header-btn111">
+                                Subscribe <span><i class="fa-solid fa-arrow-right" style="color: #F7E5DA;"></i></span>
+                              </button>
+                              
                         </form>
                     </div>
-                </div>
+                </div> -->
             </div>
             <div class="space50 d-lg-block d-none"></div>
             <div class="space40 d-lg-none d-block"></div>
@@ -1072,6 +1181,21 @@
         </div>
     </div>
     <!--===== FOOTER AREA ENDS =======-->
+
+    <style>
+        .footer-logo-area1 ul li a:hover,
+        .footer-logo-area2 ul li a:hover,
+        .footer-logo-area2 ul li a:hover span {
+          color: #832B00 !important;
+          text-decoration: none;
+        }
+      
+        .footer-logo-area1 ul li a,
+        .footer-logo-area2 ul li a span {
+          transition: color 0.3s ease;
+        }
+      </style>
+      
 
     <!--===== JS SCRIPT LINK =======-->
     <script src="assets/js/plugins/bootstrap.min.js"></script>
