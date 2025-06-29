@@ -628,18 +628,29 @@ color: inherit !important;
     <div class="benefits">
       <div class="column column-left">
         <div class="benefit-box">
-          <img src="https://img.icons8.com/color/96/positive-dynamic.png" alt="Positive Work Culture" />
-          <p><strong>Positive Work Culture</strong></p>
+          <img src="https://img.icons8.com/ios-filled/50/5b0e2d/merge-git.png" alt="Dual Industry Exposure" />
+
+          <p><strong>Dual Industry Exposure
+          </strong></p>
+        </div>
+        <div class="benefit-box">
+          <img src="https://img.icons8.com/ios-filled/50/2c5898/collaboration.png" alt="Collaborative Culture" />
+
+          <p><strong>Collaborative Culture
+          </strong></p>
         </div>
       </div>
+      
       <div class="column column-right">
         <div class="benefit-box">
-          <img src="https://img.icons8.com/color/96/time.png" alt="Long-Term Career Paths" />
-          <p><strong>Long-Term<br>Career Paths</strong></p>
+          <img src="https://img.icons8.com/ios-filled/50/3b813c/personal-growth.png" alt="Real Growth Opportunities" />
+          <p><strong>Real Growth Opportunities</strong></p>
         </div>
+        
         <div class="benefit-box">
-          <img src="https://img.icons8.com/color/96/conference-call.png" alt="People-Oriented Leadership" />
-          <p><strong>People-Oriented<br>Leadership</strong></p>
+          <img src="https://img.icons8.com/ios-filled/50/f18700/balance.png" alt="Work-Life Harmony" />
+
+          <p><strong>Work-Life Harmony</strong></p>
         </div>
       </div>
       
@@ -674,17 +685,21 @@ color: inherit !important;
     }
     
     .column-left {
-      display: flex;
-      align-items: center; /* Align center vertically */
-      margin-right: 30px;
-    }
+  display: flex;
+  flex-direction: column; /* new: stack benefit-boxes vertically */
+  align-items: center;
+  margin-right: 40px;
+  gap: 40px; /* spacing between boxes */
+}
+
     
-    .column-right {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      gap: 20px;
-    }
+.column-right {
+  display: flex;
+  flex-direction: column;
+  gap: 40px; /* consistent spacing */
+  /* Removed: justify-content: space-between */
+}
+
     
     .benefit-box {
       background: #fff;
@@ -748,22 +763,30 @@ color: inherit !important;
         
         <div class="job-listings">
           <div class="job-box">
-            <img src="https://img.icons8.com/ios-filled/50/2c5898/hashtag-large.png" alt="Social Media" />
-            <span>Organic Social<br>Media Strategist</span>
+            <!-- Digital Marketing -->
+            <img src="https://img.icons8.com/ios-filled/50/2c5898/internet.png" alt="Digital Marketing" />
+            <span>Digital Marketing</span>
           </div>
+        
           <div class="job-box">
-            <img src="https://img.icons8.com/ios-filled/50/f18700/search--v1.png" alt="SEO" />
-            <span>SEO Strategist</span>
+            <!-- Front-End Developer -->
+            <img src="https://img.icons8.com/ios-filled/50/f18700/source-code.png" alt="Front-End Developer" />
+            <span>Front-End Developer</span>
           </div>
+        
           <div class="job-box">
-            <img src="https://img.icons8.com/ios-filled/50/2b7a8b/user-male-circle.png" alt="Account Manager" />
+            <!-- Account Manager -->
+            <img src="https://img.icons8.com/ios-filled/50/2b7a8b/businessman.png" alt="Account Manager" />
             <span>Account Manager</span>
           </div>
+        
           <div class="job-box">
-            <img src="https://img.icons8.com/ios-filled/50/2c5898/megaphone.png" alt="Marketing Consultant" />
-            <span>Marketing Consultant</span>
+            <!-- Human Resources -->
+            <img src="https://img.icons8.com/ios-filled/50/2c5898/conference-call.png" alt="Human Resources" />
+            <span>Human Resources</span>
           </div>
         </div>
+        
       
         <button class="resume-btn" onclick="sendResume()">SEND US YOUR RESUME NOW</button>
       </div>
@@ -834,48 +857,59 @@ color: inherit !important;
     
     <!--OUR CULTURE-->
     <div class="culture-section">
-        <h2>Our Culture</h2>
-        <h4>It Is Who We Are and How We Work!</h4>
+        <h2>Where Passion Meets Purpose
+        </h2>
+        <!-- <h4>It Is Who We Are and How We Work!</h4> -->
         <p class="culture-intro">
-          Thrive is proud to rank among the Inc. 5000 fastest-growing companies in the United States for seven consecutive years.
-          Since the Inc. 5000 List started in 1982, only 1.5% of companies have made the list seven times!
-          But our commitment to success doesn’t stop here. We continuously invest in our employees to ensure personal and operational excellence.
+          At TwicTech, work isn’t just about tasks — it’s about creativity, collaboration, and continuous growth. We believe in building a workplace where people love what they do, feel valued for who they are, and are inspired to bring their best every day.
         </p>
       
         <div class="culture-grid">
-            <div class="culture-box">
-                <i class="fas fa-hand-fist" style="font-size: 50px; color: #2c5898;margin-bottom: 15px; "></i>
-                <h5>EMPOWERMENT</h5>
-                <p>We encourage our employees to reach beyond their daily responsibilities, explore their interests and stretch their capabilities.</p>
-              </div>
-              
+          <!-- Open & Transparent Culture -->
           <div class="culture-box">
-            <img src="https://img.icons8.com/ios-filled/50/3c8190/facebook-like.png" alt="Appreciation" />
-            <h5>APPRECIATION</h5>
-            <p>We recognize and celebrate the accomplishments and hard work of our team members, as well as how they elevate others to reach their desired goals.</p>
+            <img src="https://img.icons8.com/ios-filled/50/2c5898/idea-sharing.png" alt="Open Culture" />
+            <h5>Open & Transparent Culture</h5>
+            <p>We promote a flat hierarchy where every voice is heard, ideas are respected, and innovation is encouraged.</p>
           </div>
+        
+          <!-- Continuous Learning Culture -->
           <div class="culture-box">
-            <img src="https://img.icons8.com/ios-filled/50/2e7d6b/conference-call.png" alt="Teamwork" />
-            <h5>TEAMWORK</h5>
-            <p>Our collaboration is based on empathy, support and trust in each other’s expertise, skills, opinion and good intentions.</p>
+            <img src="https://img.icons8.com/ios-filled/50/3c8190/graduation-cap.png" alt="Continuous Learning" />
+            <h5>Continuous Learning Culture</h5>
+            <p>Access internal workshops, masterclasses, and sponsored certifications to upskill in marketing, tech, and leadership.</p>
           </div>
+        
+          <!-- Impactful Work -->
           <div class="culture-box">
-            <img src="https://img.icons8.com/ios-filled/50/3b813c/process.png" alt="Integrity" />
-            <h5>INTEGRITY</h5>
-            <p>We act fairly towards our colleagues, clients and local communities at all times.</p>
+            <img src="https://img.icons8.com/ios-filled/50/2e7d6b/task.png" alt="Impactful Work" />
+            <h5>Impactful Work</h5>
+            <p>Work on real projects for national and global clients that challenge your thinking and shape industries.</p>
           </div>
+
+        
+          <!-- Flexible Work Style -->
           <div class="culture-box">
-            <img src="https://img.icons8.com/ios-filled/50/7a943c/scales.png" alt="Nurturing" />
-            <h5>NURTURING</h5>
-            <p>We encourage and support all our employees with their personal and professional development.</p>
+            <img src="https://img.icons8.com/ios-filled/50/3b813c/clock.png" alt="Flexible Work Style" />
+            <h5>Flexible Work Style</h5>
+            <p>Remote-friendly culture, hybrid models, and flexible hours — we understand that balance boosts performance.</p>
           </div>
+        
+          <!-- Fun Fridays & Team Engagement -->
           <div class="culture-box">
-            <img src="https://img.icons8.com/ios-filled/50/f18700/handshake-heart.png" alt="Balance" />
-            <h5>BALANCE</h5>
-            <p>We prioritize work-life balance to maintain a healthier, more productive workforce.</p>
+            <img src="https://img.icons8.com/ios-filled/50/7a943c/confetti.png" alt="Team Engagement" />
+            <h5>Fun Fridays & Team Engagement</h5>
+            <p>Game days, idea jams, birthday celebrations, and virtual hangouts — fun is a part of the job.</p>
+          </div>
+
+          <!-- Wellness & Well-being -->
+          <div class="culture-box">
+            <img src="https://img.icons8.com/ios-filled/50/f18700/meditation-guru.png" alt="Wellness" />
+            <h5>Wellness & Well-being</h5>
+            <p>Mental health support, stress-free zones, and access to wellness initiatives help you stay mentally strong and motivated.</p>
           </div>
         </div>
-      </div>
+        
+    </div>
 
       <style>
         .culture-section {
@@ -889,6 +923,7 @@ color: inherit !important;
           font-size: 36px;
           color: #2c2c2c;
           margin-bottom: 5px;
+          font-weight: 700;
         }
         
         .culture-section h4 {
