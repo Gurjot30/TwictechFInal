@@ -587,7 +587,646 @@
 </div>
 <!--===== MOBILE HEADER STARTS =======-->
 
+<!--Hero section-->
 
+<!-- HERO SECTION -->
+<section class="hero">
+    <div class="hero-content">
+      <h1>Custom Software <br>Solutions</h1>
+      <p>
+        Our custom software development services are designed to allow you to focus on your
+        business, while we develop your ideal product. Anything and everything you want – we deliver.
+      </p>
+      <a href="#contact" class="btn-talk">LET'S TALK</a>
+      <div class="partner-logos">
+        <img src="assets/img/microsoft.png" alt="Microsoft" />
+        <img src="assets/img/aws.png" alt="AWS" />
+        <img src="assets/img/harness.png" alt="Harness" />
+        <img src="assets/img/inc5000.png" alt="Inc 5000" />
+        <img src="assets/img/iso9001.png" alt="ISO 9001" />
+        <img src="assets/img/soc2.png" alt="SOC 2" />
+      </div>
+    </div>
+    <div class="hero-bg"></div>
+  </section>
+
+  <style>
+ .hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 170px 100px;
+  background: url('assets/img/softwaredev.jpg') no-repeat center center / cover;
+  overflow: hidden;
+  color: white;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(224, 206, 206, 0.5); /* dark overlay */
+  z-index: 1;
+}
+
+.hero-content {
+  max-width: 600px;
+  z-index: 2;
+  position: relative;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.hero-content p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: black;
+  margin-bottom: 30px;
+}
+
+.btn-talk {
+  display: inline-block;
+  background-color: #5b0e2d;
+  color: white;
+  font-weight: bold;
+  padding: 14px 28px;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: 0.3s;
+  z-index: 2;
+  position: relative;
+}
+
+.btn-talk:hover {
+  background-color: #5b0e2d;
+  color: white;
+}
+
+.partner-logos {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  z-index: 2;
+  position: relative;
+}
+
+.partner-logos img {
+  max-height: 50px;
+  object-fit: contain;
+  background: white;
+  padding: 5px;
+  border-radius: 8px;
+}
+
+@media (max-width: 991px) {
+  .hero {
+    flex-direction: column;
+    padding: 60px 30px;
+    text-align: center;
+  }
+
+  .hero::before {
+    background: rgba(0, 0, 0, 0.6);
+  }
+
+  .hero-content h1 {
+    font-size: 36px;
+  }
+
+  .partner-logos {
+    justify-content: center;
+  }
+}
+
+
+  </style>
+
+<!--White papers-->
+<section class="whitepapers-section">
+    <h2 class="section-title">White papers</h2>
+    <div class="whitepapers-container">
+      <!-- Card 1 -->
+      <div class="whitepaper-card">
+        <div class="card-image">
+          <div class="tag">
+            <span class="label">WHITEPAPER</span>
+            <img src="https://img.icons8.com/ios/50/document--v1.png" alt="doc" />
+          </div>
+          <div class="tag-title">BEST PRACTICES FOR<br>SOFTWARE DEVELOPMENT</div>
+          <img src="assets/img/all-images/blog-img8.png" alt="Software Dev" class="bg-img" />
+        </div>
+        <div class="card-text">
+          <p>Best Practices For<br />Software<br />Development</p>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="whitepaper-card">
+        <div class="card-image">
+          <div class="tag">
+            <span class="label">WHITEPAPER</span>
+            <img src="https://img.icons8.com/ios/50/document--v1.png" alt="doc" />
+          </div>
+          <div class="tag-title">BEST PRACTICES FOR<br>IoT APP DEVELOPMENT</div>
+          <img src="assets/img/all-images/blog-img2.png" alt="IoT Dev" class="bg-img" />
+        </div>
+        <div class="card-text">
+          <p>IoT App<br />Development Best<br />Practices</p>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="whitepaper-card">
+        <div class="card-image">
+          <div class="tag">
+            <span class="label">WHITEPAPER</span>
+            <img src="https://img.icons8.com/ios/50/document--v1.png" alt="doc" />
+          </div>
+          <div class="tag-title">BEST PRACTICES FOR<br>SAAS APP DEVELOPMENT</div>
+          <img src="assets/img/about6.avif" alt="SaaS Dev" class="bg-img" />
+        </div>
+        <div class="card-text">
+          <p>SaaS Application<br />Development Best<br />Practices</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <style>
+    body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background: #fff;
+  color: #00334e;
+}
+
+.whitepapers-section {
+  padding: 40px 60px;
+}
+
+.section-title {
+  font-size: 40px;
+  font-weight: 600;
+  color: #0c2d48;
+  margin-bottom: 40px;
+}
+
+.whitepapers-container {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap; /* allow wrapping on smaller screens */
+  justify-content: center;
+}
+
+
+.whitepaper-card {
+  display: flex;
+  background: #fff;
+  border-radius: 25px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  flex: 1 1 300px;       /* flexible size */
+  max-width: 400px;      /* limit max width */
+  min-width: 300px;      /* prevent shrinking too much */
+  transition: transform 0.3s ease;
+}
+
+.whitepaper-card:hover {
+  transform: translateY(-5px);
+}
+
+.card-image {
+  position: relative;
+  width: 50%;
+  overflow: hidden;
+}
+
+.bg-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.tag {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #fec837;
+  padding: 10px 15px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  font-weight: bold;
+  color: #00334e;
+}
+
+.tag img {
+  width: 20px;
+  height: 20px;
+}
+
+.tag-title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #00334e;
+  color: white;
+  padding: 10px 15px;
+  font-size: 13px;
+  font-weight: bold;
+  width: 100%;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  line-height: 1.4;
+}
+
+.card-text {
+  padding: 25px 20px;
+  font-size: 18px;
+  color: #00334e;
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+
+  </style>
+
+  <!--WHY WORK WITH US-->
+
+  <section class="who-we-work-with">
+    <div class="section-header">
+      <p class="tagline">&lt; WHO WE WORK WITH /&gt;</p>
+      <h2>Customized Software for Any Company <br> Size and Type</h2>
+    </div>
+  
+    <div class="work-grid">
+      <div class="left">
+        <div class="work-box">
+          <h3>Business to Business</h3>
+          <p>We support B2B companies with software product development services to streamline their partnerships through technology adoption.</p>
+        </div>
+        <div class="work-box">
+          <h3>Business to Customers</h3>
+          <p>For the B2C sector, we develop customer-facing solutions like <a href="#">eCommerce platforms</a>, on-demand apps, virtual assistants, self-service portals, and more.</p>
+        </div>
+      </div>
+  
+      <div class="center-image">
+        <img src="assets/img/whywork.jpg" alt="Global Collaboration" />
+      </div>
+  
+      <div class="right">
+        <div class="work-box">
+          <h3>Business to Employees</h3>
+          <p>We’ll help you boost your team productivity, automate business processes, and address any other needs by implementing software for your employees.</p>
+        </div>
+        <div class="work-box">
+          <h3>Software Development Companies</h3>
+          <p>If you’re delivering a tech project but require some skills or need to accelerate the implementation — we can become a team to outsource your work to.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <style>
+    .who-we-work-with {
+  padding: 100px 120px;
+  background: #fff;
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+  color: #1e3d8f;
+}
+
+.section-header .tagline {
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.section-header h2 {
+  font-size: 42px;
+  font-weight: 700;
+  color: #1e3d8f;
+  margin-bottom: 50px;
+}
+
+.work-grid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.left,
+.right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.work-box h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1e3d8f;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.work-box p {
+  font-size: 16px;
+  color: #444;
+  text-align: left;
+  border-bottom: 1px solid #dce3f1;
+  padding-bottom: 20px;
+}
+
+.work-box p a {
+  color: #1e3d8f;
+  text-decoration: underline;
+}
+
+.center-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 250px;
+}
+
+.center-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 991px) {
+  .work-grid {
+    flex-direction: column;
+  }
+
+  .left, .right {
+    align-items: center;
+  }
+
+  .work-box h3,
+  .work-box p {
+    text-align: center;
+  }
+}
+
+  </style>
+
+  <!--QUIZ SECTION-->
+
+  <section class="quiz-section">
+    <div class="quiz-card">
+      <div class="quiz-text">
+        <h2>Product Compass Quiz</h2>
+        <p>
+          Whether you like to play it safe and calculated,<br />
+          aggressive and experimental, or both, choose a strategy<br />
+          that matches your short-, mid-, and long-term product<br />
+          goals.
+        </p>
+        <a href="#" class="quiz-btn">Take the quiz <span>→</span></a>
+      </div>
+      <div class="quiz-image">
+        <img src="assets/img/quiz.jpg" alt="Quiz Illustration" />
+      </div>
+    </div>
+    
+  </section>
+
+  <style>
+    .quiz-section {
+  display: flex;
+  justify-content: center;
+  padding: 80px 20px;
+  background-color: #f9f9fc;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.quiz-card {
+  display: flex;
+  max-width: 1100px;
+  width: 100%;
+  background-color: #f2f1f6;
+  border-radius: 28px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+}
+
+.quiz-text {
+  flex: 1;
+  padding: 60px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.quiz-text h2 {
+    margin-top: 10px;
+  font-size: 37px;
+  color: #0d0c1d;
+  margin-bottom: 24px;
+  font-weight: 600;
+}
+
+.quiz-text p {
+  font-size: 20px;
+  line-height: 1.6;
+  color: #0d0c1d;
+  margin-bottom: 32px;
+  margin-top: 15px;
+}
+
+.quiz-btn {
+  display: inline-flex;
+  align-items: center;
+  background-color: #5b0e2d;
+  color: white;
+  padding: 8px 16px;        /* smaller padding */
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  width: 160px;              /* ensures it only wraps content */
+  min-width: unset;         /* just in case */
+  transition: background 0.3s ease;
+  
+}
+
+.quiz-btn span {
+  margin-left: 6px;
+  font-size: 14px;
+}
+
+
+.quiz-btn:hover {
+  color: white;
+}
+
+.quiz-image {
+  flex: 1;
+}
+
+.quiz-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+  </style>
+
+  <!---guide section-->
+
+  <section class="guides-section">
+    <div class="guides-header">
+      <h2>Guides</h2>
+      <a href="#" class="view-all-btn">View all guides</a>
+    </div>
+  
+    <div class="guides-grid">
+      <div class="guide-card red">
+        <p class="guide-tag">Intro to Development</p>
+        <h3>Web App Development</h3>
+        <div class="guide-icon">⚙️</div>
+      </div>
+      <div class="guide-card purple">
+        <p class="guide-tag">Tips for Mobile Development</p>
+        <h3>iOS App Development Cost</h3>
+        <div class="guide-icon">📱</div>
+      </div>
+      <div class="guide-card dark-purple">
+        <p class="guide-tag">Implementing UX Design</p>
+        <h3>SaaS UX Design Best Practices</h3>
+        <div class="guide-icon">📦</div>
+      </div>
+      <div class="guide-card purple">
+        <p class="guide-tag">Tips for Mobile Development</p>
+        <h3>Mobile App Development Cost</h3>
+        <div class="guide-icon">📱</div>
+      </div>
+    </div>
+  </section>
+
+  <style>
+    .guides-section {
+  padding: 90px 80px;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff;
+}
+
+.guides-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.guides-header h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #0d0c1d;
+  margin-left: 30px;
+}
+
+.view-all-btn {
+  border: 2px solid #0d0c1d;
+  padding: 10px 24px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 500;
+  color: #0d0c1d;
+  font-size: 16px;
+  transition: background 0.3s ease, color 0.3s ease;
+  margin-right: 30px;
+}
+
+.view-all-btn:hover {
+  background-color: #0d0c1d;
+  color: white;
+}
+
+.guides-grid {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.guide-card {
+  flex: 1 1 220px;
+  min-width: 240px;
+  max-width: 260px;
+  background-color: #ccc;
+  color: white;
+  border-radius: 20px 20px 0 20px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 280px;
+  position: relative;
+  overflow: hidden;
+  margin-left: 30px;
+  margin-right: 10px;
+}
+
+.guide-card h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 10px;
+  line-height: 1.4;
+}
+
+.guide-tag {
+  font-size: 14px;
+  color: white;
+  opacity: 0.9;
+}
+
+.guide-icon {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  font-size: 64px;
+  opacity: 0.2;
+}
+
+/* Color Variants */
+.red {
+  background-color: #f93568;
+}
+
+.purple {
+  background-color: #8a5cfb;
+}
+
+.dark-purple {
+  background-color: #4c1ce0;
+}
+
+@media (max-width: 768px) {
+  .guides-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+  </style>
 
 
     <!--===== FOOTER AREA STARTS =======-->
