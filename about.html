@@ -397,11 +397,10 @@
 <section class="team-section">
     <div class="overlay">
       <div class="content">
-        <h1>GET THE RIGHT PEOPLE,<br>SKILLS, AND TOOLS – ALL THE TIME</h1>
+        <h1>Empowering Brands.<br>Elevating Technology.
+        </h1>
         <p>
-          Disruptive Advertising is the best performance marketing agency for authentic brands and marketers.
-          Because we only work with brands and people we believe in, you get the hearts and minds of our marketers to
-          achieve breakthrough results for your business. We will only onboard 10 new clients this month, see if you’re one of them.
+          Welcome to TwicTech, where creativity meets technology to shape the future of businesses. We are a dynamic firm offering Brand Marketing Solutions and IT Services under one roof — empowering our clients to thrive in a digitally driven world.
         </p>
         <!-- <a href="#" class="cta-button">SEE IF YOU QUALIFY</a> -->
       </div>
@@ -473,129 +472,496 @@
     }
   </style>
 
-  <!--FEATURE SECTION ABOUT US PAGE-->
+<section class="intro-section">
+  <div class="image-grid">
+    <div class="clip top-left"></div>
+    <div class="clip top-right"></div>
+    <div class="clip bottom-left"></div>
+    <div class="clip bottom-right"></div>
+  </div>
 
-  <section class="features-section">
-    <div class="features-container">
+  <div class="right-content">
+    <div class="tag">WHO ARE WE?</div>
+    <h1>WE NARRATE THE <br> DISTINCTIVE & STORIES <br> SOME BRAND WITH SHAPING <br> THEIR TARGET.</h1>
 
-      <div class="feature-box">
-        <img src="assets/img/about1-removebg-preview.png" alt="Authenticity">
-        <h3>Authenticity</h3>
-        <p>We work exclusively with brands and people we believe in, ensuring our hearts and minds are fully committed to your success. Authenticity is at the core of everything we do, creating a win-win-win mindset that fosters value, growth, and sustainability.</p>
-      </div>
+   
 
-      <div class="feature-box">
-        <img src="assets/img/about2-removebg-preview.png" alt="Top Talent">
-        <h3>Top Talent</h3>
-        <p>Our team comprises top-notch marketers who are passionate about what they do. Through our Disruptive University program, we continuously develop and retain talent that can drive real impact for your business.</p>
-      </div>
-
-      <div class="feature-box">
-        <img src="assets/img/about3-removebg-preview.png" alt="Strategy">
-        <h3>Strategy</h3>
-        <p>We align your business goals with the right marketing strategy, ensuring every effort drives success. Our Disruptive Difference process clarifies your objectives & customer journey, then leverages data-informed decisions to help you win with each marketing channel.</p>
-      </div>
-
-      <div class="feature-box">
-        <img src="assets/img/about4-removebg-preview.png" alt="Breakthroughs">
-        <h3>Breakthroughs</h3>
-        <p>We leverage the right people, tools, and technology to deliver breakthrough results. Beyond best practices and playbooks, our experts constantly innovate and find new ways to win.</p>
-      </div>
-
-      <div class="feature-box">
-        <img src="assets/img/about5-removebg-preview.png" alt="Exclusivity">
-        <h3>Exclusivity</h3>
-        <p>As a Disruptive partner, you gain access to exclusive relationships, content, and community. This includes collaboration with industry leaders, transformational content through Disruptive University, and opportunities to amplify your community impact through Disruptive Caring.</p>
-      </div>
+    <div class="description">
+      <p>TwicTech is a forward-thinking company built with a passion for innovation, storytelling, and digital transformation. With roots in branding and expertise in modern technology, we are committed to delivering results that drive visibility, growth, and impact. From startups to enterprises, we partner with organizations to build meaningful brands and implement cutting-edge digital solutions.</p>
 
     </div>
 
-    <!-- <a href="#" class="cta-button">Book an Appointment</a> -->
-  </section>
+    
+  </div>
+</section>
 
-  <script>
-    // Optional JS if you want to track button clicks
-    document.querySelector('.cta-button').addEventListener('click', () => {
-      alert('Redirecting to booking page...');
-      // window.location.href = 'booking.html'; // use this in real case
-    });
-  </script>
 
 <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #fff;
-    }
 
-    .features-section {
-      text-align: center;
-      padding: 60px 40px;
-    }
+.intro-section {
+  display: flex;
+  padding: 90px 80px;
+  gap: 60px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-left: 70px;
+}
 
-    .features-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 40px;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
+.image-grid {
+  width: 400px;
+  height: 400px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  overflow: hidden;
+}
 
-    .feature-box {
-      flex: 1 1 200px;
-      max-width: 250px;
-    }
+.clip {
+  background-image: url('assets/img/all-images/blog-img2.png'); /* Your single image path */
+  background-size: 200% 200%; /* Because we're using each quadrant */
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
 
-    .feature-box img {
-      height: 150px;
-      margin-bottom: 20px;
-    }
+/* TOP LEFT */
+.top-left {
+  border-top-left-radius: 200px;
+  background-position: 0% 0%;
+}
 
-    .feature-box h3 {
-      color: #5b0e2d;
-      font-weight: 600;
-      font-size: 20px;
-      margin-bottom: 15px;
-    }
+/* TOP RIGHT */
+.top-right {
+  border-top-right-radius: 200px;
+  background-position: 100% 0%;
+}
 
-    .feature-box p {
-      font-size: 15px;
-      color: #000;
-      line-height: 1.6;
-    }
+/* BOTTOM LEFT */
+.bottom-left {
+  border-bottom-left-radius: 200px;
+  background-position: 0% 100%;
+}
 
-    .cta-button {
-      margin-top: 40px;
-      display: inline-block;
-      background: linear-gradient(135deg,#5b0e2d, #E84266, #FF7E5F);
-      color: white;
-      padding: 14px 30px;
-      text-decoration: none;
-      font-weight: bold;
-      text-transform: uppercase;
-      border-radius: 2px;
-      font-size: 14px;
-      letter-spacing: 1px;
-    }
+/* BOTTOM RIGHT */
+.bottom-right {
+  border-bottom-right-radius: 200px;
+  background-position: 100% 100%;
+}
 
-    .cta-button:hover {
-        background: linear-gradient(135deg,#5b0e2d, #E84266, #FF7E5F);
-        color: white;
-    }
+/* Right Content Styling */
+.right-content {
+  flex: 1;
+  max-width: 700px;
+}
 
-    @media (max-width: 768px) {
-      .features-container {
-        flex-direction: column;
-        align-items: center;
-      }
+.tag {
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: 6px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
 
-      .feature-box {
-        max-width: 80%;
-      }
-    }
-  </style>
+.right-content h1 {
+  font-size: 40px;
+  line-height: 1.4;
+  font-weight: 800;
+  margin-bottom: 30px;
+}
+
+.description p {
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+
+
+</style>
+
+<!--WHY CHOOSE US-->
+
+<section class="why-choose-us">
+  <div class="left-content">
+    <span class="subheading1">Why Choose TwicTech?
+    </span>
+    <!-- <h2>Why Choose TwicTech?
+    </h2> -->
+    <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> -->
+    
+    <div class="image-container">
+      <img src="https://img.freepik.com/free-photo/young-businessman-talking-phone-office_1303-22214.jpg" alt="Businessman" />
+      <div class="border-outline"></div>
+    </div>
+  </div>
+
+  <div class="right-content">
+    <div class="guarantee-grid">
+      <!-- Repeatable Item -->
+      <div class="guarantee-item">
+        <div class="wave-icon">
+          <svg viewBox="0 0 100 50" preserveAspectRatio="none">
+            <path d="M0,50 Q50,0 100,50 L100,0 L0,0 Z" fill="#FDEEEF"/>
+          </svg>
+          <span class="percent">%</span>
+        </div>
+        <h3>Integrated Services:</h3>
+        <p>One destination for both brand marketing and IT development
+        </p>
+      </div>
+
+      <div class="guarantee-item">
+        <div class="wave-icon">
+          <svg viewBox="0 0 100 50" preserveAspectRatio="none">
+            <path d="M0,50 Q50,0 100,50 L100,0 L0,0 Z" fill="#FDEEEF"/>
+          </svg>
+          <span class="percent">%</span>
+        </div>
+        <h3>Creative + Technical Team:</h3>
+        <p>A hybrid team of marketers, designers, developers, and strategists
+        </p>
+      </div>
+
+      <div class="guarantee-item">
+        <div class="wave-icon">
+          <svg viewBox="0 0 100 50" preserveAspectRatio="none">
+            <path d="M0,50 Q50,0 100,50 L100,0 L0,0 Z" fill="#FDEEEF"/>
+          </svg>
+          <span class="percent">%</span>
+        </div>
+        <h3>Client-First Approach:</h3>
+        <p>We listen, we care, we deliver
+        </p>
+      </div>
+
+      <div class="guarantee-item">
+        <div class="wave-icon">
+          <svg viewBox="0 0 100 50" preserveAspectRatio="none">
+            <path d="M0,50 Q50,0 100,50 L100,0 L0,0 Z" fill="#FDEEEF"/>
+          </svg>
+          <span class="percent">%</span>
+        </div>
+        <h3>Scalable Solutions:</h3>
+        <p>From local startups to national brands
+        </p>
+      </div>
+      
+
+      <div class="guarantee-item">
+        <div class="wave-icon">
+          <svg viewBox="0 0 100 50" preserveAspectRatio="none">
+            <path d="M0,50 Q50,0 100,50 L100,0 L0,0 Z" fill="#FDEEEF"/>
+          </svg>
+          <span class="percent">%</span>
+        </div>
+        <h3>Innovation-Driven:</h3>
+        <p>We stay ahead of trends to keep you ahead in business</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #fff;
+  color: #111;
+}
+
+.why-choose-us {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 70px 40px;
+  max-width: 1400px;
+  margin: auto;
+  align-items: center;
+  gap: 60px;
+}
+
+.left-content {
+  flex: 1;
+  min-width: 300px;
+  margin-left: 50px;
+}
+
+.subheading1 {
+  color: #5b0e2d;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+
+.left-content h2 {
+  font-size: 32px;
+  margin: 0 0 15px;
+}
+
+.left-content p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Image: increased size */
+.image-container {
+  margin-top: 40px;
+  position: relative;
+  width: 500px;         /* Increased width */
+  height: 320px;        /* Increased height */
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+}
+
+.border-outline {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-left: 5px solid #E84266;
+  border-bottom: 5px solid #E84266;
+  pointer-events: none;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+/* Grid layout: center the 5th item */
+.guarantee-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  justify-items: center;
+
+}
+
+/* Center the last item when total is 5 */
+.guarantee-item:nth-child(5) {
+  grid-column: 1 / span 2;
+  justify-self: center;
+  max-width: 300px;
+}
+
+.guarantee-item {
+  position: relative;
+  padding-top: 50px;
+  text-align: center;
+  background: transparent;
+}
+
+
+
+.right-content {
+  flex: 1.2;
+  
+  min-width: 350px;
+}
+
+
+.wave-icon {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 50px;
+}
+
+.wave-icon svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.percent {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #E84266;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.guarantee-item h3 {
+  font-size: 18px;
+  margin: 20px 0 10px;
+  color: #111;
+  font-weight: 700;
+}
+
+.guarantee-item p {
+  font-size: 14px;
+  color: #444;
+  line-height: 1.5;
+}
+
+</style>
+
+  <!-- FEATURE SECTION ABOUT US PAGE -->
+  <section class="features-section">
+    <div class="section-heading">
+      <h2>Our Clients</h2>
+      <p>We proudly serve businesses across industries including:</p>
+    </div>
+  
+    <!-- First Row (4 boxes) -->
+    <div class="features-row">
+      <div class="feature-box">
+        <svg width="110" height="110" fill="#FF7E5F" viewBox="0 0 24 24"><path d="M3 6h18l-1.5 9h-15L3 6zm2 2l1 6h12l1-6H5z"/><path d="M7 16a2 2 0 110 4 2 2 0 010-4zm10 0a2 2 0 110 4 2 2 0 010-4z"/></svg>
+
+        <h3>Retail & E-commerce
+        </h3>
+        <!-- <p>We work exclusively with brands and people we believe in, ensuring our hearts and minds are fully committed to your success.</p> -->
+      </div>
+  
+      <div class="feature-box">
+        <svg width="110" height="110" fill="#FF7E5F" viewBox="0 0 24 24"><path d="M21 8h-3V5a2 2 0 00-2-2H8a2 2 0 00-2 2v3H3a2 2 0 00-2 2v9a2 2 0 002 2h18a2 2 0 002-2v-9a2 2 0 00-2-2zM9 5h6v3H9V5zm6 11h-2v2h-2v-2H9v-2h2v-2h2v2h2v2z"/></svg>
+
+        <h3>Healthcare & Wellness
+        </h3>
+        <!-- <p>Our team comprises top-notch marketers who are passionate about what they do, constantly learning and growing.</p> -->
+      </div>
+  
+      <div class="feature-box">
+        <svg width="110" height="110" fill="#FF7E5F" viewBox="0 0 24 24"><path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3z"/></svg>
+
+        <h3>Education & EdTech </h3>
+        <!-- <p>We align your business goals with the right marketing strategy, ensuring every effort drives success.</p> -->
+      </div>
+  
+      <div class="feature-box">
+        <svg width="110" height="110" fill="#FF7E5F" viewBox="0 0 24 24"><path d="M3 11l9-7 9 7v10a1 1 0 01-1 1H4a1 1 0 01-1-1v-10zm11 9h-4v-5h4v5z"/></svg>
+
+        <h3>Real Estate & Construction
+        </h3>
+        <!-- <p>We leverage tools and technology to deliver breakthrough results and innovation beyond best practices.</p> -->
+      </div>
+    </div>
+  
+    <!-- Second Row (3 boxes centered) -->
+    <div class="features-row center-row">
+      <div class="feature-box">
+        <svg width="110" height="110" fill="#FF7E5F" viewBox="0 0 24 24"><path d="M3 13h13v6h3v-6h2l2-5H1l2 5zm2 0l-.5-2h17l-.5 2H5zm1 6a2 2 0 110-4 2 2 0 010 4zm11 0a2 2 0 110-4 2 2 0 010 4z"/></svg>
+
+        <h3>Transport & Logistics
+        </h3>
+        <!-- <p>As a Disruptive partner, you gain access to exclusive content, community, and collaboration with industry leaders.</p> -->
+      </div>
+  
+      <div class="feature-box">
+        <svg width="110" height="110" fill="#FF7E5F" viewBox="0 0 24 24"><path d="M3 4v16h18V4H3zm2 2h14v12H5V6zm2 2v8h10V8H7zm2 2h6v4H9v-4z"/></svg>
+
+        <h3>IT & SaaS Startups
+        </h3>
+        <!-- <p>We don’t just follow trends; we create them by thinking outside the box and experimenting with bold new strategies.</p> -->
+      </div>
+  
+      <div class="feature-box">
+        <svg width="110" height="110" fill="#FF7E5F" viewBox="0 0 24 24"><path d="M7 2v10a3 3 0 006 0V2h2v10a5 5 0 11-10 0V2h2z"/></svg>
+
+        <h3>Food & Hospitality</h3>
+        <!-- <p>We believe in growing together. Our client relationships are built on trust, transparency, and shared goals.</p> -->
+      </div>
+    </div>
+  </section>
+  
+
+<!-- Optional JS for CTA -->
+<script>
+  document.querySelector('.cta-button')?.addEventListener('click', () => {
+    alert('Redirecting to booking page...');
+    // window.location.href = 'booking.html';
+  });
+</script>
+
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+  }
+
+  .features-section {
+  text-align: center;
+  padding: 60px 40px;
+  margin-left: 30px;
+}
+
+.section-heading h2 {
+  font-size: 32px;
+  color: #5b0e2d;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.section-heading p {
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 40px;
+}
+
+.features-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto 40px auto;
+}
+
+.features-row.center-row {
+  justify-content: center;
+}
+
+.feature-box {
+  flex: 1 1 220px;
+  max-width: 250px;
+}
+
+.feature-box img {
+  height: 150px;
+  margin-bottom: 20px;
+}
+
+.feature-box h3 {
+  color: #5b0e2d;
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.feature-box p {
+  font-size: 15px;
+  color: #000;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .features-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature-box {
+    max-width: 80%;
+  }
+}
+
+</style>
+
 
   <!--MISSON SECTION-->
 
@@ -607,7 +973,7 @@
       <h2>Our Mission</h2>
       <div class="underline"></div>
       <p>
-        We are on a mission to positively impact the world by bringing cutting-edge marketing solutions to your brands and organizations as we build the best performance marketing agency creating growth opportunities for our people and driving business results for our clients.
+        To provide integrated brand marketing and IT services that create measurable success, drive digital excellence, and help businesses grow with clarity and purpose.
       </p>
       <!-- <a href="#" class="mission-btn">
         OUR MISSION <i class="fas fa-chevron-right"></i>
@@ -739,25 +1105,38 @@
     <div class="values-container">
       <div class="value-item">
         <img src="assets/img/corevalues1 Background Removed.png" alt="Authentic Icon">
-        <h3>Authentic</h3>
-        <p>I live in alignment with my strengths, values and unique abilities & lean into others to support my weaknesses.</p>
+        <h3>Innovation</h3>
+        <p>We challenge the ordinary to create the extraordinary.
+        </p>
       </div>
       <div class="value-item">
         <img src="assets/img/corevalues2 Background Removed.png" alt="Inside Out Icon">
-        <h3>Inside Out</h3>
-        <p>I take ownership for my life and circumstances by practicing awareness, honesty and responsibility.</p>
+        <h3>Integrity</h3>
+        <p>We build relationships on trust, honesty, and commitment.
+        </p>
       </div>
       <div class="value-item">
         <img src="assets/img/corevalues3 Background Removed.png" alt="Proactive Icon">
-        <h3>Proactive</h3>
-        <p>I am actively learning and growing personally and professionally.</p>
-      </div>
-      <div class="value-item">
-        <img src="assets/img/corevalues4 Background Removed.png" alt="Win Win Win Icon">
-        <h3>Win / Win / Win</h3>
-        <p>I am committed to finding a solution that creates a win for all parties involved (Employee, Customer, Company).</p>
+        <h3>Creativity</h3>
+        <p>We turn ideas into impactful brand experiences.
+        </p>
       </div>
     </div>
+    <div class="values-container row-2">
+      <div class="value-item">
+        <img src="assets/img/corevalues4 Background Removed.png" alt="Win Win Win Icon" />
+        <h3>Customer-Centricity</h3>
+        <p>We put your goals at the heart of everything we do.
+        </p>
+      </div>
+      <div class="value-item">
+        <img src="assets/img/corevalues1 Background Removed.png" alt="Another Value Icon" />
+        <h3>Collaboration</h3>
+        <p>Together, we grow stronger, faster, and smarter.</p>
+      </div>
+    </div>
+    
+    
   </div>
 
   <style>
@@ -772,20 +1151,39 @@
   font-weight: 700;
   margin-bottom: 60px;
 }
-
 .values-container {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  justify-items: center;
+  margin-bottom: 40px;
 }
+
+.row-2 .value-item:nth-child(1) {
+  grid-column: 1 / 2; /* shift to first column */
+}
+
+.row-2 .value-item:nth-child(2) {
+  grid-column: 2 / 3; /* shift to second column */
+ 
+}
+
+.row-2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  justify-items: center;
+  margin-left: 300px; /* shifts both items to the left */
+}
+
+
 
 .value-item {
-  flex: 1 1 24%; /* increased width per item */
-  max-width: 24%;
-  min-width: 100px;
+  max-width: 300px;
   text-align: center;
 }
+
+
 
 .value-item img {
   height: 120px;
@@ -811,14 +1209,13 @@
   <div class="vision-section">
     <div class="vision-left">
       <h4 class="subheading">Our Vision</h4>
-      <h1 class="main-heading">WE ENVISION A WORLD WHERE<br>ONLY AUTHENTIC BRANDS WIN.</h1>
+      <h1 class="main-heading">To become a global catalyst for brand evolution and digital innovation.
+      </h1>
       <div class="red-line"></div>
     </div>
     <div class="vision-right">
       <p class="vision-text">
-        We will only onboard 10 new clients this month, see if you’re one of them. 
-        Experience The Disruptive Difference & receive a winning strategy within 
-        your first 30 days for FREE.
+        We envision a future where businesses of all sizes can unlock their full potential through strategic branding and intelligent technology — and we’re here to make that vision real.
       </p>
       <div class="rating">
         <span class="rating-text">Rated 4.8/5 On Clutch</span>
