@@ -595,24 +595,28 @@ color: #5b0e2d; /* maroon on hover */
 
 <section class="hero-section">
     <div class="hero-content">
-      <p class="hero-subtitle">OUR UNIQUE MOBILE APP DEVELOPMENT STRATEGY</p>
+      <!-- <p class="hero-subtitle">OUR UNIQUE MOBILE APP DEVELOPMENT STRATEGY</p> -->
       <h1 class="hero-title">
-        WE CRAFT CUSTOM APP DEVELOPMENT SOLUTIONS THAT
-        <span class="highlight">ENGAGE & DELIGHT</span>
+         
+        <span class="highlight">Transforming Ideas into Intelligent Apps</span>
       </h1>
 
-      <ul class="hero-services">
+      <!-- <ul class="hero-services">
         <li><span class="tick">✔</span> <strong>App Development</strong></li>
         <li><span class="tick">✔</span> <strong>SEO Services</strong></li>
         <li><span class="tick">✔</span> <strong>IOS & Android</strong></li>
         <li><span class="tick">✔</span> <strong>Entertainment & Gaming</strong></li>
-      </ul>
+      </ul> -->
 
       <p class="hero-description">
-        As a mobile app development company, Lounge Lizard’s expert Brandtenders develop mobile apps for iOS and Android devices that bring solutions to all types of customer experiences. From smart home applications to education and learning apps to gaming and entertainment apps, our team can take your vision and create a mind-blowing mobile app.
+        At <strong>TwicTech,</strong> we don’t just build mobile apps — we build <strong>digital experiences</strong> that connect brands with people. With deep roots in both <strong>brand strategy</strong> and <strong>cutting-edge technology,</strong> our mobile app development services are crafted to deliver <strong>functionality, performance, and emotional impact.</strong>
       </p>
 
-      <a href="#" class="cta-button">TALK TO A BRANDTENDER</a>
+      <p class="hero-description">
+        Whether you’re a startup with a bold idea or an enterprise aiming to streamline operations, we help you <strong>design, develop, and deploy </strong>powerful mobile applications tailored to your business needs.
+      </p>
+
+      <!-- <a href="#" class="cta-button">TALK TO A BRANDTENDER</a> -->
     </div>
 
     <div class="hero-image">
@@ -706,8 +710,250 @@ color: #5b0e2d; /* maroon on hover */
 
   </style>
 
+  <!--aboutservuces-->
+
+  <section class="about-app-section">
+    <div class="app-content-wrapper">
+      <!-- Text Area -->
+      <div class="app-text">
+        <h1 id="animatedHeading"></h1>
+  
+    
+  
+        <ul class="app-services-list" id="animatedList">
+          <li><span class="icon">✔</span> Custom Mobile App Development</li>
+          <p id="animatedParagraph">We develop tailor-made apps aligned with your brand goals, target audience, and unique functionalities.
+          </p>
+          <li><span class="icon">✔</span> Android & iOS App Development</li>
+          <p id="animatedParagraph">Native applications designed for seamless performance, rich UI/UX, and platform-specific optimization.
+          </p>
+          <li><span class="icon">✔</span> Cross-Platform App Development</li>
+          <p id="animatedParagraph">Using Flutter, React Native, or Xamarin, we create apps that work beautifully across iOS and Android with a single codebase.
+          </p>
+          <li><span class="icon">✔</span>  UI/UX Design & Prototyping</li>
+          <p id="animatedParagraph">Stunning interfaces and intuitive flows crafted to keep users engaged and make every action effortless.
+          </p>
+          <li><span class="icon">✔</span> App Strategy & Consulting</li>
+          <p id="animatedParagraph">From validating your idea to choosing the right tech stack, our experts guide you at every step.
+          </p>
+          <li><span class="icon">✔</span> App Testing & Quality AssuranceS</li>
+          <p id="animatedParagraph">Rigorous functional, usability, and security testing ensures a smooth, bug-free user experience.
+          </p>
+          <li><span class="icon">✔</span> Backend Development & API Integration</li>
+          <p id="animatedParagraph">We build robust backend systems and connect your app with third-party APIs, CRMs, payment gateways, or cloud databases.
+          </p>
+          <li><span class="icon">✔</span> App Launch & Post-Launch Support</li>
+          <p id="animatedParagraph">We handle deployment to app stores and provide ongoing maintenance, updates, and performance tracking.
+          </p>
+        </ul>
+      </div>
+  
+      <!-- Image Area -->
+      <div class="app-image">
+        <img src="assets/img/appdevabout.png" alt="Sign & tools" />
+      </div>
+    </div>
+  </section>
+  
+  
+
+  <style>
+.about-app-section {
+  background: url('assets/img/featured.png') no-repeat center center / cover;
+  opacity: 0.9;
+  padding: 80px 100px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.app-content-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1400px;
+  margin: auto;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.app-text {
+  flex: 1 1 50%;
+  padding-right: 40px;
+}
+
+/* Heading */
+#animatedHeading {
+  font-size: 30px;
+  font-weight: bold;
+  color: #5b0e2d;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.word {
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeInUp 0.5s ease forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Paragraph */
+#animatedParagraph {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.1;
+  margin-bottom: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  text-align: justify;
+}
+
+#animatedParagraph span {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeInUp 0.4s ease forwards;
+}
+
+/* List */
+.app-services-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.app-services-list li {
+  font-size: 17px;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeInLine 0.6s ease forwards;
+}
+
+@keyframes fadeInLine {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.icon {
+  display: inline-flex;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: linear-gradient(135deg,#5b0e2d, #E84266, #FF7E5F);
+  color: white;
+  font-weight: bold;
+  align-items: center;
+  justify-content: center;
+  margin-right: 12px;
+  font-size: 14px;
+}
+
+/* Image */
+.app-image {
+  flex: 1 1 40%;
+  text-align: center;
+}
+
+.app-image img {
+  max-width: 900px;   /* Increased from 100% or 300px */
+  width: 120%;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .app-content-wrapper {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .app-text {
+    padding-right: 0;
+  }
+
+  #animatedHeading {
+    justify-content: center;
+  }
+
+  .app-image img {
+    max-width: 300px;
+  }
+}
+
+
+
+  </style>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const heading = document.getElementById("animatedHeading");
+      const para = document.getElementById("animatedParagraph");
+      const listItems = document.querySelectorAll("#animatedList li");
+    
+      const headingText = "Our Mobile App Development Services";
+      
+    
+      const section = document.querySelector(".about-app-section");
+    
+      const observer = new IntersectionObserver(
+        (entries, observer) => {
+          if (entries[0].isIntersecting) {
+            // Heading animation
+            const headingWords = headingText.split(" ");
+            headingWords.forEach((word, index) => {
+              const span = document.createElement("span");
+              span.className = "word";
+              span.textContent = word;
+              span.style.animationDelay = `${index * 0.3}s`;
+              heading.appendChild(span);
+            });
+    
+            // Paragraph animation
+            const paraWords = paraText.split(" ");
+            paraWords.forEach((word, index) => {
+              const span = document.createElement("span");
+              span.textContent = word + " ";
+              span.style.animationDelay = `${(headingWords.length + index) * 0.05}s`;
+              para.appendChild(span);
+            });
+    
+            // List animation
+            listItems.forEach((li, index) => {
+              li.style.animationDelay = `${
+                (headingWords.length + paraWords.length) * 0.05 + index * 0.3
+              }s`;
+              li.classList.add("animated"); // trigger CSS animation
+            });
+    
+            observer.disconnect(); // Run only once
+          }
+        },
+        { threshold: 0.1 } // 10% visibility
+      );
+    
+      observer.observe(section);
+    });
+    </script>
+
   <!--Featured work-->
-  <section class="featured-work-section">
+  <!-- <section class="featured-work-section">
     <div class="overlay"></div>
   
     <div class="content-wrapper">
@@ -973,18 +1219,18 @@ color: #5b0e2d; /* maroon on hover */
       currentSlide = (currentSlide + 1) % slides.length;
       showSlide(currentSlide);
     }, 4000);
-    </script>
+    </script> -->
 
     <!--CLIENT -->
     <div class="benefits-outer">
     <section class="benefits-section">
         <!-- Left Fixed Text -->
         <div class="benefits-left">
-          <h4>CLIENT BENEFITS</h4>
-          <h1>WHAT YOU GET</h1>
-          <p>
+          <!-- <h4>CLIENT BENEFITS</h4> -->
+          <h1>Our Process: From Concept to Launch</h1>
+          <!-- <p>
             With Lounge Lizard, when we develop a mobile app, we bring our best game to mix you an app design that resonates with your customers and provides solutions that they can access anywhere. Here is what you get – the benefits of app development services for clients when working with our team of creatives:
-          </p>
+          </p> -->
         </div>
     
         <div class="benefits-right">
@@ -993,8 +1239,8 @@ color: #5b0e2d; /* maroon on hover */
                 <i class="fas fa-lightbulb"></i>
               </div>
               <div class="card-text">
-                <h3>CONCEPTUALIZATION & DESIGN</h3>
-                <p>Apps change and evolve quickly in today’s tech environment — our goal is to conceptualize and design your app through our mobile apps development services with a fast-time-to-market.</p>
+                <h3> Discovery & Planning</h3>
+                <p>We start with business analysis, market research, and feature mapping to align the app with your goals.</p>
               </div>
             </div>
           
@@ -1003,8 +1249,8 @@ color: #5b0e2d; /* maroon on hover */
                 <i class="fas fa-code"></i>
               </div>
               <div class="card-text">
-                <h3>PROFESSIONAL APP DEVELOPMENT</h3>
-                <p>Our app developers are fluent in programming languages like React Native, Swift, and Xamarin that make mobile apps effective.</p>
+                <h3>Design & Prototyping</h3>
+                <p>Our UI/UX designers create brand-aligned visuals and interactive prototypes for early feedback.</p>
               </div>
             </div>
           
@@ -1013,8 +1259,8 @@ color: #5b0e2d; /* maroon on hover */
                 <i class="fas fa-gauge-high"></i>
               </div>
               <div class="card-text">
-                <h3>RESPONSIVE APP PERFORMANCE</h3>
-                <p>Our app development experts can boost performance by up to 50% using optimization techniques like compression and caching.</p>
+                <h3>Development</h3>
+                <p>We write clean, scalable, and secure code — with clear milestones and transparent communication throughout.</p>
               </div>
             </div>
           
@@ -1023,8 +1269,8 @@ color: #5b0e2d; /* maroon on hover */
                 <i class="fas fa-layer-group"></i>
               </div>
               <div class="card-text">
-                <h3>CROSS-PLATFORM INTEGRATION</h3>
-                <p>We ensure seamless app operation across all platforms and devices while syncing and updating effortlessly.</p>
+                <h3>Testing & QA</h3>
+                <p>Your app is rigorously tested across devices and scenarios to ensure a seamless user experience.</p>
               </div>
             </div>
           
@@ -1033,12 +1279,12 @@ color: #5b0e2d; /* maroon on hover */
                 <i class="fas fa-vial"></i>
               </div>
               <div class="card-text">
-                <h3>TESTING & QA</h3>
-                <p>We apply advanced QA techniques and testing protocols to ensure your app works perfectly before launch.</p>
+                <h3>Deployment & Support</h3>
+                <p>We launch your app and provide ongoing support, updates, and analytics monitoring for performance improvement.</p>
               </div>
             </div>
           
-            <div class="benefit-card hidden-on-load">
+            <!-- <div class="benefit-card hidden-on-load">
               <div class="icon-circle">
                 <i class="fas fa-wrench"></i>
               </div>
@@ -1046,7 +1292,7 @@ color: #5b0e2d; /* maroon on hover */
                 <h3>ONGOING MAINTENANCE</h3>
                 <p>We provide long-term support and maintenance to keep your application healthy and up-to-date into the future.</p>
               </div>
-            </div>
+            </div> -->
           </div>
           
       </section>
@@ -1096,7 +1342,7 @@ color: #5b0e2d; /* maroon on hover */
 
 .benefits-left h1 {
   font-size: 35px;
-  margin: 0 0 20px;
+  margin: 20px 0 20px;
   font-weight: 600;
 }
 
@@ -1194,12 +1440,11 @@ color: #5b0e2d; /* maroon on hover */
         <!-- <div class="rating-stars">⭐⭐⭐⭐⭐</div> -->
       </div>
       <div class="right-content-area">
-        <h4 class="subheading">WHY BRANDS CHOOSE US</h4>
+        <h4 class="subheading">App + Brand = Business Growth</h4>
         <h1 class="main-heading">
-          WHY YOU SHOULD CHOOSE APP <br>
-          DEVELOPMENT AGENCY LOUNGE LIZARD
+          Unlike typical tech firms, TwicTech merges branding expertise with app development — so your app isn’t just usable, it’s memorable. We help you build apps that grow your business, enhance engagement, and represent your brand in the digital world.
         </h1>
-        <div class="feature-grid">
+        <!-- <div class="feature-grid">
           <div class="feature-item">
             <h3>FULL-SERVICE APP DEVELOPMENT</h3>
             <p>From conceptualization to design & development to final testing, our mobile app development company specializes in delivering a complete product.</p>
@@ -1224,7 +1469,7 @@ color: #5b0e2d; /* maroon on hover */
             <h3>PROJECT MANAGEMENT</h3>
             <p>A highly qualified project advocate leads each project and is responsible for coordinated communications, start-to-finish execution, and a smooth launch.</p>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
   </section>
@@ -1273,8 +1518,9 @@ color: #5b0e2d; /* maroon on hover */
 
 .right-content-area {
   flex: 2;
-  padding: 20px 40px;
+  padding: 30px 40px;
   margin-left: 40px;
+  margin-top: 80px;
 }
 
 .subheading {
@@ -1316,231 +1562,7 @@ color: #5b0e2d; /* maroon on hover */
 
   </style>
 
-  <!--aboutservuces-->
-
-  <section class="about-app-section">
-    <div class="app-content-wrapper">
-      <!-- Text Area -->
-      <div class="app-text">
-        <h1 id="animatedHeading"></h1>
   
-        <p id="animatedParagraph"></p>
-  
-        <ul class="app-services-list" id="animatedList">
-          <li><span class="icon">✔</span> IOS APP DEVELOPMENT</li>
-          <li><span class="icon">✔</span> ANDROID APP DEVELOPMENT</li>
-          <li><span class="icon">✔</span> NATIVE & HYBRID APPS</li>
-          <li><span class="icon">✔</span> EDUCATION APPS</li>
-          <li><span class="icon">✔</span> GAMING APPS</li>
-          <li><span class="icon">✔</span> SOCIAL MEDIA APPS</li>
-          <li><span class="icon">✔</span> LIFESTYLE APPS</li>
-          <li><span class="icon">✔</span> SMART HOME APPS</li>
-        </ul>
-      </div>
-  
-      <!-- Image Area -->
-      <div class="app-image">
-        <img src="assets/img/appdevabout.png" alt="Sign & tools" />
-      </div>
-    </div>
-  </section>
-  
-  
-
-  <style>
-.about-app-section {
-  background: #f5f5f5;
-  padding: 80px 100px;
-  font-family: 'Segoe UI', sans-serif;
-}
-
-.app-content-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 1400px;
-  margin: auto;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.app-text {
-  flex: 1 1 50%;
-  padding-right: 40px;
-}
-
-/* Heading */
-#animatedHeading {
-  font-size: 35px;
-  font-weight: bold;
-  color: #5b0e2d;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-bottom: 20px;
-}
-
-.word {
-  opacity: 0;
-  transform: translateY(10px);
-  animation: fadeInUp 0.5s ease forwards;
-}
-
-@keyframes fadeInUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* Paragraph */
-#animatedParagraph {
-  font-size: 17px;
-  color: #555;
-  line-height: 1.7;
-  margin-bottom: 30px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px;
-  text-align: justify;
-}
-
-#animatedParagraph span {
-  display: inline-block;
-  opacity: 0;
-  transform: translateY(10px);
-  animation: fadeInUp 0.4s ease forwards;
-}
-
-/* List */
-.app-services-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.app-services-list li {
-  font-size: 17px;
-  font-weight: bold;
-  color: #222;
-  margin-bottom: 12px;
-  display: flex;
-  align-items: center;
-  opacity: 0;
-  transform: translateY(10px);
-  animation: fadeInLine 0.6s ease forwards;
-}
-
-@keyframes fadeInLine {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.icon {
-  display: inline-flex;
-  width: 22px;
-  height: 22px;
-  border-radius: 50%;
-  background: linear-gradient(135deg,#5b0e2d, #E84266, #FF7E5F);
-  color: white;
-  font-weight: bold;
-  align-items: center;
-  justify-content: center;
-  margin-right: 12px;
-  font-size: 14px;
-}
-
-/* Image */
-.app-image {
-  flex: 1 1 40%;
-  text-align: center;
-}
-
-.app-image img {
-  max-width: 900px;   /* Increased from 100% or 300px */
-  width: 120%;
-  height: auto;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
-
-/* Responsive */
-@media (max-width: 768px) {
-  .app-content-wrapper {
-    flex-direction: column;
-    gap: 30px;
-  }
-
-  .app-text {
-    padding-right: 0;
-  }
-
-  #animatedHeading {
-    justify-content: center;
-  }
-
-  .app-image img {
-    max-width: 300px;
-  }
-}
-
-
-
-  </style>
-
-<script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const heading = document.getElementById("animatedHeading");
-      const para = document.getElementById("animatedParagraph");
-      const listItems = document.querySelectorAll("#animatedList li");
-    
-      const headingText = "ABOUT APP DEVELOPMENT SERVICES";
-      const paraText =
-        "When you engage our expert app development team, you tap into custom mobile app development services that can deftly take your idea and craft a top-tier application ready to grow your customer base and create stickiness that cements your long-term relationship.";
-    
-      const section = document.querySelector(".about-app-section");
-    
-      const observer = new IntersectionObserver(
-        (entries, observer) => {
-          if (entries[0].isIntersecting) {
-            // Heading animation
-            const headingWords = headingText.split(" ");
-            headingWords.forEach((word, index) => {
-              const span = document.createElement("span");
-              span.className = "word";
-              span.textContent = word;
-              span.style.animationDelay = `${index * 0.3}s`;
-              heading.appendChild(span);
-            });
-    
-            // Paragraph animation
-            const paraWords = paraText.split(" ");
-            paraWords.forEach((word, index) => {
-              const span = document.createElement("span");
-              span.textContent = word + " ";
-              span.style.animationDelay = `${(headingWords.length + index) * 0.05}s`;
-              para.appendChild(span);
-            });
-    
-            // List animation
-            listItems.forEach((li, index) => {
-              li.style.animationDelay = `${
-                (headingWords.length + paraWords.length) * 0.05 + index * 0.3
-              }s`;
-              li.classList.add("animated"); // trigger CSS animation
-            });
-    
-            observer.disconnect(); // Run only once
-          }
-        },
-        { threshold: 0.1 } // 10% visibility
-      );
-    
-      observer.observe(section);
-    });
-    </script>
     
     
     
