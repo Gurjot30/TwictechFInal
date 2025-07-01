@@ -590,47 +590,69 @@ color: inherit !important;
 
 <!-- HERO SECTION -->
 <section class="hero">
-    <div class="hero-content">
-      <h1>Custom Software <br>Solutions</h1>
-      <p>
-        Our custom software development services are designed to allow you to focus on your
-        business, while we develop your ideal product. Anything and everything you want – we deliver.
-      </p>
-      <a href="#contact" class="btn-talk">LET'S TALK</a>
-      <div class="partner-logos">
-        <img src="assets/img/microsoft.png" alt="Microsoft" />
-        <img src="assets/img/aws.png" alt="AWS" />
-        <img src="assets/img/harness.png" alt="Harness" />
-        <img src="assets/img/inc5000.png" alt="Inc 5000" />
-        <img src="assets/img/iso9001.png" alt="ISO 9001" />
-        <img src="assets/img/soc2.png" alt="SOC 2" />
-      </div>
+  <!-- Video Background -->
+  <video class="hero-video" autoplay muted loop playsinline>
+    <source src="assets/video/herovideo.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Overlay -->
+  <div class="hero-overlay"></div>
+
+  <!-- Foreground Content -->
+  <div class="hero-content">
+    <h1>Tailored Technology. Smarter Solutions. Scalable Results.</h1>
+    <p>
+      At TwicTech, we specialize in developing custom software solutions that are engineered to meet your exact business needs — not force you to adapt to pre-built limitations. Whether you’re looking to automate processes, digitize operations, or build an entirely new digital product, our team delivers secure, scalable, and performance-focused software built for long-term success.
+    </p>
+    <p>
+      As a unique blend of an IT solutions provider and a brand marketing company, we ensure that your software isn’t just functional — it’s also user-friendly, brand-aligned, and growth-ready.
+    </p>
+    <a href="#contact" class="btn-talk">LET'S TALK</a>
+
+    <div class="partner-logos">
+      <img src="assets/img/microsoft.png" alt="Microsoft" />
+      <img src="assets/img/aws.png" alt="AWS" />
+      <img src="assets/img/harness.png" alt="Harness" />
+      <img src="assets/img/inc5000.png" alt="Inc 5000" />
+      <img src="assets/img/iso9001.png" alt="ISO 9001" />
+      <img src="assets/img/soc2.png" alt="SOC 2" />
     </div>
-    <div class="hero-bg"></div>
-  </section>
+  </div>
+</section>
+
 
   <style>
- .hero {
+.hero {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 170px 100px;
-  background: url('assets/img/softwaredev.jpg') no-repeat center center / cover;
+  padding: 120px 100px;
   overflow: hidden;
   color: white;
+  min-height: 600px;
 }
 
-.hero::before {
-  content: "";
+.hero-video {
   position: absolute;
   inset: 0;
-  background: rgba(224, 206, 206, 0.5); /* dark overlay */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+/* Overlay */
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(236, 207, 207, 0.635); 
   z-index: 1;
 }
 
 .hero-content {
-  max-width: 600px;
+  max-width: 900px;
   z-index: 2;
   position: relative;
 }
@@ -640,13 +662,13 @@ color: inherit !important;
   font-weight: 600;
   line-height: 1.2;
   margin-bottom: 20px;
-  color: black;
+  color: #2a0413;
 }
 
 .hero-content p {
   font-size: 18px;
   line-height: 1.6;
-  color: black;
+  color: #39061a;
   margin-bottom: 30px;
 }
 
@@ -686,15 +708,12 @@ color: inherit !important;
   border-radius: 8px;
 }
 
+/* Responsive */
 @media (max-width: 991px) {
   .hero {
     flex-direction: column;
     padding: 60px 30px;
     text-align: center;
-  }
-
-  .hero::before {
-    background: rgba(0, 0, 0, 0.6);
   }
 
   .hero-content h1 {
@@ -706,1125 +725,246 @@ color: inherit !important;
   }
 }
 
-
   </style>
 
-<!--White papers-->
-<section class="whitepapers-section">
-    <h2 class="section-title">White papers</h2>
-    <div class="whitepapers-container">
-      <!-- Card 1 -->
-      <div class="whitepaper-card">
-        <div class="card-image">
-          <div class="tag">
-            <span class="label">WHITEPAPER</span>
-            <img src="https://img.icons8.com/ios/50/document--v1.png" alt="doc" />
-          </div>
-          <div class="tag-title">BEST PRACTICES FOR<br>SOFTWARE DEVELOPMENT</div>
-          <img src="assets/img/all-images/blog-img8.png" alt="Software Dev" class="bg-img" />
-        </div>
-        <div class="card-text">
-          <p>Best Practices For<br />Software<br />Development</p>
-        </div>
-      </div>
 
-      <!-- Card 2 -->
-      <div class="whitepaper-card">
-        <div class="card-image">
-          <div class="tag">
-            <span class="label">WHITEPAPER</span>
-            <img src="https://img.icons8.com/ios/50/document--v1.png" alt="doc" />
-          </div>
-          <div class="tag-title">BEST PRACTICES FOR<br>IoT APP DEVELOPMENT</div>
-          <img src="assets/img/all-images/blog-img2.png" alt="IoT Dev" class="bg-img" />
-        </div>
-        <div class="card-text">
-          <p>IoT App<br />Development Best<br />Practices</p>
-        </div>
+  <!--WHY CUSTOMER SOFTWARE-->
+  
+  <section class="industries-section">
+    <h2>Why Custom Software?</h2>
+    <p class="industries-subtext">
+      Off-the-shelf software often comes with compromises. Custom software empowers your business with:
+    </p>
+  
+    <div class="industries-container">
+      <div class="industries-list">
+        <div class="arrow-box">Complete control over features & scalability</div>
+        <div class="arrow-box">Seamless integration with existing systems</div>
+        <div class="arrow-box">Enhanced security & performance</div>
+        <div class="arrow-box">A user interface that reflects your brand</div>
+        <div class="arrow-box">Competitive advantage through innovation</div>
       </div>
-
-      <!-- Card 3 -->
-      <div class="whitepaper-card">
-        <div class="card-image">
-          <div class="tag">
-            <span class="label">WHITEPAPER</span>
-            <img src="https://img.icons8.com/ios/50/document--v1.png" alt="doc" />
-          </div>
-          <div class="tag-title">BEST PRACTICES FOR<br>SAAS APP DEVELOPMENT</div>
-          <img src="assets/img/about6.avif" alt="SaaS Dev" class="bg-img" />
-        </div>
-        <div class="card-text">
-          <p>SaaS Application<br />Development Best<br />Practices</p>
-        </div>
+      <div class="industries-image">
+        <img src="assets/img/quiz.jpg" alt="Software Services">
       </div>
+      
     </div>
+     <!-- 👇 New p tag BELOW the entire section content -->
+  <p class="industries-footer">
+    With TwicTech, your software is built for you — and only you.
+  </p>
   </section>
 
   <style>
-    body {
+  .industries-section {
+  padding: 60px 20px;
   font-family: 'Segoe UI', sans-serif;
-  margin: 0;
-  background: #fff;
-  color: #00334e;
-}
-
-.whitepapers-section {
-  padding: 40px 60px;
-}
-
-.section-title {
-  font-size: 40px;
-  font-weight: 600;
-  color: #0c2d48;
-  margin-bottom: 40px;
-}
-
-.whitepapers-container {
-  display: flex;
-  gap: 30px;
-  flex-wrap: wrap; /* allow wrapping on smaller screens */
-  justify-content: center;
-}
-
-
-.whitepaper-card {
-  display: flex;
-  background: #fff;
-  border-radius: 25px;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  flex: 1 1 300px;       /* flexible size */
-  max-width: 400px;      /* limit max width */
-  min-width: 300px;      /* prevent shrinking too much */
-  transition: transform 0.3s ease;
-}
-
-.whitepaper-card:hover {
-  transform: translateY(-5px);
-}
-
-.card-image {
-  position: relative;
-  width: 50%;
-  overflow: hidden;
-}
-
-.bg-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.tag {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: #fec837;
-  padding: 10px 15px;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 14px;
-  font-weight: bold;
-  color: #00334e;
-}
-
-.tag img {
-  width: 20px;
-  height: 20px;
-}
-
-.tag-title {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  background: #00334e;
-  color: white;
-  padding: 10px 15px;
-  font-size: 13px;
-  font-weight: bold;
-  width: 100%;
-  box-sizing: border-box;
-  text-transform: uppercase;
-  line-height: 1.4;
-}
-
-.card-text {
-  padding: 25px 20px;
-  font-size: 18px;
-  color: #00334e;
-  width: 50%;
-  display: flex;
-  align-items: center;
-}
-
-  </style>
-
-  <!--WHY WORK WITH US-->
-
-  <section class="who-we-work-with">
-    <div class="section-header">
-      <p class="tagline">&lt; WHO WE WORK WITH /&gt;</p>
-      <h2>Customized Software for Any Company <br> Size and Type</h2>
-    </div>
-  
-    <div class="work-grid">
-      <div class="left">
-        <div class="work-box">
-          <h3>Business to Business</h3>
-          <p>We support B2B companies with software product development services to streamline their partnerships through technology adoption.</p>
-        </div>
-        <div class="work-box">
-          <h3>Business to Customers</h3>
-          <p>For the B2C sector, we develop customer-facing solutions like <a href="#">eCommerce platforms</a>, on-demand apps, virtual assistants, self-service portals, and more.</p>
-        </div>
-      </div>
-  
-      <div class="center-image">
-        <img src="assets/img/whywork.jpg" alt="Global Collaboration" />
-      </div>
-  
-      <div class="right">
-        <div class="work-box">
-          <h3>Business to Employees</h3>
-          <p>We’ll help you boost your team productivity, automate business processes, and address any other needs by implementing software for your employees.</p>
-        </div>
-        <div class="work-box">
-          <h3>Software Development Companies</h3>
-          <p>If you’re delivering a tech project but require some skills or need to accelerate the implementation — we can become a team to outsource your work to.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <style>
-    .who-we-work-with {
-  padding: 100px 120px;
-  background: #fff;
+  background: #fefefe;
   text-align: center;
-  font-family: 'Segoe UI', sans-serif;
-  color: #1e3d8f;
 }
 
-.section-header .tagline {
+.industries-footer {
+  margin-top: 50px;
+  font-size: 16px;
+  color: #444;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  line-height: 1.6;
+}
+
+
+.industries-section h2 {
+  font-size: 24px;
   font-weight: 600;
-  letter-spacing: 1px;
-  color: #666;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
 }
 
-.section-header h2 {
-  font-size: 42px;
-  font-weight: 700;
-  color: #1e3d8f;
-  margin-bottom: 50px;
+.industries-subtext {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 40px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.work-grid {
+
+.industries-container {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 50px;
   flex-wrap: wrap;
-}
-
-.left,
-.right {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 40px;
 }
 
-.work-box h3 {
-  font-size: 20px;
-  font-weight: 700;
-  color: #1e3d8f;
-  margin-bottom: 10px;
-  text-align: left;
-}
-
-.work-box p {
-  font-size: 16px;
-  color: #444;
-  text-align: left;
-  border-bottom: 1px solid #dce3f1;
-  padding-bottom: 20px;
-}
-
-.work-box p a {
-  color: #1e3d8f;
-  text-decoration: underline;
-}
-
-.center-image {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-width: 250px;
-}
-
-.center-image img {
-  max-width: 100%;
-  height: auto;
-}
-
-@media (max-width: 991px) {
-  .work-grid {
-    flex-direction: column;
-  }
-
-  .left, .right {
-    align-items: center;
-  }
-
-  .work-box h3,
-  .work-box p {
-    text-align: center;
-  }
-}
-
-  </style>
-
-  <!--QUIZ SECTION-->
-
-  <section class="quiz-section">
-    <div class="quiz-card">
-      <div class="quiz-text">
-        <h2>Product Compass Quiz</h2>
-        <p>
-          Whether you like to play it safe and calculated,<br />
-          aggressive and experimental, or both, choose a strategy<br />
-          that matches your short-, mid-, and long-term product<br />
-          goals.
-        </p>
-        <a href="#" class="quiz-btn">Take the quiz <span>→</span></a>
-      </div>
-      <div class="quiz-image">
-        <img src="assets/img/quiz.jpg" alt="Quiz Illustration" />
-      </div>
-    </div>
-    
-  </section>
-
-  <style>
-    .quiz-section {
-  display: flex;
-  justify-content: center;
-  padding: 80px 20px;
-  background-color: #f9f9fc;
-  font-family: 'Segoe UI', sans-serif;
-}
-
-.quiz-card {
-  display: flex;
-  max-width: 1100px;
-  width: 100%;
-  background-color: #f2f1f6;
-  border-radius: 28px;
-  overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
-}
-
-.quiz-text {
-  flex: 1;
-  padding: 60px 40px;
+.industries-list {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  gap: 15px;
 }
 
-.quiz-text h2 {
-    margin-top: 10px;
-  font-size: 37px;
-  color: #0d0c1d;
-  margin-bottom: 24px;
-  font-weight: 600;
-}
-
-.quiz-text p {
-  font-size: 20px;
-  line-height: 1.6;
-  color: #0d0c1d;
-  margin-bottom: 32px;
-  margin-top: 15px;
-}
-
-.quiz-btn {
-  display: inline-flex;
-  align-items: center;
-  background-color: #5b0e2d;
+.arrow-box {
+  background: linear-gradient(135deg, #5b0e2d, #E84266, #FF7E5F);
   color: white;
-  padding: 8px 16px;        /* smaller padding */
-  border-radius: 30px;
-  text-decoration: none;
-  font-size: 16px;
+  padding: 15px 25px;
+  border-radius: 0 30px 30px 0;
+  width: 260px;
+  text-align: left;
   font-weight: 500;
-  width: 160px;              /* ensures it only wraps content */
-  min-width: unset;         /* just in case */
-  transition: background 0.3s ease;
-  
+  clip-path: polygon(0 0, calc(100% - 20px) 0, 100% 50%, calc(100% - 20px) 100%, 0 100%);
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
 }
 
-.quiz-btn span {
-  margin-left: 6px;
-  font-size: 14px;
+.industries-image {
+  max-width: 400px;
+  background: white;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
-
-.quiz-btn:hover {
-  color: white;
-}
-
-.quiz-image {
-  flex: 1;
-}
-
-.quiz-image img {
+.industries-image img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
   display: block;
 }
 
+
   </style>
 
-  <!---guide section-->
 
-  <section class="guides-section">
-    <div class="guides-header">
-      <h2>Guides</h2>
-      <a href="#" class="view-all-btn">View all guides</a>
+<section class="why-choose-section">
+  <h2><span class="highlight">Our Custom Software </span> Development Services</h2>
+
+  <div class="circle-wrapper">
+    <!-- Center Circle -->
+    <div class="center-circle">
+      <svg width="36" height="36" fill="#fff" viewBox="0 0 24 24">
+        <path d="M12 0L10.59 1.41 19.17 10H0v2h19.17l-8.58 8.59L12 24l12-12z"/>
+      </svg>
     </div>
-  
-    <div class="guides-grid">
-      <div class="guide-card red">
-        <p class="guide-tag">Intro to Development</p>
-        <h3>Web App Development</h3>
-        <div class="guide-icon">⚙️</div>
-      </div>
-      <div class="guide-card purple">
-        <p class="guide-tag">Tips for Mobile Development</p>
-        <h3>iOS App Development Cost</h3>
-        <div class="guide-icon">📱</div>
-      </div>
-      <div class="guide-card dark-purple">
-        <p class="guide-tag">Implementing UX Design</p>
-        <h3>SaaS UX Design Best Practices</h3>
-        <div class="guide-icon">📦</div>
-      </div>
-      <div class="guide-card purple">
-        <p class="guide-tag">Tips for Mobile Development</p>
-        <h3>Mobile App Development Cost</h3>
-        <div class="guide-icon">📱</div>
-      </div>
+
+    <!-- Circle Items -->
+    <div class="circle-item pos1">
+      <svg class="icon" viewBox="0 0 24 24"><path fill="#fff" d="M3 4v16h18V4H3zm2 2h14v12H5V6z"/></svg>
+      <p>Software Consulting & Business Analysis</p>
     </div>
-  </section>
+
+    <div class="circle-item pos2">
+      <svg class="icon" viewBox="0 0 24 24"><path fill="#fff" d="M12 2L2 7v13h20V7l-10-5zm0 2.18L18.6 7 12 10.82 5.4 7 12 4.18zM4 9.27l8 4.55 8-4.55V18H4V9.27z"/></svg>
+      <p>Full-Cycle Software Development</p>
+    </div>
+
+    <div class="circle-item pos3">
+      <svg class="icon" viewBox="0 0 24 24"><path fill="#fff" d="M6 2h12v2H6zm-2 4h16v2H4zm0 4h16v2H4zm0 4h10v2H4z"/></svg>
+      <p>Enterprise Software Solutions</p>
+    </div>
+
+    <div class="circle-item pos4">
+      <svg class="icon" viewBox="0 0 24 24"><path fill="#fff" d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2z"/></svg>
+      <p>Custom Web & Mobile Apps</p>
+    </div>
+
+    <div class="circle-item pos5">
+      <svg class="icon" viewBox="0 0 24 24"><path fill="#fff" d="M12 12l8.5-6H3.5zM12 13.2L4 8.4v9.6h16V8.4z"/></svg>
+      <p>Software Security & Compliance</p>
+    </div>
+
+    <div class="circle-item pos6">
+      <svg class="icon" viewBox="0 0 24 24"><path fill="#fff" d="M5 4v2h14V4H5zm0 4v2h14V8H5zm0 4v2h14v-2H5zm0 4v2h14v-2H5z"/></svg>
+      <p>Testing & QA</p>
+    </div>
+
+    <div class="circle-item pos7">
+      <svg class="icon" viewBox="0 0 24 24"><path fill="#fff" d="M17 2H7v2h10V2zM5 6h14v2H5V6zm2 4h10v2H7v-2zm-2 4h14v2H5v-2zm2 4h10v2H7v-2z"/></svg>
+      <p>Maintenance & Support</p>
+    </div>
+  </div>
+
+
+</section>
+
+
 
   <style>
-    .guides-section {
-  padding: 90px 80px;
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #fff;
-}
-
-.guides-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 40px;
-}
-
-.guides-header h2 {
-  font-size: 36px;
-  font-weight: 700;
-  color: #0d0c1d;
-  margin-left: 30px;
-}
-
-.view-all-btn {
-  border: 2px solid #0d0c1d;
-  padding: 10px 24px;
-  border-radius: 50px;
-  text-decoration: none;
-  font-weight: 500;
-  color: #0d0c1d;
-  font-size: 16px;
-  transition: background 0.3s ease, color 0.3s ease;
-  margin-right: 30px;
-}
-
-.view-all-btn:hover {
-  background-color: #0d0c1d;
-  color: white;
-}
-
-.guides-grid {
-  display: flex;
-  gap: 15px;
-  flex-wrap: wrap;
-}
-
-.guide-card {
-  flex: 1 1 220px;
-  min-width: 240px;
-  max-width: 260px;
-  background-color: #ccc;
-  color: white;
-  border-radius: 20px 20px 0 20px;
-  padding: 24px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 280px;
-  position: relative;
-  overflow: hidden;
-  margin-left: 30px;
-  margin-right: 10px;
-}
-
-.guide-card h3 {
-  font-size: 20px;
-  font-weight: 600;
-  margin-top: 10px;
-  line-height: 1.4;
-}
-
-.guide-tag {
-  font-size: 14px;
-  color: white;
-  opacity: 0.9;
-}
-
-.guide-icon {
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
-  font-size: 64px;
-  opacity: 0.2;
-}
-
-/* Color Variants */
-.red {
-  background-color: #f93568;
-}
-
-.purple {
-  background-color: #8a5cfb;
-}
-
-.dark-purple {
-  background-color: #4c1ce0;
-}
-
-@media (max-width: 768px) {
-  .guides-grid {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-  </style>
-
-  <!--HOW IT WORKS-->
-
-  <section class="foundation">
-    <div class="foundation-header">
-      <h2>How it works</h2>
-      <p>From start to finish, we’ll work with you to design a product that people and businesses want to use.</p>
-    </div>
-  
-    <div class="foundation-title">
-      <h3>Foundation building</h3>
-      <p>We establish a solid base through fundamental structures and frameworks, ensuring alignment among stakeholders and optimizing the user journey.</p>
-    </div>
-  
-    <div class="foundation-content">
-      <div class="foundation-image">
-        <img src="assets/img/career2.avif" alt="Wireframe Example" />
-      </div>
-  
-      <div class="foundation-points">
-        <div class="point">
-          <h4>Information architecture</h4>
-          <p>A robust framework for categorizing features based on the overall goals and user needs.</p>
-        </div>
-        <div class="point">
-          <h4>Wireframes</h4>
-          <p>Low and high-fidelity mock-ups of the product’s interfaces to demonstrate and refine various layouts and ideal interactions.</p>
-        </div>
-        <div class="point">
-          <h4>User flows</h4>
-          <p>We map out pathways that showcase the user journey and drive desired actions.</p>
-        </div>
-        <div class="point">
-          <h4>Compliance and accessibility</h4>
-          <p>Our experts stay industry standards and regulations to provide inclusive and barrier-free access for all users.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <style>
-    .foundation {
-  padding: 80px 60px;
+ .why-choose-section {
+  padding: 60px 20px;
+  text-align: center;
   font-family: 'Segoe UI', sans-serif;
   background: #fff;
-  text-align: center;
-  color: #111;
 }
 
-.foundation-header h2 {
-  font-size: 40px;
-  font-weight: 700;
-  margin-bottom: 12px;
-}
-
-.foundation-header p {
-  font-size: 18px;
-  color: #555;
-  max-width: 600px;
-  margin: 0 auto 60px;
-}
-
-.foundation-title h3 {
-  font-size: 28px;
-  font-weight: 600;
-  margin-bottom: 10px;
-}
-
-.foundation-title p {
-  font-size: 16px;
-  color: #666;
-  max-width: 700px;
-  margin: 0 auto 60px;
-}
-
-.foundation-content {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 50px;
-  flex-wrap: wrap;
-  text-align: left;
-}
-
-.foundation-image img {
-  max-width: 480px;
-  border-radius: 12px;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-}
-
-.foundation-points {
-  max-width: 480px;
-}
-
-.foundation-points .point {
-  margin-bottom: 30px;
-}
-
-.foundation-points h4 {
-  font-size: 18px;
-  font-weight: 600;
-  margin-bottom: 8px;
-  color: #111;
-}
-
-.foundation-points p {
-  font-size: 15px;
-  color: #444;
+.why-choose-section h2 {
+  font-size: 24px;
+  margin-bottom: 50px;
   line-height: 1.5;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .foundation-content {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .foundation-points {
-    text-align: left;
-    padding: 0 10px;
-  }
-}
-
-  </style>
-
-  <!--VISUAL DESIGN-->
-
-  <section class="visual-design">
-    <div class="visual-design-header">
-      <h2>Visual design</h2>
-      <p>
-        From unique iconography to captivating layouts, we craft visually appealing interfaces that speak to your audience and elevate their interaction with your product.
-      </p>
-    </div>
-  
-    <div class="visual-design-content">
-      <div class="visual-design-text">
-        <div class="v-point">
-          <h4>Look and feel exploration</h4>
-          <p>
-            Our visual discovery process is dedicated to exploring various design themes and elements to establish a distinctive aesthetic aligned with your vision.
-          </p>
-        </div>
-  
-        <div class="v-point">
-          <h4>UI design</h4>
-          <p>
-            We employ iterative collaboration on high-fidelity interface designs that incorporate your creative vision and functional requirements.
-          </p>
-        </div>
-  
-        <div class="v-point">
-          <h4>Branding and UI style guide</h4>
-          <p>
-            We'll provide clear documentation dictating branding elements and UI components to enhance digital presence by ensuring a consistent visual identity across all products.
-          </p>
-        </div>
-      </div>
-  
-      <div class="visual-design-image">
-        <img src="assets/img/visualdesign.jpg" alt="UI Design Preview" />
-      </div>
-    </div>
-  </section>
-
-  <style>
-    .visual-design {
-  padding: 80px 60px;
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #fff;
-  color: #111;
-}
-
-.visual-design-header {
-  text-align: center;
-  max-width: 800px;
-  margin: 0 auto 60px;
-}
-
-.visual-design-header h2 {
-  font-size: 38px;
   font-weight: 700;
-  margin-bottom: 15px;
 }
 
-.visual-design-header p {
-  font-size: 18px;
-  color: #555;
-  line-height: 1.6;
+.highlight {
+  color: #e84545;
 }
 
-.visual-design-content {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 60px;
-  flex-wrap: wrap;
-}
-
-.visual-design-text {
-  max-width: 500px;
-}
-
-.v-point {
-  margin-bottom: 30px;
-}
-
-.v-point h4 {
-  font-size: 18px;
-  font-weight: 600;
-  margin-bottom: 10px;
-  color: #222;
-}
-
-.v-point p {
-  font-size: 15px;
-  color: #444;
-  line-height: 1.5;
-}
-
-.visual-design-image img {
-  max-width: 550px;
-  border-radius: 12px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .visual-design-content {
-    flex-direction: column-reverse;
-    align-items: center;
-  }
-
-  .visual-design-text {
-    text-align: left;
-    padding: 0 10px;
-  }
-
-  .visual-design-image img {
-    width: 100%;
-  }
-}
-
-  </style>
-
-  <!--design refinement-->
-
-  <section class="design-refinement">
-    <div class="design-refinement-header">
-      <h2>Design refinement</h2>
-      <p>
-        This is where we bring your designs to life, collaborating closely with your team to iterate and refine the overall customer experience.
-      </p>
-    </div>
-  
-    <div class="design-refinement-content">
-      <div class="design-refinement-image">
-        <img src="assets/img/design refinement.jpg" alt="Design Tool Preview" />
-      </div>
-      <div class="design-refinement-text">
-        <div class="refine-point">
-          <h4>Prototyping</h4>
-          <p>
-            We'll create interactive models to see and feel exactly how the product functions before it’s built—perfect for identifying gaps and aligning stakeholders.
-          </p>
-        </div>
-  
-        <div class="refine-point">
-          <h4>Interaction and motion design</h4>
-          <p>
-            The action of converting static interfaces into dynamic and exceptional user experiences for every UI/UX project.
-          </p>
-        </div>
-  
-        <div class="refine-point">
-          <h4>Usability testing</h4>
-          <p>
-            We conduct user testing on prototypes to gather qualitative insights into user behavior and identify pain points that need improvement, to provide effective user-centric solutions.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <style>
-    .design-refinement {
-  padding: 80px 60px;
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #fff;
-  color: #111;
-}
-
-.design-refinement-header {
-  text-align: center;
-  max-width: 900px;
-  margin: 0 auto 60px;
-}
-
-.design-refinement-header h2 {
-  font-size: 36px;
-  font-weight: 700;
-  margin-bottom: 12px;
-}
-
-.design-refinement-header p {
-  font-size: 17px;
-  color: #555;
-  line-height: 1.6;
-}
-
-.design-refinement-content {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 60px;
-  flex-wrap: wrap;
-}
-
-.design-refinement-image img {
-  max-width: 600px;
-  border-radius: 12px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-}
-
-.design-refinement-text {
-  max-width: 500px;
-}
-
-.refine-point {
-  margin-bottom: 30px;
-}
-
-.refine-point h4 {
-  font-size: 18px;
-  font-weight: 600;
-  margin-bottom: 10px;
-  color: #222;
-}
-
-.refine-point p {
-  font-size: 15px;
-  color: #444;
-  line-height: 1.5;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .design-refinement-content {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .design-refinement-image img {
-    width: 100%;
-  }
-}
-
-  </style>
-
-  <!--LAUNCH-->
-
-  <section class="launch">
-    <div class="launch-header">
-      <h2>Launch</h2>
-      <p>
-        We provide ongoing assistance and support to ensure a smooth transition to development, and to help launch your product as planned.
-      </p>
-    </div>
-  
-    <div class="launch-content">
-      <div class="launch-text">
-        <div class="launch-point">
-          <h4>Design documentation</h4>
-          <p>
-            Annotated final screen designs to convey design intent and user flows for developers' context of intended functionality.
-          </p>
-        </div>
-  
-        <div class="launch-point">
-          <h4>Dev delivery and hand-off</h4>
-          <p>
-            All essential assets and specifications required for development will be provided, facilitating the effective definition of acceptance criteria.
-          </p>
-        </div>
-  
-        <div class="launch-point">
-          <h4>Design QA</h4>
-          <p>
-            Provide all essential assets and specifications required for development, facilitating the effective definition of acceptance criteria.
-          </p>
-        </div>
-      </div>
-  
-      <div class="launch-image">
-        <img src="assets/img/2301987.jpg" alt="Design Spec Example" />
-      </div>
-    </div>
-  </section>
-
-  <style>
-    .launch {
-  padding: 80px 60px;
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #fff;
-  color: #111;
-}
-
-.launch-header {
-  text-align: center;
-  max-width: 900px;
-  margin: 0 auto 60px;
-}
-
-.launch-header h2 {
-  font-size: 36px;
-  font-weight: 700;
-  margin-bottom: 12px;
-}
-
-.launch-header p {
-  font-size: 17px;
-  color: #555;
-  line-height: 1.6;
-}
-
-.launch-content {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 60px;
-  flex-wrap: wrap;
-}
-
-.launch-text {
-  max-width: 500px;
-}
-
-.launch-point {
-  margin-bottom: 30px;
-}
-
-.launch-point h4 {
-  font-size: 18px;
-  font-weight: 600;
-  margin-bottom: 10px;
-  color: #222;
-}
-
-.launch-point p {
-  font-size: 15px;
-  color: #444;
-  line-height: 1.5;
-}
-
-.launch-image img {
-  max-width: 600px;
-  border-radius: 14px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .launch-content {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .launch-image img {
-    width: 100%;
-  }
-}
-
-  </style>
-
-  <!--work anywhere-->
-
-  <section class="work-anywhere">
-    <div class="work-content">
-      <div class="work-text">
-        <h2>Designing for<br />anywhere work<br />happens</h2>
-        <p>
-          We specialize in crafting responsive, cross-platform<br />
-          products tailored to meet your business objectives<br />
-          seamlessly across all devices.
-        </p>
-      </div>
-  
-      <div class="work-services">
-        <div class="work-service">
-            
-            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="white" viewBox="0 0 24 24">
-                <path d="M3 4h18v12H3z" fill="none" stroke="currentColor" stroke-width="2"/>
-                <path d="M8 20h8M12 16v4" fill="none" stroke="currentColor" stroke-width="2"/>
-              </svg>
-              
-          <span>Web and desktop apps</span>
-        </div>
-        <div class="work-service">
-            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="white" viewBox="0 0 24 24">
-                <rect x="7" y="2" width="10" height="20" rx="2" ry="2" stroke="currentColor" stroke-width="2" fill="none"/>
-                <circle cx="12" cy="18" r="1" fill="currentColor"/>
-              </svg>
-              
-          <span>Mobile and tablet apps</span>
-        </div>
-        <div class="work-service">
-            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="white" viewBox="0 0 24 24">
-                <rect x="6" y="6" width="12" height="12" rx="2" stroke="currentColor" stroke-width="2" fill="none"/>
-                <path d="M4 9v6M20 9v6M9 4h6M9 20h6" stroke="currentColor" stroke-width="2" fill="none"/>
-              </svg>
-              
-          <span>Embedded apps and IoT</span>
-        </div>
-        <div class="work-service">
-            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="white" viewBox="0 0 24 24">
-                <rect x="9" y="9" width="6" height="6" stroke="currentColor" stroke-width="2" fill="none"/>
-                <path d="M4 4v3M4 17v3M20 4v3M20 17v3M17 4h-3M10 4H7M17 20h-3M10 20H7" stroke="currentColor" stroke-width="2"/>
-              </svg>
-              
-          <span>Artificial intelligence</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <style>
-    .work-anywhere {
-  background-color: #151b22;
-  color: #fff;
-  padding: 100px 60px;
-  font-family: 'Segoe UI', sans-serif;
-}
-
-.work-content {
-  max-width: 900px;
+.circle-wrapper {
+  position: relative;
+  width: 600px;
+  height: 600px;
   margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 40px;
-
 }
 
-.work-text h2 {
-  font-size: 44px;
-  font-weight: 700;
-  line-height: 1.3;
-  margin-bottom: 24px;
-}
-
-.work-text p {
-  font-size: 17px;
-  line-height: 1.6;
-  color: #c0c0c0;
-}
-
-.work-services {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  margin-right: 50px;
-}
-
-.work-service {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  font-size: 18px;
-  font-weight: 500;
-}
-
-.work-service img {
-  width: 48px;
-  height: 48px;
+.center-circle {
+  width: 100px;
+  height: 100px;
+  background: #e84545;
   border-radius: 50%;
-  background: linear-gradient(135deg, #2396ff, #007bff);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle-item {
+  position: absolute;
+  width: 200px;
+  text-align: center;
+  font-size: 14px;
+  color: #333;
+}
+
+.circle-item .icon {
+  background: #e84545;
+  border-radius: 50%;
   padding: 12px;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .work-content {
-    flex-direction: column;
-    align-items: flex-start;
-  }
+.pos1 { top: 0%;    left: 50%; transform: translate(-50%, 0); }       /* Top */
+.pos2 { top: 21%;   left: 85%; transform: translate(-50%, -50%); }    /* Top-right */
+.pos3 { top: 55%;   left: 98%; transform: translate(-50%, -50%); }    /* Right */
+.pos4 { top: 85%;   left: 72%; transform: translate(-50%, -50%); }    /* Bottom-right */
+.pos5 { top: 100%;  left: 30%; transform: translate(-50%, -100%); }   /* Bottom */
+.pos6 { top: 55%;   left: 5%; transform: translate(-50%, -50%); }     /* Bottom-left */
+.pos7 { top: 21%;   left: 10%; transform: translate(-50%, -50%); }    /* Top-left */
 
-  .work-text h2 {
-    font-size: 32px;
-  }
 
-  .work-service span {
-    font-size: 16px;
-  }
-}
+
 
   </style>
+  
+
+  
+
+  
+
+ 
 
     <!--===== FOOTER AREA STARTS =======-->
     <div class="footer13-section-area">
