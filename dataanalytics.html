@@ -689,67 +689,61 @@ p {
   <section class="clarity-section">
     <div class="clarity-header">
       <div class="left">
-        <h2>Turn complexity into clarity—so your data fuels smarter growth.</h2>
+        <h2>Why Data Analytics Is Critical Today</h2>
       </div>
       <div class="right">
         <p>
-          Managing multiple revenue streams and data sources—whether from social commerce, DTC channels, retail, or marketing analytics—can be overwhelming.
-          Is your infrastructure built to handle it all?<br /><br />
-          We ensure your data ecosystem is <strong>seamless, accurate, and actionable</strong>.
+            Data is one of your most valuable business assets — but only if you can <strong>extract meaning from it.</strong> With the right analytics in place, you can:<br /><br />
+            TwicTech bridges the gap between technology, data, and brand intelligence, giving you a complete picture of your business in motion.
         </p>
-        <button class="get-in-touch">Get in Touch ↗</button>
+
       </div>
     </div>
   
-    <div class="clarity-cards">
+    <div class="card-row row-1">
       <div class="card light-yellow">
         <div class="icon">◇</div>
-        <h3>Complex Data Sets, Simplified</h3>
-        <p>
-          Whether it’s social commerce, direct-to-consumer channels, retail, or marketing analytics, businesses must integrate multiple revenue streams and data sources.
-          We ensure your infrastructure can handle it all.
-        </p>
+        <h3>Identify trends and customer preferences</h3>
+        <!-- <p>Whether it’s social commerce, direct-to-consumer channels, retail, or marketing analytics, we ensure your infrastructure can handle it all.</p> -->
       </div>
   
       <div class="card gray">
         <div class="icon">◉</div>
-        <h3>Better Data, Bigger Growth</h3>
-        <p>
-          Inaccurate or outdated data can be costly. Our rigorous QA protocols ensure that your data is reliable, up to date, and ready to drive growth.
-        </p>
+        <h3>Optimize marketing and sales performance</h3>
+        <!-- <p>Inaccurate or outdated data can be costly. Our QA protocols ensure your data is reliable and growth-ready.</p> -->
       </div>
   
       <div class="card yellow">
         <div class="icon">⇅</div>
-        <h3>Compliance Made Simple</h3>
-        <p>
-          Navigate the complexities of GDPR, CCPA, and evolving regulations with confidence. We help you build a compliant, secure data framework to avoid costly missteps.
-        </p>
+        <h3>Enhance operational efficiency</h3>
+        <!-- <p>Navigate GDPR, CCPA, and evolving regulations with a secure framework that avoids costly missteps.</p> -->
       </div>
+    </div>
   
+    <div class="card-row row-2">
       <div class="card light-yellow">
         <div class="icon">⨁</div>
-        <h3>Unified Data = Multiplied Impact</h3>
-        <p>
-          Seamlessly connect and unify your data. We create a centralized ecosystem that aligns teams, standardizes KPIs, and ensures a single source of truth across your organization.
-        </p>
+        <h3>Predict future outcomes and reduce risk</h3>
+        <!-- <p>Connect and unify your data to align teams and ensure a single source of truth.</p> -->
+      </div>
+  
+      <div class="card gray">
+        <div class="icon">⬟</div>
+        <h3>Make data-backed business decisions</h3>
+        <!-- <p>Get instant access to your KPIs and metrics with dashboards that empower fast decisions.</p> -->
       </div>
     </div>
   </section>
+  
 
   
   <style>
-    body {
-  margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #1d1d1d;
-  color: #fff;
-}
-
-/* Main Section */
+ /* Container */
 .clarity-section {
   padding: 80px 60px;
   background-color: #1d1d1d;
+  color: #fff;
+  font-family: 'Segoe UI', sans-serif;
 }
 
 /* Header */
@@ -784,42 +778,39 @@ p {
 
 .clarity-header .right strong {
   color: #fff;
-  font-weight: 600;
 }
 
-.get-in-touch {
-  background-color: #fff4c5;
-  color: #1d1d1d;
-  padding: 12px 20px;
-  font-size: 16px;
-  font-weight: 500;
-  border-radius: 30px;
-  border: none;
-  cursor: pointer;
-  margin-top: 24px;
-  transition: background 0.3s;
-}
 
-.get-in-touch:hover {
-  background-color: #ffeead;
-}
 
-/* Cards Grid */
-.clarity-cards {
+/* Card Rows */
+.card-row {
   display: flex;
   gap: 24px;
   flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+.row-1 {
+  display: flex;
   justify-content: space-between;
+  gap: 24px; /* Reduced gap */
 }
 
+
+.row-2 {
+  justify-content: center;
+}
+
+/* Individual Card */
 .card {
-  flex: 1;
-  min-width: 220px;
+    width: 100%;
+  max-width: 100%;
+  flex: 1 1 0;
   padding: 30px;
   border-radius: 14px;
   background-color: #fff;
   color: #1d1d1d;
-  max-width: 300px;
+  text-align: left;
 }
 
 .card h3 {
@@ -840,7 +831,7 @@ p {
   margin-bottom: 10px;
 }
 
-/* Custom Colors */
+/* Custom Backgrounds */
 .card.light-yellow {
   background-color: #fff4c5;
 }
@@ -852,6 +843,7 @@ p {
 .card.yellow {
   background-color: #f8b500;
 }
+
 
   </style>
 
