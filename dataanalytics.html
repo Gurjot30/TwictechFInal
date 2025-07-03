@@ -684,167 +684,191 @@ p {
   </style>
 
 
-  <!--PLATFORMS-->
-
-  <section class="clarity-section">
-    <div class="clarity-header">
-      <div class="left">
-        <h2>Why Data Analytics Is Critical Today</h2>
-      </div>
-      <div class="right">
-        <p>
-            Data is one of your most valuable business assets — but only if you can <strong>extract meaning from it.</strong> With the right analytics in place, you can:<br /><br />
-            TwicTech bridges the gap between technology, data, and brand intelligence, giving you a complete picture of your business in motion.
-        </p>
-
-      </div>
+<!-- PLATFORMS -->
+<section class="clarity-section">
+  <div class="clarity-header">
+    <div class="left">
+      <h2>Why Data Analytics Is Critical Today</h2>
+      <p>
+        Data is one of your most valuable business assets — but only if you can
+        <strong>extract meaning from it.</strong> With the right analytics in place, you can:<br /><br />
+        TwicTech bridges the gap between technology, data, and brand intelligence, giving you a complete picture of your business in motion.
+      </p>
     </div>
-  
-    <div class="card-row row-1">
-      <div class="card light-yellow">
+    
+  </div>
+
+  <div class="card-row row-1">
+    <div class="card light-yellow">
+      <div class="icon-heading">
         <div class="icon">◇</div>
         <h3>Identify trends and customer preferences</h3>
-        <!-- <p>Whether it’s social commerce, direct-to-consumer channels, retail, or marketing analytics, we ensure your infrastructure can handle it all.</p> -->
       </div>
-  
-      <div class="card gray">
+    </div>
+
+    <div class="card gray">
+      <div class="icon-heading">
         <div class="icon">◉</div>
         <h3>Optimize marketing and sales performance</h3>
-        <!-- <p>Inaccurate or outdated data can be costly. Our QA protocols ensure your data is reliable and growth-ready.</p> -->
       </div>
-  
-      <div class="card yellow">
+    </div>
+
+    <div class="card yellow">
+      <div class="icon-heading">
         <div class="icon">⇅</div>
         <h3>Enhance operational efficiency</h3>
-        <!-- <p>Navigate GDPR, CCPA, and evolving regulations with a secure framework that avoids costly missteps.</p> -->
       </div>
     </div>
-  
-    <div class="card-row row-2">
-      <div class="card light-yellow">
+  </div>
+
+  <div class="card-row row-2">
+    <div class="card light-yellow">
+      <div class="icon-heading">
         <div class="icon">⨁</div>
         <h3>Predict future outcomes and reduce risk</h3>
-        <!-- <p>Connect and unify your data to align teams and ensure a single source of truth.</p> -->
-      </div>
-  
-      <div class="card gray">
-        <div class="icon">⬟</div>
-        <h3>Make data-backed business decisions</h3>
-        <!-- <p>Get instant access to your KPIs and metrics with dashboards that empower fast decisions.</p> -->
       </div>
     </div>
-  </section>
+
+    <div class="card gray">
+      <div class="icon-heading">
+        <div class="icon">⬟</div>
+        <h3>Make data-backed business decisions</h3>
+      </div>
+    </div>
+  </div>
+</section>
+
   
 
   
   <style>
- /* Container */
-.clarity-section {
-  padding: 80px 60px;
-  background-color: #1d1d1d;
-  color: #fff;
-  font-family: 'Segoe UI', sans-serif;
-}
+    /* Container */
+    .clarity-section {
+      padding: 80px 60px;
+      background-color: #1d1d1d;
+      color: #fff;
+      font-family: 'Segoe UI', sans-serif;
+    }
 
-/* Header */
-.clarity-header {
+    /* Header */
+    .clarity-header {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 40px;
+      margin-bottom: 60px;
+    }
+
+    .clarity-header .left {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .clarity-header .left h2 {
+      font-size: 40px;
+      font-weight: bold;
+      line-height: 1.3;
+      color: #fff;
+    }
+
+    .clarity-header .right {
+      flex: 1;
+      min-width: 300px;
+      max-width: 480px;
+      color: #bbb;
+      font-size: 16px;
+      line-height: 1.7;
+    }
+
+    .clarity-header .right strong {
+      color: #fff;
+    }
+
+    .card-row {
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 40px;
-  margin-bottom: 60px;
-}
-
-.clarity-header .left {
-  flex: 1;
-  min-width: 300px;
-}
-
-.clarity-header .left h2 {
-  font-size: 40px;
-  font-weight: bold;
-  line-height: 1.3;
-  color: #fff;
-}
-
-.clarity-header .right {
-  flex: 1;
-  min-width: 300px;
-  max-width: 480px;
-  color: #bbb;
-  font-size: 16px;
-  line-height: 1.7;
-}
-
-.clarity-header .right strong {
-  color: #fff;
-}
-
-
-
-/* Card Rows */
-.card-row {
-  display: flex;
-  gap: 24px;
+  gap: 30px;
   flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 40px;
+  max-width: 880px; /* restrict width to align cards */
+  margin-left: auto;
+  margin-right: auto;
 }
+
 .row-1 {
-  display: flex;
-  justify-content: space-between;
-  gap: 24px; /* Reduced gap */
+  justify-content: center; /* center instead of space-between */
 }
 
 
-.row-2 {
-  justify-content: center;
-}
+    .row-2 {
+      justify-content: center;
+    }
 
-/* Individual Card */
-.card {
-    width: 100%;
-  max-width: 100%;
-  flex: 1 1 0;
-  padding: 30px;
-  border-radius: 14px;
-  background-color: #fff;
-  color: #1d1d1d;
-  text-align: left;
-}
+    /* Individual Card */
+    .card {
+      max-width: 260px;
+      flex: 1 1 220px;
+      padding: 20px;
+      border-radius: 12px;
+      background-color: #fff;
+      color: #1d1d1d;
+      text-align: left;
+    }
 
-.card h3 {
-  margin-top: 14px;
-  margin-bottom: 14px;
-  font-size: 18px;
-  font-weight: 600;
-}
+    /* Icon and Heading in same line */
+    .icon-heading {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
 
-.card p {
-  font-size: 15px;
-  line-height: 1.6;
-  color: #333;
-}
+    .card .icon {
+      font-size: 20px;
+      color: #1d1d1d;
+    }
 
-.card .icon {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
+    .card h3 {
+      margin: 0;
+      font-size: 16px;
+      font-weight: 600;
+    }
 
-/* Custom Backgrounds */
-.card.light-yellow {
-  background-color: #fff4c5;
-}
+    .card p {
+      font-size: 14px;
+      line-height: 1.6;
+      color: #333;
+      margin-top: 10px;
+    }
 
-.card.gray {
-  background-color: #d8d8d8;
-}
+    /* Custom Backgrounds */
+    .card.light-yellow {
+      background-color: #fff4c5;
+    }
 
-.card.yellow {
-  background-color: #f8b500;
-}
+    .card.gray {
+      background-color: #d8d8d8;
+    }
 
+    .card.yellow {
+      background-color: #f8b500;
+    }
 
+    /* Responsive */
+    @media (max-width: 768px) {
+      .clarity-header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .card-row {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .card {
+        max-width: 100%;
+      }
+    }
   </style>
 
 <section class="tools-grid-section">
