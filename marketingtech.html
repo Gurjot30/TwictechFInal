@@ -588,112 +588,250 @@
 <!--===== MOBILE HEADER STARTS =======-->
 
 <!-- HERO SECTION -->
-<section class="hero">
-    <div class="hero-text">
-      <h2 class="subheading">Marketing Technology Consulting</h2>
-      <h1>Where Strategy Meets Systems. Empowering Brands with Smarter Marketing Tech.</h1>
-      <p class="description">
-        At <strong>TwicTech</strong>, we help businesses navigate the fast-evolving world of Marketing Technology by aligning the right tools, platforms, and strategies to achieve real marketing impact. From CRM integrations to marketing automation, analytics, and omnichannel campaign tools — we offer end-to-end consulting that brings clarity, efficiency, and ROI to your marketing ecosystem.
-      </p>
-      <p class="description">
-        As a brand marketing and IT services company, we bridge the gap between creative vision and technical execution — helping brands grow smarter, not just louder.
-      </p>
+<!-- HERO SECTION -->
+<section class="hero-section">
+  <div class="hero-grid">
+    <!-- Left Content -->
+    <div class="hero-content">
+      <div class="subheading-box">Marketing Technology Consulting</div>
+
+      <h1 class="main-heading">
+        Where <span class="highlight">Strategy</span> Meets 
+        <span class="highlight">Systems</span>. <br />
+        Empowering Brands with <span class="highlight">Smarter Marketing Tech</span>.
+      </h1>
+
+      <!-- Optional Description or CTA -->
+      <!-- <p class="hero-description">We help businesses drive results through smarter MarTech solutions.</p> -->
+      <!-- <a href="#contact" class="cta-btn">Book a Free Consultation</a> -->
     </div>
-  
-    <div class="hero-image-wrapper">
-      <img src="assets/img/crm5.jpg" alt="TV interview" class="hero-img" />
-  
-      <!-- Diagonal strips -->
-      <div class="strip strip1"></div>
-      <div class="strip strip2"></div>
-      <div class="strip strip3"></div>
+
+    <!-- Right Image -->
+    <div class="hero-image">
+      <img src="assets/img/marketing.png" alt="Marketing Tech Visual" />
     </div>
-  </section>
+  </div>
+</section>
+
+
+<style>
+/* HERO SECTION STYLING */
+/* HERO SECTION STYLING */
+.hero-section {
+  background: linear-gradient(to bottom, #f0c8c8, #c78484, #5e1313);
+  color: #ffffff;
+  padding: 100px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* Removed overlay since not in use */
+
+.hero-grid {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 100%;
+  z-index: 1;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.hero-content {
+  flex: 1;
+  color: black;
+  text-align: left;
+}
+
+.subheading-box {
+  display: inline-block;
+  background-color: #521515;
+  color: white;
+  padding: 8px 20px;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.main-heading {
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: black;
+}
+
+.main-heading .highlight {
+  color: #5b0e2d;
+}
+
+.hero-description {
+  font-size: 18px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  color: #333;
+  text-align: left;
+}
+
+.cta-btn {
+  display: inline-block;
+  background-color: #e84266;
+  color: #fff;
+  padding: 12px 30px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.cta-btn:hover {
+  background-color: #c13654;
+}
+
+.hero-image {
+  flex: 1;
+  text-align: right;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-grid {
+    flex-direction: column;
+  }
+
+  .hero-image {
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .hero-content {
+    text-align: center; /* Optional: keep left or center on mobile */
+  }
+
+  .main-heading {
+    font-size: 32px;
+  }
+
+  .subheading-box {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+</style>
+
+
+
+<!-- ABOUT SECTION -->
+<section class="about">
+  <div class="about-image-wrapper">
+    <img src="assets/img/about6.avif" alt="TV interview" class="about-img" />
+
+    <!-- Diagonal strips
+    <div class="strip strip1"></div>
+    <div class="strip strip2"></div>
+    <div class="strip strip3"></div> -->
+  </div>
+
+  <div class="about-text">
+
+    <h1>About Us</h1>
+   
+    <p class="description">
+      At <strong>TwicTech</strong>, we help businesses navigate the fast-evolving world of Marketing Technology by aligning the right tools, platforms, and strategies to achieve real marketing impact. From CRM integrations to marketing automation, analytics, and omnichannel campaign tools — we offer end-to-end consulting that brings clarity, efficiency, and ROI to your marketing ecosystem.
+    </p>
+    <p class="description">
+      As a brand marketing and IT services company, we bridge the gap between creative vision and technical execution — helping brands grow smarter, not just louder.
+    </p>
+  </div>
+</section>
+
+<style>
   
-  <style>
-  body {
-    margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background: linear-gradient(135deg, #FF7E5F, #E84266, #5b0e2d);
-  }
-  
-  .hero {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 100px 50px;
-    min-height: 100vh;
-    box-sizing: border-box;
-    color: #430808;
-  }
-  
-  .hero-text {
-    flex: 1;
-    z-index: 2;
-    padding-right: 40px;
-  }
-  
-  .hero-text .subheading {
-    font-size: 20px;
-    font-weight: 700;
-    margin-bottom: 20px;
-    color: #ffc3c3;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-  }
-  
-  .hero-text h1 {
-    font-size: 35px;
-    font-weight: 600;
-    line-height: 1.4;
-    max-width: 700px;
-    margin: 0 0 20px;
-  }
-  
-  .hero-text .description {
-    font-size: 16px;
-    line-height: 1.6;
-    max-width: 700px;
-    margin-bottom: 16px;
-    color: #430808;
-  }
-  
-  .hero-image-wrapper {
-    flex: 1;
-    position: relative;
-    max-width: 100%;
-  }
-  
-  .hero-img {
-    width: 90%;
-    height: auto;
-    display: block;
-    border-radius: 8px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-  }
-  
-  /* Diagonal strips */
-  .strip {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 10%;
-    background-color: #430808;
-    transform: skewX(-20deg);
-    z-index: 2;
-    opacity: 0.5;
-  }
-  
-  .strip1 {
-    left: 13%;
-  }
-  .strip2 {
-    left: 28%;
-  }
-  .strip3 {
-    left: 43%;
-  }
-  </style>
+
+.about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 50px;
+  min-height: 100vh;
+  box-sizing: border-box;
+  color: #430808;
+  gap: 30px;
+}
+
+.about-image-wrapper {
+  flex: 1;
+  position: relative;
+  max-width: 100%;
+}
+
+.about-img {
+  width: 80%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  margin-left: 30px;
+}
+
+/* Diagonal strips */
+.strip {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 10%;
+  background-color: #430808;
+  transform: skewX(-20deg);
+  z-index: 2;
+  opacity: 0.5;
+}
+
+.strip1 { left: 13%; }
+.strip2 { left: 28%; }
+.strip3 { left: 43%; }
+
+.about-text {
+  flex: 1;
+  z-index: 2;
+  padding-left: 40px;
+}
+
+.about-text .subheading {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #ffc3c3;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.about-text h1 {
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 1.4;
+  max-width: 700px;
+  margin: 0 0 20px;
+}
+
+.about-text .description {
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 700px;
+  margin-bottom: 16px;
+  color: #430808;
+}
+
+</style>
 
   <!--WHY CHOOSE US-->
 
