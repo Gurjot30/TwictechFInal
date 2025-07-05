@@ -591,61 +591,129 @@
 </div>
 <!--===== MOBILE HEADER STARTS =======-->
 
-<!--HERO SECTION-->
+<!-- HERO SECTION -->
 <section class="hero-section">
-    <div class="hero-left">
-      <h1>
-        Power Your 
-        <span class="green-text">Relationships. Automate</span> Your Growth.<br />
-       
+  <div class="hero-left">
+    <div class="subheading-box">CRM & Marketing Automation</div>
+    <h1>
+      Power Your 
+      Relationships. <span class="highlighted-text">Automate</span> Your Growth.
+    </h1>
+    <!-- <p>
+      In today’s digital world, customer relationships and automated marketing aren’t just tools — they’re strategic engines that fuel sustainable business growth. At TwicTech, we deliver customized CRM and marketing automation solutions that help you manage leads, track customer interactions, and nurture loyalty at scale — all while maintaining your brand's personality.
+    </p> -->
+  </div>
 
-      </h1>
-      <p>
-        In today’s digital world, customer relationships and automated marketing aren’t just tools — they’re strategic engines that fuel sustainable business growth. At TwicTech, we deliver customized CRM and marketing automation solutions that help you manage leads, track customer interactions, and nurture loyalty at scale — all while maintaining your brand's personality.
-      </p>
+  <div class="hero-right">
+    <img src="assets/img/gradient-crm-infographic.png" alt="CRM Illustration" />
+  </div>
+</section>
 
-      <p>
-        Combining our expertise in technology development and brand marketing, we don’t just set up systems — we build smart, scalable ecosystems that align with your business and brand goals.
-      </p>
- 
-    </div>
-  
-    <div class="hero-right">
-      <div class="angled-overlay"></div>
-      <img src="assets/img/aboutpage.avif" alt="hero-image" />
-    </div>
-  </section>
-  
-  
-
-  <style>
-
-.hero-section {
+<style>
+  .hero-section {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: 100vh;
-  padding: 110px 80px;
-  background-color: whitesmoke;
+  padding: 140px 80px;
+  background: linear-gradient(135deg, #fcbcbc, #f69393, #edbbae);
+  flex-wrap: wrap;
 }
 
 .hero-left {
   flex: 1;
-  z-index: 2;
+  max-width: 50%;
+  padding-right: 40px;
+}
 
+.subheading-box {
+  display: inline-block;
+  background-color: #ffe5ea;
+  color: #ab2642;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  margin-bottom: 20px;
 }
 
 .hero-left h1 {
+  font-size: 2.8rem;
+  line-height: 1.3;
+  font-weight: 700;
+  color: #111;
+}
+
+.highlighted-text {
+  color: #ab2642;
+}
+
+
+.hero-right {
+  flex: 1;
+  max-width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-right img {
+  width: 100%;
+  max-width: 550px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+</style>
+
+<!--ABOUT US SECTION-->
+<section class="aboutus-section">
+  <div class="aboutus-left">
+    <h1>
+      
+      <span class="highlighted-text">About Us </span>
+    </h1>
+    <p>
+      In today’s digital world, customer relationships and automated marketing aren’t just tools — they’re strategic engines that fuel sustainable business growth. At TwicTech, we deliver customized CRM and marketing automation solutions that help you manage leads, track customer interactions, and nurture loyalty at scale — all while maintaining your brand's personality.
+    </p>
+    <p>
+      Combining our expertise in technology development and brand marketing, we don’t just set up systems — we build smart, scalable ecosystems that align with your business and brand goals.
+    </p>
+  </div>
+
+  <div class="aboutus-right">
+    <div class="angled-overlay"></div>
+    <img src="assets/img/aboutpage.avif" alt="main-img" class="main-img" />
+    <img src="assets/img/crm3.jpg" alt="overlapping-img" class="overlapping-img" />
+  </div>
+</section>
+
+<style>
+  .aboutus-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 90vh;
+  padding: 60px 80px;
+  background-color: whitesmoke;
+}
+
+.aboutus-left {
+  flex: 1;
+  z-index: 2;
+}
+
+.aboutus-left h1 {
   font-size: 2.7rem;
   line-height: 1.3;
   font-weight: 700;
 }
 
-.green-text {
+.highlighted-text {
   color: #ab2642;
 }
 
-.hero-left p {
+.aboutus-left p {
   margin: 30px 0;
   font-size: 1.1rem;
   color: black;
@@ -653,9 +721,7 @@
   line-height: 1.6;
 }
 
-
-
-.hero-right {
+.aboutus-right {
   flex: 1;
   position: relative;
   overflow: hidden;
@@ -664,7 +730,7 @@
   justify-content: center;
 }
 
-.hero-right img {
+.aboutus-right .main-img {
   width: 90%;
   height: auto;
   object-fit: cover;
@@ -672,7 +738,7 @@
   z-index: 1;
 }
 
-.angled-overlay {
+/* .angled-overlay {
   position: absolute;
   top: 0;
   left: 5%;
@@ -681,11 +747,18 @@
   clip-path: polygon(30% 0, 100% 0%, 100% 100%, 0% 100%);
   background: linear-gradient(90deg, rgba(81, 8, 8, 0.7), rgba(0,0,0,0));
   z-index: 2;
+} */
+
+.overlapping-img {
+  position: absolute;
+  bottom: -50px;
+  right: -20px;
+  width: 450px; /* Adjust size as needed */
+  z-index: 3;
+
 }
 
-
-  </style>
-
+</style>
 <section class="crm-section">
     <div class="crm-heading">
       <h2>Why CRM &  <span>Automation Matter</span></h2>
