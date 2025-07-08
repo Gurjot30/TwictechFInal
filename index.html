@@ -56,11 +56,14 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="header-elements">
-                            <div class="site-logo">
-                                <a href="index.html">
-                                  <img src="assets/img/logo/logo.png" alt="" style="width: 160px;">
-                                </a>
-                              </div>
+                          <div class="site-logo">
+                            <a href="index.html">
+                              <img src="assets/img/logo/logo.png" alt="" style="width: 160px; margin-top: 5px;">
+
+                            </a>
+                            <div id="tagline" class="animated-text"></div>
+                          </div>
+                          
                               
                             <div class="main-menu">
                                 <ul>
@@ -184,8 +187,39 @@
         </div>
     </header>
     <!--=====HEADER END =======-->
+    <script>
+      const text = "Where Ideas Evolve Into Iconic Brands";
+      const taglineElement = document.getElementById("tagline");
+      let index = 0;
+    
+      function typeText() {
+        if (index < text.length) {
+          taglineElement.textContent += text.charAt(index);
+          index++;
+          setTimeout(typeText, 100); // Typing speed
+        }
+      }
+    
+      window.addEventListener("load", typeText);
+    </script>
+    
+    
 
     <style>
+
+.animated-text {
+  font-size: 10px;
+  color: #5b0e2d;
+  font-weight: 600;
+  margin-top: 8px;
+  margin-left: -10px; /* Shift slightly to the left */
+  min-height: 22px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: fit-content;
+}
+
+
 .dropdown-padding.three-column-wrapper {
   display: flex !important;
   justify-content: flex-start;         /* Align columns to the start */
