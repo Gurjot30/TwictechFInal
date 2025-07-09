@@ -26,6 +26,8 @@
 <!-- Slick Theme -->
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
 
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+
 
     
 
@@ -630,6 +632,401 @@
     </div>
 </div>
 <!--===== MOBILE HEADER STARTS =======-->
+
+
+<style>
+    /* * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #fff;
+      color: #1a1a1a;
+      line-height: 1.5;
+    } */
+    .containerr {
+      display: flex;
+      padding: 120px;
+      justify-content: center;
+      align-items: center;
+      margin-top: 30px;
+
+    }
+    .left-section {
+  background: linear-gradient(135deg, #551010, #f27b7b); /* orange to yellow gradient */
+  padding: 30px;
+  border-radius: 20px;
+  position: relative;
+  max-width: 430px;
+}
+
+.left-section img.main-book {
+      width: 100%;
+      border-radius: 10px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      margin-bottom: 15px; /* Added space below the main image */
+    }
+    .left-section img.main-book:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    /* .left-section .book-info {
+      margin-top: 20px;
+    }
+    .left-section .book-info h4 {
+      font-weight: 700;
+      font-size: 16px;
+      margin-bottom: 10px;
+    } */
+    /* .left-section .book-info p {
+      font-size: 14px;
+      color: #fff;
+    }
+    .left-section .rating {
+      color: #fff;
+      font-weight: 600;
+    } */
+    .left-section .thumbnails {
+      display: flex;
+      margin-top: 10px;
+    }
+    .left-section .thumbnails img {
+      width: 125px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 5px;
+      margin-right: 10px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .left-section .thumbnails img:hover {
+      transform: scale(1.1);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+    .carousel-buttons {
+      position: absolute;
+      top: 45%;
+      right: -20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .carousel-buttons button {
+      background: #fff;
+      border: none;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .right-section {
+      margin-left: 60px;
+      max-width: 550px;
+    }
+    .right-section h1 {
+      font-size: 36px;
+      color: #1a1a1a;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+    .right-section p {
+      font-size: 16px;
+      color: #666;
+      margin-bottom: 30px;
+      font-style: italic;
+    }
+    /* .search-bar {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 40px;
+    }
+    .search-bar input {
+      padding: 10px 20px;
+      border: 1px solid #ccc;
+      border-radius: 40px;
+      flex: 1;
+    }
+    .search-bar button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 40px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .search-bar .search-btn {
+      background: #f07b3f;
+      color: white;
+    }
+    .search-bar .explore-btn {
+      background: linear-gradient(90deg, #fbb040, #f7944d);
+      color: white;
+    }
+    .stats {
+      display: flex;
+      justify-content: space-between;
+      max-width: 500px;
+    }
+    .stats div {
+      text-align: center;
+    }
+    .stats h3 {
+      font-size: 20px;
+      font-weight: 700;
+      color: #1a1a1a;
+    }
+    .stats span {
+      font-size: 14px;
+      color: #666;
+    } */
+  </style>
+
+  <!--HERO SECTION-->
+
+  <div class="containerr">
+    <div class="left-section">
+      <img class="main-book" src="assets/img/retail.jpg" alt="Book Cover" />
+      <div class="thumbnails">
+        <img src="assets/img/Wavy_Bus-17_Single-06.jpg" alt="Book Thumb 1" />
+        <img src="assets/img/retail1.jpg" alt="Book Thumb 2" />
+        <img src="assets/img/ECOMMERCE.png" alt="Book Thumb 2" />
+      </div>
+      <!-- <div class="book-info">
+        <h4>Autospace: The manufer fantastic beast <span class="rating">★ 4.3</span></h4>
+        <p>Takes readers on an exhilarating journey through a captivating world where magical creatures roam amidst advanced technologies</p>
+      </div> -->
+      <div class="carousel-buttons">
+        <button>&larr;</button>
+        <button>&rarr;</button>
+      </div>
+    </div>
+
+    <div class="right-section">
+      <h1>Turn Clicks into Customers. Build a Brand They Can’t Ignore.</h1>
+      <p>At TwicTech, we transform retail & e-commerce businesses into trusted, fast-growing digital brands.</p>
+      <!-- <div class="search-bar">
+        <input type="text" placeholder="Find the book by title or author" />
+        <button class="search-btn">Search</button>
+        <button class="explore-btn">Explore the Library</button>
+      </div>
+      <div class="stats">
+        <div>
+          <h3>12,000+</h3>
+          <span>Self publish books</span>
+        </div>
+        <div>
+          <h3>30+</h3>
+          <span>Genres</span>
+        </div>
+        <div>
+          <h3>246</h3>
+          <span>Creative authors</span>
+        </div>
+        <div>
+          <h3>134K+</h3>
+          <span>Books sold</span>
+        </div>
+      </div> -->
+    </div>
+  </div>
+
+  <!--SUBTEXT-->
+
+  <section class="full-width-banner">
+    <div class="overlay">
+      <div class="content">
+        <p>
+          From startups launching their first product to enterprise stores scaling globally,
+          we deliver <strong>creative branding</strong>, <strong>conversion-optimized websites</strong>,
+          and <strong>high-performance digital marketing</strong> to make your store stand out and sell more.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <style>
+    .full-width-banner {
+  position: relative;
+  width: 100%;
+  height: 60vh; /* or 400px depending on use */
+  background: url('assets/img/bannerretail.jpg') no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.full-width-banner .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(99, 85, 85, 0.6); /* dark overlay */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  text-align: center;
+}
+
+.full-width-banner .content p {
+  color: #fff;
+  font-size: 1.5rem;
+  line-height: 1.6;
+  max-width: 900px;
+  font-weight: 400;
+}
+
+.full-width-banner .content strong {
+  font-weight: 700;
+  color: #f7b7b7;
+}
+
+  </style>
+
+  <!--why choose-->
+
+  <section class="why-choose-us">
+    <div class="container">
+      <div class="left">
+        <!-- <h5>WHY CHOOSE US</h5> -->
+        <h2>Why Branding & Strategy Are Crucial in Retail & E-Commerce</h2>
+        <p>
+            Today’s customers are <strong>scrolling faster, trusting less, and choosing smarter.</strong> In this landscape, your store’s success isn’t about just having a product—it’s about building a <strong>brand they remember.</strong>
+        </p>
+
+        <p>
+            TwicTech helps:
+        </p>
+        <div class="features-grid">
+          <div class="feature"><i class="icon">⏱</i> <span>Craft a compelling brand identity that drives loyalty</span></div>
+          <div class="feature"><i class="icon">🛠</i> <span>Build converting digital storefronts for web & mobile</span></div>
+          <div class="feature"><i class="icon">🚀</i> <span>Launch data-backed ad campaigns that reduce acquisition cost</span></div>
+          <div class="feature"><i class="icon">🧠</i> <span>Create multi-platform visibility that increases repeat sales</span></div>
+        </div>
+      </div>
+      <div class="right">
+        <div class="img-wrapper">
+          <img src="assets/img/whyretail1.jpg" class="main-img" alt="Person" />
+          <img src="assets/img/whyretail.jpg" class="overlay-img" alt="Phone" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <style>
+    .why-choose-us {
+  padding: 80px 20px;
+  background: #fff;
+  font-family: 'Inter', sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.left {
+  flex: 1;
+  min-width: 320px;
+  padding-right: 40px;
+}
+
+.left h5 {
+  color: #d94d83;
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.left h2 {
+  color: #5b0e2d;
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.left p {
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(150px, 1fr));
+  gap: 20px 30px;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+  color: #111;
+}
+
+.icon {
+  color: #5b0e2d;
+  font-size: 20px;
+  border: 1px solid #5b0e2d;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.right {
+  flex: 1;
+  min-width: 320px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.img-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+
+.main-img {
+  width: 100%;
+  border-radius: 8px;
+  filter: grayscale(0%) sepia(20%) hue-rotate(-20deg);
+  background-color: rgba(217, 77, 131, 0.3);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.main-img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 15px 25px rgba(0,0,0,0.3);
+}
+
+.overlay-img {
+  position: absolute;
+  bottom: -30px;
+  right: -30px;
+  width: 180px;
+  border: 5px solid #fff;
+  border-radius: 8px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.overlay-img:hover {
+  transform: scale(1.08) rotate(2deg);
+  box-shadow: 0 15px 25px rgba(0,0,0,0.3);
+}
+
+
+  </style>
 
 
 
