@@ -1158,7 +1158,7 @@
               <span>Website Design & Development</span>
             </div>
             <div class="slider-item">
-                <img src="assets/img/APP.png" alt="">
+                <img src="assets/img/appabout.png" alt="">
               <span>Mobile App Development</span>
             </div>
             <div class="slider-item">
@@ -1662,7 +1662,15 @@
 </style>
 
 
-      
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+<script>
+  AOS.init({
+    once: true, // Animation only happens once
+    duration: 1000, // Default animation duration
+  });
+</script>
+
 
     <!--===== BLOG AREA STARTS =======-->
     <div class="blog13-section-area sp2">
@@ -1766,6 +1774,16 @@
         .blog-content-area p {
           flex-grow: 1;
         }
+
+        .blog13-section-area [data-aos] {
+  opacity: 1 !important;
+  transform: none !important;
+}
+.blog13-section-area {
+  overflow: visible;
+  position: relative;
+}
+
       </style>
       
 
