@@ -763,6 +763,15 @@
   }
 }
 
+.guide-wrapper {
+  margin-left: 5%;
+  margin-right: 5%;
+  /* Optional: add vertical margin or padding if needed */
+
+
+
+}
+
 /* Guide Section */
 .guide-section {
   background: #f8a0a0;
@@ -813,7 +822,7 @@
 
 .about-section {
   padding: 60px 20px;
-  background: #f5f5f5;
+
 }
 
 .about-section .container {
@@ -870,7 +879,312 @@
 
 
   </style>
+
+  <!--SERVIECS-->
+
+  <section class="what-we-do">
+    <div class="containerrrr">
+      <h2 class="section-title">🏙️ What We Do for Real Estate & Infrastructure Brands</h2>
+      <div class="card-grid">
   
+        <!-- Card 1 -->
+        <div class="service-card">
+          <div class="icon"><img src="https://img.icons8.com/color/64/real-estate.png" alt="Branding"></div>
+          <h3>Real Estate Branding & Identity</h3>
+          <p>We create premium identities that reflect trust, vision, and value.</p>
+          <ul>
+            <li>Brand naming, positioning & tagline creation</li>
+            <li>Logo, palette & hierarchy</li>
+            <li>Master & sub-brand structure</li>
+          </ul>
+        </div>
+  
+        <!-- Card 2 -->
+        <div class="service-card">
+          <div class="icon"><img src="https://img.icons8.com/color/64/domain.png" alt="Websites"></div>
+          <h3>Project Websites & Landing Pages</h3>
+          <p>Optimized for lead generation and property discovery.</p>
+          <ul>
+            <li>3D walkthroughs & floorplans</li>
+            <li>Dynamic filters & map</li>
+            <li>Lead forms & WhatsApp chat</li>
+          </ul>
+        </div>
+  
+        <!-- Card 3 -->
+        <div class="service-card">
+          <div class="icon"><img src="https://img.icons8.com/color/64/marker.png" alt="Ads"></div>
+          <h3>Digital Ads & Geo-Fencing</h3>
+          <p>We don’t waste impressions—target by location & interest.</p>
+          <ul>
+            <li>Google & Meta ad campaigns</li>
+            <li>Brochures & lead magnets</li>
+            <li>Event-based geo targeting</li>
+          </ul>
+        </div>
+  
+        <!-- Card 4 -->
+        <div class="service-card">
+          <div class="icon"><img src="https://img.icons8.com/color/64/video-call.png" alt="Video"></div>
+          <h3>Video Content & Walkthroughs</h3>
+          <p>Showcase, don’t just sell.</p>
+          <ul>
+            <li>High-quality walkthroughs</li>
+            <li>Time-lapse construction updates</li>
+            <li>Social-ready video ads</li>
+          </ul>
+        </div>
+  
+        <!-- Card 5 -->
+        <div class="service-card">
+          <div class="icon"><img src="https://img.icons8.com/color/64/google-web-search.png" alt="SEO"></div>
+          <h3>SEO & Local Lead Generation</h3>
+          <p>We put your project where your buyers search.</p>
+          <ul>
+            <li>Landmark-based SEO</li>
+            <li>Market insights & blogs</li>
+            <li>Schema & location markup</li>
+          </ul>
+        </div>
+  
+        <!-- Card 6 -->
+        <div class="service-card">
+          <div class="icon"><img src="https://img.icons8.com/color/64/handshake.png" alt="CRM Icon" />
+          </div>
+          <h3>CRM & Lead Nurturing</h3>
+          <p>Never lose a prospect again.</p>
+          <ul>
+            <li>Lead to booking pipeline</li>
+            <li>Auto WhatsApp/email flows</li>
+            <li>CRM dashboards & tracking</li>
+          </ul>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+
+  <style>
+    .what-we-do {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  font-family: 'Urbanist', sans-serif;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 50px;
+  color: #111;
+  font-weight: 700;
+}
+
+.containerrrr {
+  max-width: 1300px;
+  margin: auto;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+}
+
+.service-card {
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 20px;
+  padding: 30px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  position: relative;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+}
+
+.service-card .icon {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 20px;
+}
+
+.service-card h3 {
+  font-size: 20px;
+  color: #222;
+  margin-bottom: 12px;
+}
+
+.service-card p {
+  font-size: 14.5px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.service-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.service-card ul li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #333;
+  position: relative;
+  padding-left: 5px;
+}
+
+.service-card ul li::before {
+  content: '';
+  flex-shrink: 0;
+  width: 10px;
+  height: 10px;
+  margin-top: 6px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #ff7e5f, #feb47b); /* peach-orange gradient */
+  transition: transform 0.3s ease;
+}
+
+.service-card ul li:hover::before {
+  transform: scale(1.3);
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 26px;
+  }
+  .service-card {
+    padding: 20px;
+  }
+}
+
+  </style>
+
+<section class="svg-image-section">
+  <img src="assets/img/estate1.svg" alt="SVG Background" class="svg-full-image" />
+</section>
+
+<style>
+  .svg-image-section {
+  width: 100%;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+.svg-full-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+</style>
+
+<!-- Who We Serve Section -->
+<section class="serve-section">
+  <h2 class="serve-heading">🧱 Who We Serve</h2>
+  <div class="serve-container">
+    <div class="serve-item">
+      <div class="circle">🏢</div>
+      <p>Real Estate Developers<br>(Residential & Commercial)</p>
+    </div>
+    <div class="serve-item">
+      <div class="circle">🏗️</div>
+      <p>Infrastructure Firms<br>(SEZs, Industrial Parks)</p>
+    </div>
+    <div class="serve-item">
+      <div class="circle">💼</div>
+      <p>Property Investment Firms<br>& Brokers</p>
+    </div>
+    <div class="serve-item">
+      <div class="circle">🌆</div>
+      <p>Smart City & Urban<br>Infrastructure Projects</p>
+    </div>
+  </div>
+</section>
+
+<style>
+  /* Who We Serve Section Styles */
+.serve-section {
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #f2bcbc, #e88080);
+  text-align: center;
+  font-family: 'Urbanist', sans-serif;
+}
+
+.serve-heading {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #222;
+  font-weight: 700;
+}
+
+.serve-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.serve-item {
+  width: 200px;
+  background: white;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.serve-item:hover {
+  transform: translateY(-8px);
+}
+
+.circle {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 15px;
+  background: linear-gradient(135deg, #f2bcbc, #7d1d44);
+  color: white;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.serve-item p {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.4;
+}
+
+</style>
+  
+<section class="svg-image-section2">
+  <img src="assets/img/estate2.svg" alt="SVG Background" class="svg-full-image2" />
+</section>
+
+<style>
+  .svg-image-section2 {
+  width: 100%;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+.svg-full-image2 {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+</style>
       
 
    
